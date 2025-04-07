@@ -85,14 +85,46 @@ const UserInputForm = ({ onComplete, onBack }) => {
     switch(formData.baseIndustry) {
       case 'agriculture':
         return [
-          { id: 'farming', label: 'Farming', icon: '🚜' },
-          { id: 'livestock', label: 'Livestock Management', icon: '🐄' },
-          { id: 'crop-management', label: 'Crop Management', icon: '🌱' },
-          { id: 'precision-agriculture', label: 'Precision Agriculture', icon: '📊' },
+          { id: 'agri-business-services', label: 'Agri-Business Services', icon: '🌾' },
+  { id: 'agrochemicals', label: 'Agrochemicals', icon: '🧪' },
+  { id: 'agricultural-equipment', label: 'Agricultural Equipment', icon: '🚜' },
+  { id: 'agricultural-technology', label: 'Agricultural Technology (AgTech)', icon: '📡' },
+  { id: 'animal-husbandry', label: 'Animal Husbandry', icon: '🐄' },
+  { id: 'aquaculture', label: 'Aquaculture', icon: '🐟' },
+  { id: 'biogas-production', label: 'Biogas Production', icon: '🔥' },
+  { id: 'cattle-ranching', label: 'Cattle Ranching', icon: '🐂' },
+  { id: 'cereal-grain-farming', label: 'Cereal and Grain Farming', icon: '🌾' },
+  { id: 'crop-protection', label: 'Crop Protection', icon: '🛡️' },
+  { id: 'crop-production', label: 'Crop Production', icon: '🌱' },
+  { id: 'dairy-farming', label: 'Dairy Farming', icon: '🥛' },
+  { id: 'farm-management', label: 'Farm Management', icon: '📊' },
+  { id: 'farm-to-table', label: 'Farm-to-Table', icon: '🍽️' },
+  { id: 'fisheries', label: 'Fisheries', icon: '🎣' },
+  { id: 'floriculture', label: 'Floriculture', icon: '🌸' },
+  { id: 'food-processing', label: 'Food Processing', icon: '🍲' },
+  { id: 'forest-products', label: 'Forest Products', icon: '🌲' },
+  { id: 'fruit-farming', label: 'Fruit Farming', icon: '🍎' },
+  { id: 'greenhouse-nursery', label: 'Greenhouse and Nursery', icon: '🏡' },
+  { id: 'herb-farming', label: 'Herb Farming', icon: '🌿' },
           { id: 'hydroponics', label: 'Hydroponics', icon: '💧' },
-          { id: 'agricultural-supply-chain', label: 'Agricultural Supply Chain', icon: '🔄' },
-          { id: 'farm-equipment', label: 'Farm Equipment', icon: '🔧' },
-          { id: 'sustainable-agriculture', label: 'Sustainable Agriculture', icon: '♻️' }
+  { id: 'indoor-farming', label: 'Indoor Farming', icon: '🏠' },
+  { id: 'irrigation-systems', label: 'Irrigation Systems', icon: '🚿' },
+  { id: 'livestock-farming', label: 'Livestock Farming', icon: '🐖' },
+  { id: 'livestock-feed-production', label: 'Livestock Feed Production', icon: '🌾' },
+  { id: 'meat-processing', label: 'Meat Processing', icon: '🍖' },
+  { id: 'mushroom-farming', label: 'Mushroom Farming', icon: '🍄' },
+  { id: 'nutraceuticals', label: 'Nutraceuticals', icon: '💊' },
+  { id: 'organic-farming', label: 'Organic Farming', icon: '🌿' },
+  { id: 'poultry-farming', label: 'Poultry Farming', icon: '🐓' },
+  { id: 'precision-agriculture', label: 'Precision Agriculture', icon: '🎯' },
+  { id: 'seed-production', label: 'Seed Production', icon: '🌱' },
+  { id: 'sustainable-agriculture', label: 'Sustainable Agriculture', icon: '🌍' },
+  { id: 'soil-fertility-management', label: 'Soil Fertility and Management', icon: '🌱' },
+  { id: 'tea-coffee-production', label: 'Tea and Coffee Production', icon: '☕' },
+  { id: 'tree-crops-agroforestry', label: 'Tree Crops and Agroforestry', icon: '🌳' },
+  { id: 'turf-sod-farming', label: 'Turf and Sod Farming', icon: '🌱' },
+  { id: 'vegetable-farming', label: 'Vegetable Farming', icon: '🥕' },
+  { id: 'wine-production', label: 'Wine Production', icon: '🍷' }
         ];
       case 'biotechnology':
         return [
@@ -2034,7 +2066,7 @@ const UserInputForm = ({ onComplete, onBack }) => {
                                                                 { id: 'whole-genome-variant-calling-tools', label: 'Whole Genome Variant Calling Tools', icon: '🔍' }
                                                               ];
                                                               case 'agricultural-banking':
-                                                                return [
+        return [
                                                                   { id: 'automated-loan-underwriting', label: 'Automated Loan Underwriting', icon: '📄' },
                                                                   { id: 'precision-agriculture-financing', label: 'Precision Agriculture Financing', icon: '🌾' },
                                                                   { id: 'crop-insurance-automation', label: 'Crop Insurance Automation', icon: '🛡️' },
@@ -2077,7 +2109,7 @@ const UserInputForm = ({ onComplete, onBack }) => {
                                                                   { id: 'automated-subsidy-allocation', label: 'Automated Subsidy Allocation', icon: '💰' }
                                                                 ];
                                                                 case 'alternative-investments':
-                                                                  return [
+        return [
                                                                     { id: 'private-equity-fund-management', label: 'Private Equity Fund Management', icon: '💼' },
                                                                     { id: 'hedge-fund-risk-optimization', label: 'Hedge Fund Risk Optimization', icon: '📈' },
                                                                     { id: 'real-estate-investment-analysis', label: 'Real Estate Investment Analysis', icon: '🏢' },
@@ -2120,7 +2152,7 @@ const UserInputForm = ({ onComplete, onBack }) => {
                                                                     { id: 'direct-lending-platforms', label: 'Direct Lending Platforms', icon: '💵' }
                                                                   ];      
                                                                   case 'asset-management':
-                                                                    return [
+        return [
                                                                       { id: 'automated-portfolio-management', label: 'Automated Portfolio Management', icon: '📊' },
                                                                       { id: 'risk-assessment-and-management-tools', label: 'Risk Assessment and Management Tools', icon: '⚖️' },
                                                                       { id: 'real-time-investment-monitoring', label: 'Real-Time Investment Monitoring', icon: '⏱️' },
@@ -2163,7 +2195,7 @@ const UserInputForm = ({ onComplete, onBack }) => {
                                                                       { id: 'capital-flow-monitoring-and-analysis', label: 'Capital Flow Monitoring and Analysis', icon: '💵' }
                                                                     ];
                                                                     case 'automated-investment-services':
-                                                                      return [
+        return [
                                                                         { id: 'personalized-investment-portfolio-creation', label: 'Personalized Investment Portfolio Creation', icon: '📝' },
                                                                         { id: 'automated-risk-profiling', label: 'Automated Risk Profiling', icon: '⚖️' },
                                                                         { id: 'goal-based-investment-planning', label: 'Goal-Based Investment Planning', icon: '🎯' },
@@ -2206,7 +2238,7 @@ const UserInputForm = ({ onComplete, onBack }) => {
                                                                         { id: 'automated-risk-mitigation-models', label: 'Automated Risk Mitigation Models', icon: '⚖️' }
                                                                       ];
                                                                       case 'bancassurance':
-                                                                        return [
+        return [
                                                                           { id: 'automated-insurance-policy-generation', label: 'Automated Insurance Policy Generation', icon: '📄' },
                                                                           { id: 'customer-risk-profiling-for-insurance-products', label: 'Customer Risk Profiling for Insurance Products', icon: '⚖️' },
                                                                           { id: 'digital-insurance-product-distribution', label: 'Digital Insurance Product Distribution', icon: '💻' },
@@ -2249,7 +2281,7 @@ const UserInputForm = ({ onComplete, onBack }) => {
                                                                           { id: 'insurance-policy-compliance-automation', label: 'Insurance Policy Compliance Automation', icon: '📜' }
                                                                         ];
                                                                         case 'brokerage-services':
-                                                                          return [
+        return [
                                                                             { id: 'automated-trade-execution', label: 'Automated Trade Execution', icon: '⚙️' },
                                                                             { id: 'algorithmic-trading-strategies', label: 'Algorithmic Trading Strategies', icon: '🤖' },
                                                                             { id: 'real-time-market-data-feeds', label: 'Real-Time Market Data Feeds', icon: '📈' },
@@ -2286,7 +2318,7 @@ const UserInputForm = ({ onComplete, onBack }) => {
                                                                             { id: 'capital-flow-monitoring-and-analysis', label: 'Capital Flow Monitoring and Analysis', icon: '💵' }
                                                                           ];
                                                                           case 'capital-markets':
-                                                                            return [
+        return [
                                                                               { id: 'automated-securities-trading', label: 'Automated Securities Trading', icon: '📈' },
                                                                               { id: 'algorithmic-trading-strategies', label: 'Algorithmic Trading Strategies', icon: '🤖' },
                                                                               { id: 'market-liquidity-optimization', label: 'Market Liquidity Optimization', icon: '💧' },
@@ -2329,7 +2361,7 @@ const UserInputForm = ({ onComplete, onBack }) => {
                                                                               { id: 'capital-market-data-analytics', label: 'Capital Market Data Analytics', icon: '📊' }
                                                                             ];
                                                                             case 'cash-management-services':
-                                                                              return [
+        return [
                                                                                 { id: 'automated-cash-flow-forecasting', label: 'Automated Cash Flow Forecasting', icon: '📈' },
                                                                                 { id: 'real-time-cash-positioning', label: 'Real-Time Cash Positioning', icon: '⏱️' },
                                                                                 { id: 'intelligent-payment-routing', label: 'Intelligent Payment Routing', icon: '🔄' },
@@ -2926,7 +2958,7 @@ const UserInputForm = ({ onComplete, onBack }) => {
                             { id: 'integrated-payment-gateway-solutions', label: 'Integrated Payment Gateway Solutions', icon: '🔗' },
                             { id: 'artificial-intelligence-for-financial-fraud-prevention', label: 'Artificial Intelligence for Financial Fraud Prevention', icon: '🛡️' }
                           ];
-                          case 'forex-services':
+                          case 'foreign-exchange-services':
                             return [
                               { id: 'automated-currency-trading-platforms', label: 'Automated Currency Trading Platforms', icon: '💱' },
                               { id: 'real-time-currency-conversion-solutions', label: 'Real-Time Currency Conversion Solutions', icon: '🔄' },
@@ -3742,54 +3774,1803 @@ const UserInputForm = ({ onComplete, onBack }) => {
                                                                   { id: 'philanthropic-giving-automation', label: 'Philanthropic Giving Automation', icon: '🎁' },
                                                                   { id: 'sustainable-and-impact-investment-solutions', label: 'Sustainable and Impact Investment Solutions', icon: '🌱' }
         ];
-      case 'farming':
-        return [
-          { id: 'crop-rotation', label: 'Crop Rotation', icon: '🌾' },
-          { id: 'organic-farming', label: 'Organic Farming', icon: '🌱' },
-          { id: 'precision-farming', label: 'Precision Farming', icon: '📊' }
+
+case 'agri-business-services':
+  return [
+    { id: 'farm-management-software', label: 'Farm Management Software', icon: '💻' },
+    { id: 'crop-monitoring-solutions', label: 'Crop Monitoring Solutions', icon: '📡' },
+    { id: 'precision-irrigation-systems', label: 'Precision Irrigation Systems', icon: '🚿' },
+    { id: 'soil-health-analytics', label: 'Soil Health and Fertility Analytics', icon: '🌱' },
+    { id: 'livestock-tracking-management', label: 'Livestock Tracking and Management', icon: '🐄' },
+    { id: 'automated-crop-protection', label: 'Automated Crop Protection Systems', icon: '🛡️' },
+    { id: 'smart-fertilization-tech', label: 'Smart Fertilization Technologies', icon: '🧪' },
+    { id: 'supply-chain-optimization', label: 'Supply Chain Optimization Tools', icon: '📦' },
+    { id: 'predictive-weather-tools', label: 'Predictive Weather and Climate Tools', icon: '🌦️' },
+    { id: 'autonomous-tractors', label: 'Autonomous Tractors and Harvesters', icon: '🚜' },
+    { id: 'crop-yield-prediction', label: 'Crop Yield Prediction Software', icon: '📊' },
+    { id: 'digital-marketplaces', label: 'Digital Marketplaces for Agriculture', icon: '🛒' },
+    { id: 'remote-sensing-land', label: 'Remote Sensing for Land Management', icon: '🛰️' },
+    { id: 'real-time-pest-detection', label: 'Real-Time Pest Detection Solutions', icon: '🐛' },
+    { id: 'automated-greenhouse', label: 'Automated Greenhouse Control Systems', icon: '🏡' },
+    { id: 'farm-to-table-logistics', label: 'Farm-to-Table Logistics Solutions', icon: '🚚' },
+    { id: 'plant-disease-diagnostic', label: 'Plant Disease Diagnostic Tools', icon: '🩺' },
+    { id: 'virtual-farming-assistance', label: 'Virtual Farming Assistance Platforms', icon: '🖥️' },
+    { id: 'crop-rotation-planning', label: 'Crop Rotation and Planning Software', icon: '🔄' },
+    { id: 'online-agri-training', label: 'Online Agricultural Training Platforms', icon: '🎓' },
+    { id: 'data-driven-livestock', label: 'Data-Driven Livestock Breeding Solutions', icon: '🧬' },
+    { id: 'smart-feeding-systems', label: 'Smart Feeding Systems for Animals', icon: '🍽️' },
+    { id: 'digital-financial-management', label: 'Digital Financial Management for Farmers', icon: '💳' },
+    { id: 'automated-weeding', label: 'Automated Weeding and Cultivation Systems', icon: '🌿' },
+    { id: 'virtual-crop-simulation', label: 'Virtual Crop Simulation Software', icon: '🌾' },
+    { id: 'blockchain-supply-chains', label: 'Blockchain for Agricultural Supply Chains', icon: '🔗' },
+    { id: 'farm-data-analytics', label: 'Farm Data Analytics Platforms', icon: '📈' },
+    { id: 'autonomous-drone-spraying', label: 'Autonomous Drone Spraying Systems', icon: '🚁' },
+    { id: 'on-demand-advisory', label: 'On-demand Agricultural Advisory Services', icon: '📞' },
+    { id: 'farm-equipment-rental', label: 'Farm Equipment Rental Platforms', icon: '🛠️' },
+    { id: 'agricultural-insurance', label: 'Agricultural Insurance Automation', icon: '📝' },
+    { id: 'vertical-farming-management', label: 'Vertical Farming Management Systems', icon: '🏢' },
+    { id: 'predictive-supply-chain', label: 'Predictive Supply Chain Solutions', icon: '🔮' },
+    { id: 'cloud-agri-inventory', label: 'Cloud-Based Agricultural Inventory Management', icon: '☁️' },
+    { id: 'smart-food-processing', label: 'Smart Food Processing Technologies', icon: '🍲' },
+    { id: 'crop-import-export', label: 'Crop Import and Export Optimization', icon: '🌍' },
+    { id: 'agri-waste-management', label: 'Agricultural Waste Management Solutions', icon: '🗑️' },
+    { id: 'real-time-water-monitoring', label: 'Real-Time Water Usage Monitoring', icon: '💧' },
+    { id: 'e-commerce-farm-products', label: 'E-commerce Platforms for Farm Products', icon: '🛒' },
+    { id: 'weather-crop-forecasting', label: 'Weather-Driven Crop Forecasting Tools', icon: '🌦️' }
+  ];
+
+case 'agrochemicals':
+  return [
+    { id: 'precision-pesticide', label: 'Precision Pesticide Application', icon: '🎯' },
+    { id: 'smart-fertilizer', label: 'Smart Fertilizer Management Systems', icon: '🧪' },
+    { id: 'automated-crop-protection', label: 'Automated Crop Protection Solutions', icon: '🛡️' },
+    { id: 'integrated-pest-management', label: 'Integrated Pest Management Software', icon: '🐛' },
+    { id: 'soil-fertility-monitoring', label: 'Soil Fertility Monitoring Systems', icon: '🌱' },
+    { id: 'crop-nutrient-optimization', label: 'Crop Nutrient Optimization Tools', icon: '📊' },
+    { id: 'predictive-pest-models', label: 'Predictive Pest Infestation Models', icon: '🔮' },
+    { id: 'digital-fertilizer-blending', label: 'Digital Fertilizer Blending Solutions', icon: '🧪' },
+    { id: 'remote-sensing-chemical', label: 'Remote Sensing for Chemical Application', icon: '🛰️' },
+    { id: 'data-driven-herbicide', label: 'Data-Driven Herbicide Optimization', icon: '🌿' },
+    { id: 'automated-weed-control', label: 'Automated Weed Control Systems', icon: '🌾' },
+    { id: 'climate-sensitive-chemical', label: 'Climate-Sensitive Chemical Application', icon: '🌦️' },
+    { id: 'soil-ph-moisture-sensors', label: 'Soil pH and Moisture Sensors', icon: '💧' },
+    { id: 'drone-crop-protection', label: 'Drone-Assisted Crop Protection', icon: '🚁' },
+    { id: 'digital-chemical-inventory', label: 'Digital Chemical Inventory Management', icon: '📦' },
+    { id: 'customizable-pest-control', label: 'Customizable Pest Control Scheduling Software', icon: '📅' },
+    { id: 'chemical-usage-analytics', label: 'Chemical Usage Analytics and Optimization', icon: '📈' },
+    { id: 'crop-specific-chemical', label: 'Crop-Specific Chemical Recommendation Platforms', icon: '🌾' },
+    { id: 'digital-pest-mapping', label: 'Digital Pest and Disease Mapping Tools', icon: '🗺️' },
+    { id: 'chemical-resistance-monitoring', label: 'Chemical Resistance Monitoring Systems', icon: '⚠️' },
+    { id: 'fertilizer-efficiency-analytics', label: 'Fertilizer Efficiency Analytics', icon: '📊' },
+    { id: 'smart-irrigation-chemical', label: 'Smart Irrigation and Chemical Integration', icon: '🚿' },
+    { id: 'precision-spraying', label: 'Precision Spraying Technologies', icon: '💦' },
+    { id: 'bio-based-agrochemicals', label: 'Bio-based Agrochemical Solutions', icon: '🌿' },
+    { id: 'agricultural-runoff', label: 'Agricultural Runoff Management Systems', icon: '🌊' },
+    { id: 'digital-compliance', label: 'Digital Compliance and Regulation Tracking', icon: '📝' },
+    { id: 'smart-fertilization-sensing', label: 'Smart Fertilization Sensing Systems', icon: '📡' },
+    { id: 'real-time-chemical', label: 'Real-Time Chemical Performance Monitoring', icon: '⏱️' },
+    { id: 'automated-growth-regulators', label: 'Automated Plant Growth Regulators', icon: '🌱' },
+    { id: 'precision-fungicide', label: 'Precision Fungicide Delivery Systems', icon: '🦠' },
+    { id: 'soil-health-predictive', label: 'Soil Health Predictive Modeling', icon: '🌱' },
+    { id: 'integrated-crop-nutrition', label: 'Integrated Crop Nutrition Management', icon: '🍎' },
+    { id: 'automated-fertilizer-scheduling', label: 'Automated Fertilizer Application Scheduling', icon: '📅' },
+    { id: 'intelligent-field-mapping', label: 'Intelligent Field Mapping for Chemical Application', icon: '🗺️' },
+    { id: 'chemical-risk-assessment', label: 'Chemical Risk Assessment Tools', icon: '⚠️' },
+    { id: 'customizable-agrochemical', label: 'Customizable Agrochemical Product Delivery', icon: '📦' },
+    { id: 'post-application-residue', label: 'Post-Application Chemical Residue Tracking', icon: '🧪' },
+    { id: 'eco-friendly-chemicals', label: 'Eco-Friendly Chemical Alternatives Analysis', icon: '🌍' },
+    { id: 'precision-insecticide', label: 'Precision Insecticide and Fungicide Application', icon: '🐜' },
+    { id: 'toxicity-impact-modeling', label: 'Toxicity and Environmental Impact Modeling', icon: '🌱' }
+  ];
+
+case 'agricultural-equipment':
+  return [
+    { id: 'autonomous-tractors', label: 'Autonomous Tractors', icon: '🚜' },
+    { id: 'smart-harvesting-systems', label: 'Smart Harvesting Systems', icon: '🌾' },
+    { id: 'precision-seeding', label: 'Precision Seeding Equipment', icon: '🌱' },
+    { id: 'automated-irrigation', label: 'Automated Irrigation Management', icon: '🚿' },
+    { id: 'drones-surveillance', label: 'Drones for Field Surveillance', icon: '🚁' },
+    { id: 'robotic-weed-control', label: 'Robotic Weed Control Systems', icon: '🌿' },
+    { id: 'soil-compaction-tools', label: 'Soil Compaction Measurement Tools', icon: '📏' },
+    { id: 'automated-plowing', label: 'Automated Plowing and Tilling Systems', icon: '🛠️' },
+    { id: 'precision-fertilizer', label: 'Precision Fertilizer Application', icon: '🧪' },
+    { id: 'smart-fertilizer-spreaders', label: 'Smart Fertilizer Spreaders', icon: '📦' },
+    { id: 'automated-crop-drones', label: 'Automated Crop Monitoring Drones', icon: '🚁' },
+    { id: 'gps-tractor-navigation', label: 'GPS-Enabled Tractor Navigation Systems', icon: '📍' },
+    { id: 'harvest-yield-mapping', label: 'Harvest Yield Mapping Systems', icon: '🗺️' },
+    { id: 'digital-fleet-management', label: 'Digital Equipment Fleet Management', icon: '📊' },
+    { id: 'tractor-performance', label: 'Tractor Performance Monitoring Tools', icon: '📈' },
+    { id: 'real-time-field-data', label: 'Real-Time Field Data Collection Equipment', icon: '⏱️' },
+    { id: 'automated-planting', label: 'Automated Planting and Seeding Machinery', icon: '🌱' },
+    { id: 'smart-grain-handling', label: 'Smart Grain Handling Equipment', icon: '🌾' },
+    { id: 'remote-mowers', label: 'Remote-Controlled Mowers', icon: '✂️' },
+    { id: 'autonomous-irrigation', label: 'Autonomous Irrigation Controllers', icon: '🚿' },
+    { id: 'weather-equipment-scheduling', label: 'Weather-Driven Equipment Scheduling Systems', icon: '🌦️' },
+    { id: 'real-time-diagnostics', label: 'Real-Time Equipment Diagnostics Tools', icon: '🛠️' },
+    { id: 'crop-spraying-robotics', label: 'Crop Spraying Robotics', icon: '💦' },
+    { id: 'automated-grain-sorting', label: 'Automated Grain Sorting and Packaging', icon: '📦' },
+    { id: 'autonomous-fruit-picking', label: 'Autonomous Fruit Picking Systems', icon: '🍎' },
+    { id: 'smart-equipment-scheduling', label: 'Smart Farm Equipment Scheduling', icon: '📅' },
+    { id: 'precision-land-leveling', label: 'Precision Land Leveling Equipment', icon: '📏' },
+    { id: 'integrated-precision-equipment', label: 'Integrated Equipment for Precision Agriculture', icon: '🛠️' },
+    { id: 'digital-tractor-fleet', label: 'Digital Tractor Fleet Optimization', icon: '📊' },
+    { id: 'autonomous-soil-tillage', label: 'Autonomous Soil Tillage Solutions', icon: '🌱' },
+    { id: 'precision-row-crop', label: 'Precision Equipment for Row Crop Management', icon: '🌾' },
+    { id: 'smart-watering-systems', label: 'Smart Watering Systems for Agricultural Machinery', icon: '💧' },
+    { id: 'vehicle-telematics', label: 'Agricultural Vehicle Telematics Systems', icon: '📡' },
+    { id: 'automated-calibration', label: 'Automated Equipment Calibration Systems', icon: '⚙️' },
+    { id: 'remote-performance-monitoring', label: 'Remote Equipment Performance Monitoring', icon: '📊' },
+    { id: 'smart-harvester-tech', label: 'Smart Harvester Technology', icon: '🌾' },
+    { id: 'real-time-maintenance-alerts', label: 'Real-Time Equipment Maintenance Alerts', icon: '⚠️' },
+    { id: 'automated-crop-adjustments', label: 'Automated Crop-Specific Equipment Adjustments', icon: '🌱' },
+    { id: 'data-driven-equipment-analytics', label: 'Data-Driven Equipment Usage Analytics', icon: '📈' },
+    { id: 'remote-fertilizer-application', label: 'Remote-Controlled Fertilizer Application Systems', icon: '🧪' }
+  ];
+
+  case 'agricultural-technology':
+    return [
+      { id: 'precision-agriculture-software', label: 'Precision Agriculture Software', icon: '📊' },
+      { id: 'smart-irrigation-management', label: 'Smart Irrigation Management Systems', icon: '🚿' },
+      { id: 'automated-crop-monitoring', label: 'Automated Crop Monitoring Systems', icon: '📡' },
+      { id: 'digital-farm-management', label: 'Digital Farm Management Platforms', icon: '💻' },
+      { id: 'farm-data-analytics', label: 'Farm Data Analytics Tools', icon: '📈' },
+      { id: 'crop-disease-prediction', label: 'Crop Disease Prediction Software', icon: '🦠' },
+      { id: 'remote-sensing-soil', label: 'Remote Sensing for Soil Health', icon: '🛰️' },
+      { id: 'yield-prediction-modeling', label: 'Yield Prediction Modeling', icon: '🔮' },
+      { id: 'farm-to-table-supply-chain', label: 'Farm-to-Table Supply Chain Management', icon: '📦' },
+      { id: 'gps-farm-equipment', label: 'GPS-Enabled Farm Equipment Navigation', icon: '📍' },
+      { id: 'automated-farm-equipment', label: 'Automated Farm Equipment Control Systems', icon: '🚜' },
+      { id: 'drones-precision-agriculture', label: 'Drones for Precision Agriculture', icon: '🚁' },
+      { id: 'digital-soil-health-mapping', label: 'Digital Soil Health Mapping', icon: '🗺️' },
+      { id: 'climate-responsive-farming', label: 'Climate-Responsive Farming Platforms', icon: '🌦️' },
+      { id: 'virtual-field-mapping', label: 'Virtual Field Mapping Tools', icon: '🖥️' },
+      { id: 'autonomous-field-robots', label: 'Autonomous Field Robots', icon: '🤖' },
+      { id: 'crop-rotation-optimization', label: 'Crop Rotation Optimization Software', icon: '🔄' },
+      { id: 'precision-livestock-monitoring', label: 'Precision Livestock Monitoring Systems', icon: '🐄' },
+      { id: 'digital-greenhouse-control', label: 'Digital Greenhouse Control Systems', icon: '🏡' },
+      { id: 'smart-crop-fertilization', label: 'Smart Crop Fertilization Tools', icon: '🧪' },
+      { id: 'livestock-tracking-monitoring', label: 'Livestock Tracking and Monitoring Systems', icon: '🐖' },
+      { id: 'weather-forecasting-agriculture', label: 'Weather Forecasting Tools for Agriculture', icon: '🌦️' },
+      { id: 'digital-weed-management', label: 'Digital Weed Management Systems', icon: '🌿' },
+      { id: 'real-time-crop-health', label: 'Real-Time Crop Health Monitoring', icon: '🌱' },
+      { id: 'soil-moisture-irrigation', label: 'Soil Moisture and Irrigation Optimization', icon: '💧' },
+      { id: 'e-commerce-farm-products', label: 'E-Commerce Platforms for Farm Products', icon: '🛒' },
+    { id: 'indoor-farming-management', label: 'Indoor Farming Management Software', icon: '🏠' },
+    { id: 'blockchain-agricultural-traceability', label: 'Blockchain for Agricultural Traceability', icon: '🔗' },
+    { id: 'automated-pest-control', label: 'Automated Pest Control Solutions', icon: '🐜' },
+    { id: 'smart-farm-asset-management', label: 'Smart Farm Asset Management', icon: '📊' },
+    { id: 'supply-chain-transparency', label: 'Supply Chain Transparency Platforms', icon: '📦' },
+    { id: 'data-driven-seed-selection', label: 'Data-Driven Seed Selection Tools', icon: '🌱' },
+    { id: 'remote-crop-surveillance', label: 'Remote Crop Surveillance Platforms', icon: '🛰️' },
+    { id: 'vertical-farming-automation', label: 'Vertical Farming Automation Systems', icon: '🏢' },
+    { id: 'smart-fertilization-chemical', label: 'Smart Fertilization and Chemical Application Tools', icon: '🧪' },
+    { id: 'digital-farm-equipment-rental', label: 'Digital Farm Equipment Rental Platforms', icon: '🛠️' },
+    { id: 'customizable-farm-equipment', label: 'Customizable Farm Equipment Optimization Software', icon: '⚙️' },
+    { id: 'harvest-scheduling-automation', label: 'Harvest Scheduling and Automation Systems', icon: '📅' },
+    { id: 'online-agricultural-knowledge', label: 'Online Agricultural Knowledge Platforms', icon: '🎓' },
+    { id: 'real-time-farm-performance', label: 'Real-Time Farm Performance Dashboards', icon: '📊' }
         ];
-      case 'livestock':
-        return [
-          { id: 'dairy-farming', label: 'Dairy Farming', icon: '🐄' },
-          { id: 'beef-farming', label: 'Beef Farming', icon: '🐂' },
-          { id: 'poultry-farming', label: 'Poultry Farming', icon: '🐔' }
-        ];
-      case 'crop-management':
-        return [
-          { id: 'sustainable-crops', label: 'Sustainable Crops', icon: '🌱' },
-          { id: 'crop-diversification', label: 'Crop Diversification', icon: '🌾' },
-          { id: 'integrated-pest-management', label: 'Integrated Pest Management', icon: '🐞' }
-        ];
-      case 'precision-agriculture':
-        return [
-          { id: 'data-driven-farming', label: 'Data-Driven Farming', icon: '📊' },
-          { id: 'smart-irrigation', label: 'Smart Irrigation', icon: '💧' },
-          { id: 'drones-in-agriculture', label: 'Drones in Agriculture', icon: '🚁' }
-        ];
+      // ... existing code ...
+case 'animal-husbandry':
+  return [
+    { id: 'automated-livestock-monitoring', label: 'Automated Livestock Monitoring Systems', icon: '🐄' },
+    { id: 'smart-herd-management', label: 'Smart Herd Management Solutions', icon: '📊' },
+    { id: 'precision-livestock-feeding', label: 'Precision Livestock Feeding Systems', icon: '🍽️' },
+    { id: 'automated-breeding-systems', label: 'Automated Breeding Systems', icon: '🧬' },
+    { id: 'livestock-health-monitoring', label: 'Livestock Health Monitoring Platforms', icon: '🩺' },
+    { id: 'wearable-sensors-animal', label: 'Wearable Sensors for Animal Tracking', icon: '📡' },
+    { id: 'real-time-animal-activity', label: 'Real-Time Animal Activity Monitoring', icon: '⏱️' },
+    { id: 'virtual-veterinary-consultations', label: 'Virtual Veterinary Consultations', icon: '🖥️' },
+    { id: 'digital-milk-production', label: 'Digital Milk Production Monitoring', icon: '🥛' },
+    { id: 'automated-animal-weight', label: 'Automated Animal Weight and Growth Tracking', icon: '📏' },
+    { id: 'remote-livestock-fencing', label: 'Remote Livestock Fencing Solutions', icon: '🚧' },
+    { id: 'livestock-disease-prediction', label: 'Livestock Disease Prediction Tools', icon: '🦠' },
+    { id: 'automated-calf-management', label: 'Automated Calf Management Systems', icon: '🐄' },
+    { id: 'smart-cattle-identification', label: 'Smart Cattle Identification Solutions', icon: '🆔' },
+    { id: 'livestock-genetic-management', label: 'Livestock Genetic Management Software', icon: '🧬' },
+    { id: 'livestock-rationing-feed', label: 'Livestock Rationing and Feed Optimization', icon: '🌾' },
+    { id: 'animal-behavior-analysis', label: 'Animal Behavior Analysis Platforms', icon: '📊' },
+    { id: 'precision-livestock-nutrition', label: 'Precision Livestock Nutrition Systems', icon: '🍎' },
+    { id: 'smart-barns-facility', label: 'Smart Barns and Facility Management Systems', icon: '🏠' },
+    { id: 'automated-egg-production', label: 'Automated Egg Production Tracking', icon: '🥚' },
+    { id: 'livestock-performance-analytics', label: 'Livestock Performance Analytics', icon: '📈' },
+    { id: 'real-time-animal-health', label: 'Real-Time Animal Health Alerts', icon: '⚠️' },
+    { id: 'automated-milking-systems', label: 'Automated Milking Systems', icon: '🥛' },
+    { id: 'livestock-welfare-comfort', label: 'Livestock Welfare and Comfort Monitoring', icon: '🐄' },
+    { id: 'digital-livestock-marketplaces', label: 'Digital Livestock Marketplaces', icon: '🛒' },
+    { id: 'remote-veterinary-diagnostics', label: 'Remote Veterinary Diagnostics Tools', icon: '🩺' },
+    { id: 'digital-animal-tracking', label: 'Digital Animal Tracking for Disease Control', icon: '📡' },
+    { id: 'smart-watering-livestock', label: 'Smart Watering Systems for Livestock', icon: '💧' },
+    { id: 'animal-breeding-optimization', label: 'Animal Breeding Optimization Software', icon: '🧬' },
+    { id: 'mobile-livestock-management', label: 'Mobile Livestock Management Platforms', icon: '📱' },
+    { id: 'blockchain-livestock-traceability', label: 'Blockchain for Livestock Traceability', icon: '🔗' },
+    { id: 'livestock-risk-management', label: 'Livestock Risk Management Platforms', icon: '⚠️' },
+    { id: 'automated-animal-waste', label: 'Automated Animal Waste Management Systems', icon: '🗑️' },
+    { id: 'smart-grazing-systems', label: 'Smart Grazing Systems', icon: '🌾' },
+    { id: 'livestock-immunization-tracking', label: 'Livestock Immunization Tracking', icon: '💉' },
+    { id: 'data-driven-meat-quality', label: 'Data-Driven Meat Quality Monitoring', icon: '🍖' },
+    { id: 'environmental-impact-livestock', label: 'Environmental Impact Monitoring for Livestock', icon: '🌍' },
+    { id: 'herd-health-treatment', label: 'Herd Health and Treatment Scheduling', icon: '📅' },
+    { id: 'digital-livestock-insurance', label: 'Digital Livestock Insurance Solutions', icon: '📝' },
+    { id: 'real-time-livestock-supply-chain', label: 'Real-Time Livestock Supply Chain Monitoring', icon: '📦' }
+  ];
+// ... existing code ...
+     // ... existing code ...
+case 'aquaculture':
+  return [
+    { id: 'automated-fish-feeding', label: 'Automated Fish Feeding Systems', icon: '🍽️' },
+    { id: 'smart-aquaculture-monitoring', label: 'Smart Aquaculture Monitoring Solutions', icon: '📡' },
+    { id: 'water-quality-temperature', label: 'Water Quality and Temperature Control Systems', icon: '🌡️' },
+    { id: 'fish-health-monitoring', label: 'Fish Health Monitoring Platforms', icon: '🩺' },
+    { id: 'real-time-aquaculture-data', label: 'Real-Time Aquaculture Data Analytics', icon: '📊' },
+    { id: 'remote-sensing-fish-stock', label: 'Remote Sensing for Fish Stock Management', icon: '🛰️' },
+    { id: 'automated-fish-harvesting', label: 'Automated Fish Harvesting Systems', icon: '🎣' },
+    { id: 'precision-aquaculture-nutrition', label: 'Precision Aquaculture Nutrition Systems', icon: '🍎' },
+    { id: 'fish-behavior-analysis', label: 'Fish Behavior Analysis Tools', icon: '📊' },
+    { id: 'environmental-impact-aquaculture', label: 'Environmental Impact Monitoring in Aquaculture', icon: '🌍' },
+    { id: 'real-time-fish-growth', label: 'Real-Time Fish Growth Tracking', icon: '📏' },
+    { id: 'intelligent-aquaculture-farm', label: 'Intelligent Aquaculture Farm Management', icon: '🏠' },
+    { id: 'fish-disease-prediction', label: 'Fish Disease Prediction and Prevention Software', icon: '🦠' },
+    { id: 'automated-water-filtration', label: 'Automated Water Filtration Systems', icon: '💧' },
+    { id: 'fish-stock-density', label: 'Fish Stock Density Optimization Software', icon: '📊' },
+    { id: 'digital-aquaculture-dashboards', label: 'Digital Aquaculture Farm Performance Dashboards', icon: '📈' },
+    { id: 'smart-fish-farm-scheduling', label: 'Smart Fish Farm Equipment Scheduling', icon: '📅' },
+    { id: 'sustainable-feed-optimization', label: 'Sustainable Feed Optimization in Aquaculture', icon: '🌾' },
+    { id: 'fish-tracking-identification', label: 'Fish Tracking and Identification Systems', icon: '📡' },
+    { id: 'aquaculture-supply-chain', label: 'Aquaculture Supply Chain Optimization', icon: '📦' },
+    { id: 'digital-fish-harvesting', label: 'Digital Fish Harvesting Scheduling', icon: '📅' },
+    { id: 'smart-oxygen-ph', label: 'Smart Oxygen and pH Regulation Tools', icon: '🧪' },
+    { id: 'remote-aquaculture-monitoring', label: 'Remote Aquaculture Farm Monitoring', icon: '🛰️' },
+    { id: 'fish-farm-automation', label: 'Fish Farm Automation Systems', icon: '🤖' },
+    { id: 'aquaculture-risk-management', label: 'Aquaculture Risk Management Platforms', icon: '⚠️' },
+    { id: 'precision-water-nutrients', label: 'Precision Monitoring of Water Nutrients', icon: '💧' },
+    { id: 'predictive-aquaculture-yield', label: 'Predictive Aquaculture Yield Estimation Tools', icon: '🔮' },
+    { id: 'smart-fish-breeding', label: 'Smart Fish Breeding Systems', icon: '🧬' },
+    { id: 'automated-aquaculture-integration', label: 'Automated Aquaculture System Integration', icon: '⚙️' },
+    { id: 'intelligent-fish-farm-fencing', label: 'Intelligent Fish Farm Fencing Systems', icon: '🚧' },
+    { id: 'real-time-aquaculture-compliance', label: 'Real-Time Aquaculture Compliance Monitoring', icon: '📝' },
+    { id: 'autonomous-underwater-vehicles', label: 'Autonomous Underwater Vehicles for Aquaculture', icon: '🤿' },
+    { id: 'digital-aquaculture-forecasting', label: 'Digital Aquaculture Supply and Demand Forecasting', icon: '🔮' },
+    { id: 'fish-feed-management', label: 'Fish Feed Management Software', icon: '🍽️' },
+    { id: 'iot-water-quality', label: 'IoT-Based Water Quality Monitoring', icon: '📡' },
+    { id: 'fish-welfare-monitoring', label: 'Fish Welfare Monitoring Systems', icon: '🐟' },
+    { id: 'marine-aquaculture-monitoring', label: 'Marine Aquaculture Monitoring and Control', icon: '🌊' },
+    { id: 'automated-harvesting-sorting', label: 'Automated Harvesting and Sorting Technology', icon: '🎣' },
+    { id: 'smart-fish-tank-monitoring', label: 'Smart Fish Tank Monitoring Systems', icon: '🐟' },
+    { id: 'blockchain-aquaculture-traceability', label: 'Blockchain for Traceability in Aquaculture', icon: '🔗' }
+  ];
+// ... existing code ...
+      // ... existing code ...
+case 'biogas-production':
+  return [
+    { id: 'automated-biogas-monitoring', label: 'Automated Biogas Plant Monitoring', icon: '📡' },
+    { id: 'smart-biogas-management', label: 'Smart Biogas Production Management Systems', icon: '📊' },
+    { id: 'real-time-biogas-yield', label: 'Real-Time Biogas Yield Optimization', icon: '📈' },
+    { id: 'organic-waste-feedstock', label: 'Organic Waste Feedstock Analysis Tools', icon: '🗑️' },
+    { id: 'biogas-storage-distribution', label: 'Biogas Storage and Distribution Automation', icon: '📦' },
+    { id: 'remote-sensing-biogas', label: 'Remote Sensing for Biogas Plant Efficiency', icon: '🛰️' },
+    { id: 'predictive-maintenance-biogas', label: 'Predictive Maintenance for Biogas Equipment', icon: '🛠️' },
+    { id: 'digital-biogas-flow', label: 'Digital Biogas Flow Control Systems', icon: '💧' },
+    { id: 'biogas-plant-performance', label: 'Biogas Plant Performance Analytics', icon: '📊' },
+    { id: 'waste-to-energy-monitoring', label: 'Waste-to-Energy Conversion Monitoring', icon: '🔥' },
+    { id: 'smart-methane-production', label: 'Smart Methane Production Control', icon: '⛽' },
+    { id: 'feedstock-preprocessing', label: 'Feedstock Preprocessing Automation', icon: '⚙️' },
+    { id: 'automated-biogas-purification', label: 'Automated Biogas Purification Systems', icon: '🧪' },
+    { id: 'real-time-gas-composition', label: 'Real-Time Gas Composition Monitoring', icon: '📊' },
+    { id: 'intelligent-biogas-environmental', label: 'Intelligent Biogas Plant Environmental Control', icon: '🌍' },
+    { id: 'biogas-quality-optimization', label: 'Biogas Quality Optimization Tools', icon: '📈' },
+    { id: 'waste-management-supply-chain', label: 'Waste Management and Feedstock Supply Chain Systems', icon: '📦' },
+    { id: 'digital-tracking-biogas', label: 'Digital Tracking of Biogas Production from Waste', icon: '📡' },
+    { id: 'biogas-facility-safety', label: 'Biogas Facility Safety Monitoring Systems', icon: '⚠️' },
+    { id: 'energy-consumption-optimization', label: 'Energy Consumption Optimization in Biogas Plants', icon: '⚡' },
+    { id: 'predictive-modeling-biogas', label: 'Predictive Modeling for Biogas Production', icon: '🔮' },
+    { id: 'biogas-energy-efficiency', label: 'Biogas Energy Efficiency Analytics', icon: '📊' },
+    { id: 'integrated-waste-to-energy', label: 'Integrated Waste-to-Energy Solutions', icon: '🔥' },
+    { id: 'biogas-production-simulation', label: 'Biogas Production Simulation Software', icon: '🖥️' },
+    { id: 'remote-monitoring-biogas', label: 'Remote Monitoring of Biogas Plant Equipment', icon: '🛰️' },
+    { id: 'smart-biogas-scheduling', label: 'Smart Biogas Plant Scheduling Systems', icon: '📅' },
+    { id: 'automated-organic-waste', label: 'Automated Organic Waste Sorting for Biogas', icon: '🗑️' },
+    { id: 'digital-compliance-biogas', label: 'Digital Compliance Management for Biogas Plants', icon: '📝' },
+    { id: 'real-time-biogas-pipeline', label: 'Real-Time Biogas Pipeline Monitoring', icon: '📡' },
+    { id: 'smart-heat-recovery', label: 'Smart Heat Recovery Systems for Biogas Plants', icon: '🔥' },
+    { id: 'biogas-energy-demand', label: 'Biogas Energy Demand Forecasting', icon: '🔮' },
+    { id: 'iot-biogas-equipment', label: 'IoT-Enabled Biogas Equipment Management', icon: '📡' },
+    { id: 'carbon-footprint-monitoring', label: 'Carbon Footprint Monitoring in Biogas Production', icon: '🌍' },
+    { id: 'distributed-biogas-generation', label: 'Distributed Biogas Generation Systems', icon: '⚡' },
+    { id: 'biogas-byproduct-management', label: 'Biogas Byproduct Management Software', icon: '📦' },
+    { id: 'automated-biogas-market', label: 'Automated Biogas Market Price Monitoring', icon: '💹' },
+    { id: 'data-driven-feedstock', label: 'Data-Driven Feedstock Quality Assessment', icon: '📊' },
+    { id: 'biogas-renewable-integration', label: 'Biogas Plant Integration with Renewable Energy Grids', icon: '🔌' },
+    { id: 'optimized-anaerobic-digestion', label: 'Optimized Anaerobic Digestion Control Systems', icon: '⚙️' },
+    { id: 'biogas-automation-sustainability', label: 'Biogas Plant Automation for Efficiency and Sustainability', icon: '🌱' }
+  ];
+// ... existing code ...
+      // ... existing code ...
+case 'cattle-ranching':
+  return [
+    { id: 'smart-herd-management', label: 'Smart Herd Management Systems', icon: '📊' },
+    { id: 'real-time-cattle-tracking', label: 'Real-Time Cattle Tracking and Monitoring', icon: '📡' },
+    { id: 'automated-feed-rationing', label: 'Automated Feed Rationing Systems', icon: '🍽️' },
+    { id: 'livestock-health-monitoring', label: 'Livestock Health Monitoring Platforms', icon: '🩺' },
+    { id: 'digital-cattle-identification', label: 'Digital Cattle Identification Solutions', icon: '🆔' },
+    { id: 'precision-grazing-management', label: 'Precision Grazing Management Systems', icon: '🌾' },
+    { id: 'remote-cattle-fencing', label: 'Remote Cattle Fencing Solutions', icon: '🚧' },
+    { id: 'predictive-weight-gain', label: 'Predictive Weight Gain Modeling', icon: '📏' },
+    { id: 'automated-cattle-breeding', label: 'Automated Cattle Breeding Programs', icon: '🧬' },
+    { id: 'livestock-performance-analytics', label: 'Livestock Performance Analytics', icon: '📈' },
+    { id: 'digital-cattle-marketplaces', label: 'Digital Cattle Marketplaces', icon: '🛒' },
+    { id: 'herd-health-treatment', label: 'Herd Health and Treatment Scheduling', icon: '📅' },
+    { id: 'smart-watering-cattle', label: 'Smart Watering Systems for Cattle', icon: '💧' },
+    { id: 'livestock-welfare-monitoring', label: 'Livestock Welfare Monitoring Tools', icon: '🐄' },
+    { id: 'real-time-disease-detection', label: 'Real-Time Disease Detection and Alerts', icon: '⚠️' },
+    { id: 'cattle-behavior-analysis', label: 'Cattle Behavior Analysis Systems', icon: '📊' },
+    { id: 'environmental-impact-ranching', label: 'Environmental Impact Monitoring for Ranches', icon: '🌍' },
+    { id: 'automated-cattle-sorting', label: 'Automated Cattle Sorting Systems', icon: '🤖' },
+    { id: 'livestock-traceability', label: 'Livestock Traceability Platforms', icon: '📡' },
+    { id: 'digital-cattle-auction', label: 'Digital Cattle Auction Systems', icon: '💰' },
+    { id: 'precision-cattle-breeding', label: 'Precision Cattle Breeding Solutions', icon: '🧬' },
+    { id: 'livestock-genetic-optimization', label: 'Livestock Genetic Optimization Software', icon: '🧬' },
+    { id: 'smart-cattle-ranch-equipment', label: 'Smart Cattle Ranch Equipment Control', icon: '⚙️' },
+    { id: 'remote-veterinary-consultations', label: 'Remote Veterinary Consultations', icon: '🖥️' },
+    { id: 'livestock-immunization-tracking', label: 'Livestock Immunization Tracking', icon: '💉' },
+    { id: 'mobile-cattle-management', label: 'Mobile Cattle Management Applications', icon: '📱' },
+    { id: 'digital-ranch-resource', label: 'Digital Ranch Resource Management', icon: '📊' },
+    { id: 'autonomous-cattle-herding', label: 'Autonomous Cattle Herding Systems', icon: '🤖' },
+    { id: 'livestock-supply-chain', label: 'Livestock Supply Chain Optimization', icon: '📦' },
+    { id: 'cattle-feed-quality', label: 'Cattle Feed Quality Monitoring', icon: '🌾' },
+    { id: 'automated-cattle-weight', label: 'Automated Cattle Weight Scales', icon: '📏' },
+    { id: 'virtual-ranch-planning', label: 'Virtual Ranch Planning Tools', icon: '🖥️' },
+    { id: 'real-time-feed-intake', label: 'Real-Time Feed Intake Monitoring', icon: '🍽️' },
+    { id: 'gps-herd-navigation', label: 'GPS-Enabled Herd Navigation Systems', icon: '📍' },
+    { id: 'cattle-risk-management', label: 'Cattle Risk Management Solutions', icon: '⚠️' },
+    { id: 'ranch-environmental-monitoring', label: 'Ranch Environmental Condition Monitoring', icon: '🌍' },
+    { id: 'automated-calf-care', label: 'Automated Calf Care and Tracking', icon: '🐄' },
+    { id: 'cattle-health-risk', label: 'Cattle Health Risk Assessment Software', icon: '🩺' },
+    { id: 'smart-pasture-management', label: 'Smart Pasture Management Systems', icon: '🌾' },
+    { id: 'digital-livestock-insurance', label: 'Digital Livestock Insurance Solutions', icon: '📝' }
+  ];
+
+  // ... existing code ...
+case 'cereal-grain-farming':
+  return [
+    { id: 'precision-seeding-systems', label: 'Precision Seeding Systems', icon: '🌱' },
+    { id: 'smart-irrigation-grain', label: 'Smart Irrigation Management for Grain Crops', icon: '🚿' },
+    { id: 'automated-grain-harvesting', label: 'Automated Grain Harvesting Systems', icon: '🌾' },
+    { id: 'crop-yield-prediction', label: 'Crop Yield Prediction Models', icon: '🔮' },
+    { id: 'real-time-soil-monitoring', label: 'Real-Time Soil Monitoring for Grains', icon: '🌱' },
+    { id: 'digital-grain-marketplaces', label: 'Digital Grain Marketplaces', icon: '🛒' },
+    { id: 'remote-sensing-crop-health', label: 'Remote Sensing for Crop Health', icon: '🛰️' },
+    { id: 'digital-fertilizer-nutrient', label: 'Digital Fertilizer and Nutrient Management', icon: '🧪' },
+    { id: 'grain-quality-monitoring', label: 'Grain Quality Monitoring Tools', icon: '📊' },
+    { id: 'smart-grain-sorting', label: 'Smart Grain Sorting and Packaging', icon: '📦' },
+    { id: 'automated-crop-protection', label: 'Automated Crop Protection Systems', icon: '🛡️' },
+    { id: 'smart-fertilization-grains', label: 'Smart Fertilization Techniques for Grains', icon: '🧪' },
+    { id: 'real-time-pest-detection', label: 'Real-Time Pest and Disease Detection', icon: '🐛' },
+    { id: 'crop-rotation-optimization', label: 'Crop Rotation Optimization Software', icon: '🔄' },
+    { id: 'data-driven-water-management', label: 'Data-Driven Water Management for Grains', icon: '💧' },
+    { id: 'harvest-scheduling-automation', label: 'Harvest Scheduling Automation', icon: '📅' },
+    { id: 'digital-grain-storage', label: 'Digital Grain Storage Management', icon: '📦' },
+    { id: 'precision-weed-control', label: 'Precision Weed Control in Grain Fields', icon: '🌿' },
+    { id: 'weather-forecasting-grain', label: 'Weather Forecasting for Grain Farming', icon: '🌦️' },
+    { id: 'field-mapping-analysis', label: 'Field Mapping and Analysis Tools', icon: '🗺️' },
+    { id: 'predictive-maintenance-grain', label: 'Predictive Maintenance for Grain Farming Equipment', icon: '🛠️' },
+    { id: 'soil-fertility-ph', label: 'Soil Fertility and pH Control Systems', icon: '🌱' },
+    { id: 'drone-field-surveillance', label: 'Drone-Assisted Field Surveillance', icon: '🚁' },
+    { id: 'grain-yield-mapping', label: 'Grain Yield Mapping and Analysis', icon: '🗺️' },
+    { id: 'automated-crop-monitoring', label: 'Automated Crop Monitoring Systems', icon: '📡' },
+    { id: 'smart-harvest-timing', label: 'Smart Harvest Timing Tools', icon: '⏱️' },
+    { id: 'grain-supply-chain', label: 'Grain Supply Chain Optimization', icon: '📦' },
+    { id: 'livestock-grain-integration', label: 'Livestock and Grain Farm Integration Software', icon: '🐄' },
+    { id: 'remote-field-equipment', label: 'Remote Field Equipment Monitoring', icon: '🛰️' },
+    { id: 'grain-storage-optimization', label: 'Grain Storage Optimization Solutions', icon: '📦' },
+    { id: 'soil-erosion-monitoring', label: 'Soil Erosion Monitoring Tools for Grain Fields', icon: '🌱' },
+    { id: 'digital-equipment-fleet', label: 'Digital Equipment Fleet Management for Grains', icon: '📊' },
+    { id: 'integrated-crop-management', label: 'Integrated Crop Management Software', icon: '📊' },
+    { id: 'real-time-grain-moisture', label: 'Real-Time Grain Moisture Content Monitoring', icon: '💧' },
+    { id: 'data-driven-grain-pricing', label: 'Data-Driven Grain Pricing and Trading Platforms', icon: '💹' },
+    { id: 'automated-irrigation-scheduling', label: 'Automated Irrigation Scheduling for Grains', icon: '🚿' },
+    { id: 'grain-production-analytics', label: 'Grain Production Analytics and Insights', icon: '📊' },
+    { id: 'real-time-crop-growth', label: 'Real-Time Crop Growth Analytics', icon: '🌱' },
+    { id: 'sustainable-grain-farming', label: 'Sustainable Farming Practices for Grain Production', icon: '🌍' },
+    { id: 'grain-export-import', label: 'Grain Export and Import Tracking Systems', icon: '🌍' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'crop-protection':
+  return [
+    { id: 'automated-pest-detection', label: 'Automated Pest Detection Systems', icon: '🐛' },
+    { id: 'precision-spraying', label: 'Precision Spraying Technologies', icon: '💦' },
+    { id: 'digital-weed-management', label: 'Digital Weed Management Solutions', icon: '🌿' },
+    { id: 'smart-pest-control', label: 'Smart Pest Control Systems', icon: '🛡️' },
+    { id: 'crop-disease-monitoring', label: 'Crop Disease Monitoring Platforms', icon: '🦠' },
+    { id: 'remote-sensing-pest', label: 'Remote Sensing for Pest Infestation', icon: '🛰️' },
+    { id: 'crop-protection-scheduling', label: 'Crop Protection Scheduling Software', icon: '📅' },
+    { id: 'real-time-pest-mapping', label: 'Real-Time Pest Activity Mapping', icon: '🗺️' },
+    { id: 'integrated-pest-management', label: 'Integrated Pest Management Solutions', icon: '📊' },
+    { id: 'pest-resistance-monitoring', label: 'Pest Resistance Monitoring Tools', icon: '⚠️' },
+    { id: 'automated-disease-detection', label: 'Automated Disease Detection and Alerts', icon: '🦠' },
+    { id: 'crop-protection-risk', label: 'Crop Protection Risk Assessment Software', icon: '⚠️' },
+    { id: 'precision-herbicide', label: 'Precision Herbicide Application Systems', icon: '🌿' },
+    { id: 'drone-assisted-pest', label: 'Drone-Assisted Pest Control', icon: '🚁' },
+    { id: 'data-driven-pest-forecasting', label: 'Data-Driven Pest Forecasting Models', icon: '🔮' },
+    { id: 'smart-fungicide', label: 'Smart Fungicide Application Systems', icon: '🦠' },
+    { id: 'biocontrol-integration', label: 'Biocontrol Integration for Pest Management', icon: '🐞' },
+    { id: 'real-time-pest-performance', label: 'Real-Time Pest Control Performance Tracking', icon: '📊' },
+    { id: 'digital-weed-control', label: 'Digital Weed Control Management', icon: '🌿' },
+    { id: 'automated-fertilizer-pesticide', label: 'Automated Fertilizer and Pesticide Blending Systems', icon: '🧪' },
+    { id: 'crop-pest-behavior', label: 'Crop Pest Behavior Analysis Tools', icon: '📊' },
+    { id: 'soil-borne-pest-detection', label: 'Soil-Borne Pest Detection Systems', icon: '🌱' },
+    { id: 'environmental-impact-crop', label: 'Environmental Impact Monitoring for Crop Protection', icon: '🌍' },
+    { id: 'digital-chemical-application', label: 'Digital Chemical Application Tracking', icon: '🧪' },
+    { id: 'crop-protection-compliance', label: 'Crop Protection Compliance Management', icon: '📝' },
+    { id: 'smart-pest-equipment', label: 'Smart Pest Control Equipment Scheduling', icon: '📅' },
+    { id: 'remote-crop-protection', label: 'Remote Crop Protection Monitoring', icon: '🛰️' },
+    { id: 'predictive-pest-disease', label: 'Predictive Pest and Disease Risk Models', icon: '🔮' },
+    { id: 'field-mapping-crop', label: 'Field Mapping for Crop Protection Applications', icon: '🗺️' },
+    { id: 'integrated-crop-irrigation', label: 'Integrated Crop Protection and Irrigation Systems', icon: '🚿' },
+    { id: 'automated-pest-reporting', label: 'Automated Pest and Disease Reporting Systems', icon: '📊' },
+    { id: 'customizable-crop-protection', label: 'Customizable Crop Protection Plans', icon: '📝' },
+    { id: 'digital-surveillance-pest', label: 'Digital Surveillance for Pest Control', icon: '📡' },
+    { id: 'climate-sensitive-crop', label: 'Climate-Sensitive Crop Protection Technologies', icon: '🌦️' },
+    { id: 'data-driven-pest-optimization', label: 'Data-Driven Pest Control Optimization', icon: '📊' },
+    { id: 'chemical-residue-monitoring', label: 'Chemical Residue Monitoring and Tracking', icon: '🧪' },
+    { id: 'mobile-pest-control', label: 'Mobile Pest Control Apps', icon: '📱' },
+    { id: 'biodegradable-pest-control', label: 'Biodegradable Pest Control Solutions', icon: '🌿' },
+    { id: 'pest-detection-organic', label: 'Pest Detection for Organic Farming Systems', icon: '🌱' },
+    { id: 'automated-pest-reporting-analytics', label: 'Automated Pest Control Reporting and Analytics', icon: '📊' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'crop-production':
+  return [
+    { id: 'precision-seeding-systems', label: 'Precision Seeding Systems', icon: '🌱' },
+    { id: 'automated-crop-monitoring', label: 'Automated Crop Monitoring', icon: '📡' },
+    { id: 'smart-fertilizer-application', label: 'Smart Fertilizer Application', icon: '🧪' },
+    { id: 'crop-yield-prediction', label: 'Crop Yield Prediction Tools', icon: '🔮' },
+    { id: 'digital-irrigation-management', label: 'Digital Irrigation Management', icon: '🚿' },
+    { id: 'real-time-crop-health', label: 'Real-Time Crop Health Monitoring', icon: '🌱' },
+    { id: 'soil-moisture-monitoring', label: 'Soil Moisture Monitoring and Control', icon: '💧' },
+    { id: 'automated-harvest-scheduling', label: 'Automated Harvest Scheduling', icon: '📅' },
+    { id: 'remote-sensing-crop-growth', label: 'Remote Sensing for Crop Growth', icon: '🛰️' },
+    { id: 'integrated-crop-management', label: 'Integrated Crop Management Systems', icon: '📊' },
+    { id: 'field-mapping-analytics', label: 'Field Mapping and Analytics', icon: '🗺️' },
+    { id: 'crop-disease-detection', label: 'Crop Disease Detection and Management', icon: '🦠' },
+    { id: 'smart-pest-control', label: 'Smart Pest and Insect Control Systems', icon: '🐛' },
+    { id: 'precision-weed-control', label: 'Precision Weed Control Solutions', icon: '🌿' },
+    { id: 'data-driven-crop-rotation', label: 'Data-Driven Crop Rotation Planning', icon: '🔄' },
+    { id: 'real-time-soil-nutrient', label: 'Real-Time Soil Nutrient Monitoring', icon: '🌱' },
+    { id: 'automated-greenhouse-climate', label: 'Automated Greenhouse Climate Control', icon: '🏡' },
+    { id: 'crop-growth-simulation', label: 'Crop Growth Simulation Tools', icon: '🖥️' },
+    { id: 'variable-rate-irrigation', label: 'Variable Rate Irrigation Systems', icon: '🚿' },
+    { id: 'smart-crop-disease-forecasting', label: 'Smart Crop Disease Forecasting', icon: '🦠' },
+    { id: 'automated-fertilizer-pesticide', label: 'Automated Fertilizer and Pesticide Blending', icon: '🧪' },
+    { id: 'remote-irrigation-fertilization', label: 'Remote Irrigation and Fertilization Monitoring', icon: '🛰️' },
+    { id: 'farm-data-analytics', label: 'Farm Data Analytics for Crop Management', icon: '📊' },
+    { id: 'autonomous-field-equipment', label: 'Autonomous Field Equipment for Crop Cultivation', icon: '🤖' },
+    { id: 'smart-planting-depth', label: 'Smart Planting Depth Control Systems', icon: '🌱' },
+    { id: 'precision-harvesting', label: 'Precision Harvesting Technology', icon: '🌾' },
+    { id: 'crop-stress-detection', label: 'Crop Stress Detection Software', icon: '⚠️' },
+    { id: 'digital-farm-dashboards', label: 'Digital Farm Management Dashboards', icon: '📊' },
+    { id: 'smart-crop-protection', label: 'Smart Crop Protection Scheduling', icon: '🛡️' },
+    { id: 'real-time-crop-stress', label: 'Real-Time Crop Stress and Water Management', icon: '💧' },
+    { id: 'satellite-imaging-crop', label: 'Satellite Imaging for Crop Monitoring', icon: '🛰️' },
+    { id: 'weather-based-crop-growth', label: 'Weather-Based Crop Growth Models', icon: '🌦️' },
+    { id: 'automated-soil-testing', label: 'Automated Soil Testing and Analysis', icon: '🌱' },
+    { id: 'remote-crop-yield-mapping', label: 'Remote Crop Yield Mapping', icon: '🗺️' },
+    { id: 'crop-performance-forecasting', label: 'Crop Performance Forecasting', icon: '🔮' },
+    { id: 'precision-plant-breeding', label: 'Precision Plant Breeding Software', icon: '🧬' },
+    { id: 'digital-soil-health', label: 'Digital Soil Health Management Tools', icon: '🌱' },
+    { id: 'real-time-data-collection', label: 'Real-Time Data Collection for Crop Production', icon: '📡' },
+    { id: 'farm-to-market-traceability', label: 'Farm-to-Market Crop Traceability Systems', icon: '📦' },
+    { id: 'digital-marketplaces-crop', label: 'Digital Marketplaces for Crop Distribution', icon: '🛒' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'dairy-farming':
+  return [
+    { id: 'automated-milking-systems', label: 'Automated Milking Systems', icon: '🥛' },
+    { id: 'real-time-milk-production', label: 'Real-Time Milk Production Monitoring', icon: '📊' },
+    { id: 'smart-herd-management', label: 'Smart Herd Management Solutions', icon: '📊' },
+    { id: 'digital-dairy-farm-management', label: 'Digital Dairy Farm Management Platforms', icon: '💻' },
+    { id: 'precision-feed-rationing', label: 'Precision Feed Rationing Systems', icon: '🍽️' },
+    { id: 'cow-health-monitoring', label: 'Cow Health Monitoring and Diagnostics', icon: '🩺' },
+    { id: 'automated-breeding-systems', label: 'Automated Breeding Systems', icon: '🧬' },
+    { id: 'cow-behavior-analysis', label: 'Dairy Cow Behavior Analysis', icon: '📊' },
+    { id: 'milk-quality-monitoring', label: 'Milk Quality Monitoring Systems', icon: '🥛' },
+    { id: 'automated-calf-management', label: 'Automated Calf Management Tools', icon: '🐄' },
+    { id: 'digital-milk-testing', label: 'Digital Milk Testing and Analysis', icon: '🧪' },
+    { id: 'remote-monitoring-dairy', label: 'Remote Monitoring of Dairy Barns', icon: '🛰️' },
+    { id: 'real-time-milk-yield', label: 'Real-Time Milk Yield Optimization', icon: '📈' },
+    { id: 'smart-cattle-identification', label: 'Smart Cattle Identification Systems', icon: '🆔' },
+    { id: 'precision-nutrient-management', label: 'Precision Nutrient Management for Dairy Cows', icon: '🍎' },
+    { id: 'herd-genetic-optimization', label: 'Herd Genetic Optimization Software', icon: '🧬' },
+    { id: 'automated-cow-tracking', label: 'Automated Cow Tracking and Location Systems', icon: '📡' },
+    { id: 'smart-cow-cooling', label: 'Smart Cow Cooling and Comfort Systems', icon: '❄️' },
+    { id: 'farm-to-dairy-supply-chain', label: 'Farm-to-Dairy Supply Chain Management', icon: '📦' },
+    { id: 'milk-production-forecasting', label: 'Milk Production Forecasting Tools', icon: '🔮' },
+    { id: 'real-time-disease-detection', label: 'Real-Time Disease Detection and Alerts', icon: '⚠️' },
+    { id: 'automatic-feeding-systems', label: 'Automatic Feeding Systems for Dairy Cows', icon: '🍽️' },
+    { id: 'smart-watering-solutions', label: 'Smart Watering Solutions for Dairy Farms', icon: '💧' },
+    { id: 'dairy-farm-performance', label: 'Dairy Farm Performance Analytics', icon: '📊' },
+    { id: 'mobile-dairy-farm-management', label: 'Mobile Dairy Farm Management Applications', icon: '📱' },
+    { id: 'digital-compliance-regulatory', label: 'Digital Compliance and Regulatory Tracking', icon: '📝' },
+    { id: 'integrated-dairy-resource', label: 'Integrated Dairy Farm Resource Management', icon: '📊' },
+    { id: 'milk-storage-distribution', label: 'Milk Storage and Distribution Automation', icon: '📦' },
+    { id: 'cow-milking-time-optimization', label: 'Cow Milking Time Optimization', icon: '⏱️' },
+    { id: 'remote-calf-health-monitoring', label: 'Remote Calf Health Monitoring', icon: '🐄' },
+    { id: 'real-time-animal-welfare', label: 'Real-Time Animal Welfare Monitoring', icon: '🐄' },
+    { id: 'dairy-waste-management', label: 'Dairy Waste Management Systems', icon: '🗑️' },
+    { id: 'environmental-impact-dairy', label: 'Environmental Impact Monitoring for Dairy Farms', icon: '🌍' },
+    { id: 'digital-training-support', label: 'Digital Training and Support Platforms for Dairy Farmers', icon: '🎓' },
+    { id: 'automated-equipment-maintenance', label: 'Automated Equipment Maintenance for Dairy Farms', icon: '🛠️' },
+    { id: 'real-time-data-sharing', label: 'Real-Time Data Sharing for Dairy Supply Chains', icon: '📡' },
+    { id: 'integrated-milk-processing', label: 'Integrated Milk Processing Management', icon: '🥛' },
+    { id: 'smart-milking-robot-fleet', label: 'Smart Milking Robot Fleet Management', icon: '🤖' },
+    { id: 'digital-dairy-financial', label: 'Digital Dairy Farm Financial Management Tools', icon: '💳' },
+    { id: 'blockchain-dairy-traceability', label: 'Blockchain for Dairy Product Traceability', icon: '🔗' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'farm-management':
+  return [
+    { id: 'farm-data-management', label: 'Farm Data Management Platforms', icon: '📊' },
+    { id: 'precision-crop-planning', label: 'Precision Crop Planning Systems', icon: '🌱' },
+    { id: 'digital-farm-dashboards', label: 'Digital Farm Performance Dashboards', icon: '📊' },
+    { id: 'automated-field-mapping', label: 'Automated Field Mapping Solutions', icon: '🗺️' },
+    { id: 'smart-irrigation-scheduling', label: 'Smart Irrigation Scheduling Software', icon: '🚿' },
+    { id: 'livestock-management', label: 'Livestock Management Systems', icon: '🐄' },
+    { id: 'real-time-equipment-tracking', label: 'Real-Time Farm Equipment Tracking', icon: '📡' },
+    { id: 'crop-yield-prediction', label: 'Crop Yield Prediction and Optimization', icon: '🔮' },
+    { id: 'farm-to-table-supply-chain', label: 'Farm-to-Table Supply Chain Automation', icon: '📦' },
+    { id: 'farm-equipment-fleet', label: 'Farm Equipment Fleet Management', icon: '🚜' },
+    { id: 'remote-farm-monitoring', label: 'Remote Farm Monitoring Solutions', icon: '🛰️' },
+    { id: 'field-weather-forecasting', label: 'Field Weather Forecasting Tools', icon: '🌦️' },
+    { id: 'farm-financial-management', label: 'Farm Financial Management Platforms', icon: '💳' },
+    { id: 'digital-farm-resource', label: 'Digital Farm Resource Allocation', icon: '📊' },
+    { id: 'automated-pest-disease', label: 'Automated Pest and Disease Detection', icon: '🐛' },
+    { id: 'soil-health-monitoring', label: 'Soil Health Monitoring Tools', icon: '🌱' },
+    { id: 'digital-compliance-management', label: 'Digital Compliance Management for Farms', icon: '📝' },
+    { id: 'crop-rotation-scheduling', label: 'Crop Rotation and Scheduling Software', icon: '🔄' },
+    { id: 'smart-fertilizer-pesticide', label: 'Smart Fertilizer and Picide Application', icon: '🧪' },
+    { id: 'automated-harvest-scheduling', label: 'Automated Harvest Scheduling and Tracking', icon: '📅' },
+    { id: 'integrated-farm-risk', label: 'Integrated Farm Risk Management Solutions', icon: '⚠️' },
+    { id: 'farm-labor-management', label: 'Farm Labor Management Platforms', icon: '👨‍🌾' },
+    { id: 'smart-waste-management', label: 'Smart Waste Management Systems for Farms', icon: '🗑️' },
+    { id: 'precision-land-management', label: 'Precision Land Management Software', icon: '🌍' },
+    { id: 'remote-veterinary-monitoring', label: 'Remote Veterinary Monitoring for Livestock', icon: '🩺' },
+    { id: 'real-time-market-price', label: 'Real-Time Market Price and Supply Forecasting', icon: '💹' },
+    { id: 'sustainable-farming-practices', label: 'Sustainable Farming Practices Management', icon: '🌍' },
+    { id: 'farm-equipment-maintenance', label: 'Farm Equipment Maintenance Scheduling', icon: '🛠️' },
+    { id: 'farm-safety-monitoring', label: 'Farm Safety Monitoring Systems', icon: '⚠️' },
+    { id: 'mobile-farm-management', label: 'Mobile Farm Management Apps', icon: '📱' },
+    { id: 'digital-crop-protection', label: 'Digital Crop Protection and Disease Control', icon: '🛡️' },
+    { id: 'real-time-data-driven', label: 'Real-Time Data-Driven Decision-Making Tools', icon: '📊' },
+    { id: 'agricultural-e-commerce', label: 'Agricultural E-commerce Platforms', icon: '🛒' },
+    { id: 'greenhouse-nursery-management', label: 'Greenhouse and Nursery Management Software', icon: '🏡' },
+    { id: 'livestock-feeding-optimization', label: 'Livestock Feeding Optimization Tools', icon: '🍽️' },
+    { id: 'smart-pasture-management', label: 'Smart Pasture Management Systems', icon: '🌾' },
+    { id: 'automated-crop-growth', label: 'Automated Crop Growth Monitoring', icon: '🌱' },
+    { id: 'digital-traceability', label: 'Digital Traceability for Crop and Livestock', icon: '📡' },
+    { id: 'farm-inventory-management', label: 'Farm Inventory Management Systems', icon: '📦' },
+    { id: 'smart-farm-reporting', label: 'Smart Farm Reporting and Analytics', icon: '📊' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'farm-to-table':
+  return [
+    { id: 'direct-to-consumer-delivery', label: 'Direct-to-Consumer Food Delivery Platforms', icon: '🚚' },
+    { id: 'smart-agricultural-e-commerce', label: 'Smart Agricultural E-Commerce Systems', icon: '🛒' },
+    { id: 'farm-to-table-logistics', label: 'Farm-to-Table Logistics Optimization', icon: '📦' },
+    { id: 'real-time-inventory-tracking', label: 'Real-Time Inventory Tracking for Fresh Produce', icon: '📊' },
+    { id: 'digital-order-management', label: 'Digital Order Management for Farms', icon: '📝' },
+    { id: 'farm-fresh-subscription', label: 'Farm Fresh Product Subscription Services', icon: '📦' },
+    { id: 'blockchain-food-traceability', label: 'Blockchain for Food Traceability', icon: '🔗' },
+    { id: 'automated-packaging', label: 'Automated Packaging Solutions for Fresh Foods', icon: '📦' },
+    { id: 'farm-supply-chain-transparency', label: 'Farm Supply Chain Transparency Platforms', icon: '📡' },
+    { id: 'farm-harvest-forecasting', label: 'Farm Harvest Forecasting Software', icon: '🔮' },
+    { id: 'digital-farmers-market', label: 'Digital Farmers’ Market Platforms', icon: '🛒' },
+    { id: 'food-waste-reduction', label: 'Food Waste Reduction Tools for Farmers', icon: '🗑️' },
+    { id: 'direct-farm-sales', label: 'Direct Farm Sales and Payment Systems', icon: '💰' },
+    { id: 'crop-livestock-demand', label: 'Crop and Livestock Demand Forecasting', icon: '🔮' },
+    { id: 'farm-to-table-quality', label: 'Farm-to-Table Food Quality Control Tools', icon: '🥗' },
+    { id: 'sustainable-packaging', label: 'Sustainable Packaging Solutions for Agricultural Products', icon: '🌿' },
+    { id: 'farm-delivery-route', label: 'Farm Delivery Route Optimization', icon: '📍' },
+    { id: 'real-time-food-safety', label: 'Real-Time Food Safety Compliance Monitoring', icon: '⚠️' },
+    { id: 'farm-to-retail-distribution', label: 'Farm-to-Retail Product Distribution Systems', icon: '📦' },
+    { id: 'local-food-sourcing', label: 'Local Food Sourcing Platforms', icon: '🌍' },
+    { id: 'smart-delivery-management', label: 'Smart Delivery Management for Farm Products', icon: '🚚' },
+    { id: 'mobile-farm-to-consumer', label: 'Mobile Applications for Farm-to-Consumer Sales', icon: '📱' },
+    { id: 'food-production-consumption', label: 'Food Production and Consumption Analytics', icon: '📊' },
+    { id: 'restaurant-farm-partnership', label: 'Restaurant and Farm Partnership Management', icon: '🍽️' },
+    { id: 'digital-food-processing', label: 'Digital Food Processing and Packaging Integration', icon: '📦' },
+    { id: 'local-farm-to-retailer', label: 'Local Farm-to-Retailer Ordering Systems', icon: '🛒' },
+    { id: 'integrated-food-supply-chain', label: 'Integrated Food Supply Chain Management', icon: '📦' },
+    { id: 'food-authentication', label: 'Food Authentication and Certification Platforms', icon: '📝' },
+    { id: 'temperature-controlled-delivery', label: 'Temperature-Controlled Farm-to-Table Delivery', icon: '🌡️' },
+    { id: 'farm-harvest-tracking', label: 'Farm Harvest Tracking and Delivery Integration', icon: '📦' },
+    { id: 'farm-to-consumer-marketplaces', label: 'Farm-to-Consumer Marketplaces', icon: '🛒' },
+    { id: 'automated-quality-assurance', label: 'Automated Quality Assurance for Farm Products', icon: '✅' },
+    { id: 'digital-customer-engagement', label: 'Digital Customer Engagement for Farm Brands', icon: '📱' },
+    { id: 'localized-food-sourcing', label: 'Localized Food Sourcing and Distribution Networks', icon: '🌍' },
+    { id: 'real-time-product-availability', label: 'Real-Time Farm Product Availability Platforms', icon: '📡' },
+    { id: 'direct-farm-shipping', label: 'Direct Farm Shipping and Handling Solutions', icon: '📦' },
+    { id: 'fresh-produce-demand', label: 'Fresh Produce Demand Matching Systems', icon: '🍎' },
+    { id: 'digital-supply-chain-optimization', label: 'Digital Supply Chain Optimization for Farm Goods', icon: '📦' },
+    { id: 'smart-food-storage', label: 'Smart Food Storage and Distribution Solutions', icon: '📦' },
+    { id: 'blockchain-secure-transactions', label: 'Blockchain for Secure Farm-to-Table Transactions', icon: '🔗' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'fisheries':
+  return [
+    { id: 'smart-fish-feeding', label: 'Smart Fish Feeding Systems', icon: '🍽️' },
+    { id: 'real-time-water-quality', label: 'Real-Time Water Quality Monitoring', icon: '💧' },
+    { id: 'automated-fish-stock', label: 'Automated Fish Stock Management', icon: '🐟' },
+    { id: 'fish-health-monitoring', label: 'Fish Health Monitoring Solutions', icon: '🩺' },
+    { id: 'precision-aquaculture-nutrition', label: 'Precision Aquaculture Nutrition Systems', icon: '🍎' },
+    { id: 'fish-disease-detection', label: 'Fish Disease Detection and Management', icon: '🦠' },
+    { id: 'automated-fish-harvesting', label: 'Automated Fish Harvesting Systems', icon: '🎣' },
+    { id: 'digital-fish-farming', label: 'Digital Fish Farming Platforms', icon: '💻' },
+    { id: 'remote-sensing-fisheries', label: 'Remote Sensing for Fisheries Management', icon: '🛰️' },
+    { id: 'fish-population-monitoring', label: 'Fish Population Monitoring Tools', icon: '📊' },
+    { id: 'smart-fish-breeding', label: 'Smart Fish Breeding Systems', icon: '🧬' },
+    { id: 'automated-water-filtration', label: 'Automated Water Filtration Systems', icon: '💧' },
+    { id: 'data-driven-fish-growth', label: 'Data-Driven Fish Growth Tracking', icon: '📏' },
+    { id: 'fish-farm-performance', label: 'Fish Farm Performance Analytics', icon: '📊' },
+    { id: 'digital-fish-processing', label: 'Digital Fish Processing Solutions', icon: '🐟' },
+    { id: 'automated-aquaculture-control', label: 'Automated Aquaculture Equipment Control', icon: '⚙️' },
+    { id: 'real-time-fish-behavior', label: 'Real-Time Fish Behavior Monitoring', icon: '📊' },
+    { id: 'predictive-fish-stocking', label: 'Predictive Models for Fish Stocking', icon: '🔮' },
+    { id: 'fish-disease-risk', label: 'Fish Disease and Pathogen Risk Forecasting', icon: '🦠' },
+    { id: 'fisheries-resource-management', label: 'Fisheries Resource Management Software', icon: '📊' },
+    { id: 'digital-fish-harvesting', label: 'Digital Fish Harvesting Scheduling', icon: '📅' },
+    { id: 'integrated-fish-farm', label: 'Integrated Fish Farm Management Systems', icon: '📊' },
+    { id: 'fish-farm-waste-management', label: 'Fish Farm Waste Management Automation', icon: '🗑️' },
+    { id: 'real-time-fish-habitat', label: 'Real-Time Monitoring of Fish Habitat Conditions', icon: '🌊' },
+    { id: 'fish-sustainability-certification', label: 'Fish Sustainability Certification Platforms', icon: '📝' },
+    { id: 'precision-fishery-resource', label: 'Precision Fishery Resource Allocation', icon: '🌊' },
+    { id: 'smart-fish-feeding-efficiency', label: 'Smart Monitoring of Fish Feeding Efficiency', icon: '🍽️' },
+    { id: 'blockchain-fisheries-traceability', label: 'Blockchain for Fisheries Traceability', icon: '🔗' },
+    { id: 'fishery-supply-chain', label: 'Fishery Supply Chain Management', icon: '📦' },
+    { id: 'automated-fish-sorting', label: 'Automated Fish Sorting Systems', icon: '🐟' },
+    { id: 'remote-offshore-fisheries', label: 'Remote Monitoring for Offshore Fisheries', icon: '🛰️' },
+    { id: 'fish-farm-environmental-impact', label: 'Fish Farm Environmental Impact Monitoring', icon: '🌍' },
+    { id: 'smart-fish-farm-scheduling', label: 'Smart Fish Farm Scheduling and Optimization', icon: '📅' },
+    { id: 'fish-health-record-keeping', label: 'Fish Health Record Keeping and Reporting', icon: '📝' },
+    { id: 'digital-water-treatment', label: 'Digital Water Treatment Solutions', icon: '💧' },
+    { id: 'fish-catching-distribution', label: 'Fish Catching and Distribution Optimization', icon: '🎣' },
+    { id: 'aquaculture-wastewater-treatment', label: 'Aquaculture Wastewater Treatment Systems', icon: '💧' },
+    { id: 'fisheries-risk-management', label: 'Fisheries Risk Management Software', icon: '⚠️' },
+    { id: 'predictive-maintenance-aquaculture', label: 'Predictive Maintenance for Aquaculture Equipment', icon: '🛠️' },
+    { id: 'smart-fish-stocking', label: 'Smart Fish Stocking and Release Systems', icon: '🐟' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'floriculture':
+  return [
+    { id: 'smart-greenhouse-management', label: 'Smart Greenhouse Management Systems', icon: '🏡' },
+    { id: 'automated-flower-planting', label: 'Automated Flower Planting Solutions', icon: '🌱' },
+    { id: 'precision-irrigation-flowers', label: 'Precision Irrigation for Flower Cultivation', icon: '🚿' },
+    { id: 'digital-flower-health', label: 'Digital Flower Health Monitoring', icon: '🌸' },
+    { id: 'climate-control-greenhouses', label: 'Climate Control and Monitoring in Greenhouses', icon: '🌡️' },
+    { id: 'automated-harvesting-flowers', label: 'Automated Harvesting Systems for Flowers', icon: '🌺' },
+    { id: 'flower-growth-simulation', label: 'Flower Growth Simulation Tools', icon: '🖥️' },
+    { id: 'digital-fertilization-flowers', label: 'Digital Fertilization and Nutrient Management', icon: '🧪' },
+    { id: 'pest-disease-detection-flowers', label: 'Pest and Disease Detection in Flower Crops', icon: '🐛' },
+    { id: 'smart-flower-sorting', label: 'Smart Flower Sorting and Packaging Systems', icon: '📦' },
+    { id: 'real-time-flower-yield', label: 'Real-Time Flower Yield Forecasting', icon: '🔮' },
+    { id: 'soil-health-moisture-flowers', label: 'Soil Health and Moisture Monitoring for Flowers', icon: '🌱' },
+    { id: 'automated-flower-processing', label: 'Automated Flower Processing and Packaging', icon: '📦' },
+    { id: 'remote-flower-farm-monitoring', label: 'Remote Flower Farm Monitoring', icon: '🛰️' },
+    { id: 'flower-supply-chain', label: 'Flower Supply Chain Optimization', icon: '📦' },
+    { id: 'digital-flower-inventory', label: 'Digital Flower Inventory Management', icon: '📊' },
+    { id: 'crop-rotation-flowers', label: 'Crop Rotation and Planning for Flowers', icon: '🔄' },
+    { id: 'smart-pollination-systems', label: 'Smart Pollination Systems', icon: '🐝' },
+    { id: 'automated-flower-distribution', label: 'Automated Flower Distribution Scheduling', icon: '📅' },
+    { id: 'smart-temperature-regulation', label: 'Smart Temperature Regulation for Flower Storage', icon: '🌡️' },
+    { id: 'digital-traceability-flowers', label: 'Digital Traceability for Flower Products', icon: '📡' },
+    { id: 'data-driven-flower-variety', label: 'Data-Driven Flower Variety Selection', icon: '📊' },
+    { id: 'flower-delivery-route', label: 'Flower Delivery Route Optimization', icon: '📍' },
+    { id: 'real-time-market-demand-flowers', label: 'Real-Time Market Demand Forecasting for Flowers', icon: '🔮' },
+    { id: 'floral-waste-management', label: 'Floral Waste Management Solutions', icon: '🗑️' },
+    { id: 'flower-breeding-genetic', label: 'Flower Breeding and Genetic Management Software', icon: '🧬' },
+    { id: 'flower-packaging-optimization', label: 'Flower Packaging Optimization Systems', icon: '📦' },
+    { id: 'environmental-impact-flowers', label: 'Environmental Impact Monitoring for Flower Farms', icon: '🌍' },
+    { id: 'smart-led-lighting', label: 'Smart LED Lighting for Flower Growth', icon: '💡' },
+    { id: 'automated-flower-pricing', label: 'Automated Flower Pricing and Market Integration', icon: '💰' },
+    { id: 'customizable-flower-care', label: 'Customizable Flower Care Software', icon: '🌸' },
+    { id: 'digital-floral-design', label: 'Digital Floral Design Tools', icon: '🖼️' },
+    { id: 'remote-sensing-flower-farms', label: 'Remote Sensing for Flower Farm Conditions', icon: '🛰️' },
+    { id: 'harvest-timing-flowers', label: 'Harvest Timing Optimization for Flowers', icon: '⏱️' },
+    { id: 'blockchain-floral-traceability', label: 'Blockchain for Floral Product Traceability', icon: '🔗' },
+    { id: 'real-time-flower-quality', label: 'Real-Time Flower Product Quality Monitoring', icon: '✅' },
+    { id: 'farm-to-table-flower-distribution', label: 'Farm-to-Table Flower Distribution Platforms', icon: '📦' },
+    { id: 'energy-efficiency-greenhouses', label: 'Energy Efficiency Optimization for Flower Greenhouses', icon: '⚡' },
+    { id: 'smart-flower-varieties', label: 'Smart Flower Varieties Inventory', icon: '📊' },
+    { id: 'digital-customer-engagement-flowers', label: 'Digital Customer Engagement for Flower Businesses', icon: '📱' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'food-processing':
+  return [
+    { id: 'automated-food-sorting', label: 'Automated Food Sorting and Grading Systems', icon: '📦' },
+    { id: 'real-time-food-quality', label: 'Real-Time Food Quality Control Systems', icon: '✅' },
+    { id: 'precision-cooking', label: 'Precision Cooking and Heat Control', icon: '🍳' },
+    { id: 'smart-food-packaging', label: 'Smart Food Packaging Solutions', icon: '📦' },
+    { id: 'food-traceability-blockchain', label: 'Food Traceability and Blockchain Integration', icon: '🔗' },
+    { id: 'digital-inventory-management', label: 'Digital Inventory Management for Food Products', icon: '📊' },
+    { id: 'automated-food-production', label: 'Automated Food Production Line Management', icon: '🏭' },
+    { id: 'predictive-maintenance-food', label: 'Predictive Maintenance for Food Processing Equipment', icon: '🛠️' },
+    { id: 'digital-food-supply-chain', label: 'Digital Food Supply Chain Optimization', icon: '📦' },
+    { id: 'smart-temperature-humidity', label: 'Smart Temperature and Humidity Control', icon: '🌡️' },
+    { id: 'food-waste-reduction', label: 'Food Waste Reduction Solutions', icon: '🗑️' },
+    { id: 'real-time-data-analytics', label: 'Real-Time Data Analytics for Food Processing', icon: '📊' },
+    { id: 'automated-food-labeling', label: 'Automated Food Labeling Systems', icon: '🏷️' },
+    { id: 'digital-waste-management', label: 'Digital Waste Management in Food Production', icon: '🗑️' },
+    { id: 'smart-ingredients-sourcing', label: 'Smart Ingredients Sourcing Platforms', icon: '🍎' },
+    { id: 'food-processing-efficiency', label: 'Food Processing Plant Efficiency Optimization', icon: '📈' },
+    { id: 'real-time-packaging-monitoring', label: 'Real-Time Packaging Line Monitoring', icon: '📦' },
+    { id: 'traceable-sustainable-sourcing', label: 'Traceable and Sustainable Sourcing Solutions', icon: '🌍' },
+    { id: 'iot-food-processing', label: 'IoT-Based Food Processing Equipment', icon: '📡' },
+    { id: 'mobile-food-processing', label: 'Mobile Food Processing Management Apps', icon: '📱' },
+    { id: 'predictive-quality-control', label: 'Predictive Quality Control Systems', icon: '🔮' },
+    { id: 'energy-management-food', label: 'Energy Management in Food Processing', icon: '⚡' },
+    { id: 'digital-compliance-regulation', label: 'Digital Compliance and Regulation Tracking', icon: '📝' },
+    { id: 'automated-food-preservation', label: 'Automated Food Preservation Technologies', icon: '❄️' },
+    { id: 'food-safety-monitoring', label: 'Food Safety Monitoring Platforms', icon: '⚠️' },
+    { id: 'smart-food-inventory', label: 'Smart Food Inventory Replenishment', icon: '📦' },
+    { id: 'food-production-simulation', label: 'Food Production Simulation Software', icon: '🖥️' },
+    { id: 'integrated-food-production', label: 'Integrated Food Production Management Systems', icon: '📊' },
+    { id: 'digital-monitoring-machines', label: 'Digital Monitoring of Food Processing Machines', icon: '📡' },
+    { id: 'supply-chain-transparency', label: 'Supply Chain Transparency for Processed Foods', icon: '📦' },
+    { id: 'smart-production-scheduling', label: 'Smart Production Scheduling and Optimization', icon: '📅' },
+    { id: 'automated-food-formulation', label: 'Automated Food Formulation and Recipe Systems', icon: '🍲' },
+    { id: 'real-time-ingredient-monitoring', label: 'Real-Time Food Ingredient Monitoring', icon: '🍎' },
+    { id: 'digital-demand-forecasting', label: 'Digital Demand Forecasting for Processed Foods', icon: '🔮' },
+    { id: 'food-product-customization', label: 'Food Product Customization and Personalization Tools', icon: '🍽️' },
+    { id: 'smart-wastewater-treatment', label: 'Smart Food Processing Wastewater Treatment', icon: '💧' },
+    { id: 'automated-metal-detection', label: 'Automated Metal Detection in Food Processing', icon: '🔍' },
+    { id: 'digital-batch-process-control', label: 'Digital Batch and Process Control Systems', icon: '⚙️' },
+    { id: 'real-time-product-development', label: 'Real-Time Data-Driven Product Development', icon: '📊' },
+    { id: 'remote-monitoring-food', label: 'Remote Monitoring of Food Processing Facilities', icon: '🛰️' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'forest-products':
+  return [
+    { id: 'smart-forest-management', label: 'Smart Forest Management Systems', icon: '🌲' },
+    { id: 'automated-timber-harvesting', label: 'Automated Timber Harvesting Systems', icon: '🪓' },
+    { id: 'digital-forest-inventory', label: 'Digital Forest Inventory Management', icon: '📊' },
+    { id: 'remote-sensing-forest-health', label: 'Remote Sensing for Forest Health Monitoring', icon: '🛰️' },
+    { id: 'real-time-tree-growth', label: 'Real-Time Tree Growth Tracking', icon: '📏' },
+    { id: 'precision-forestry-equipment', label: 'Precision Forestry Equipment', icon: '⚙️' },
+    { id: 'automated-wood-sorting', label: 'Automated Wood Sorting and Grading', icon: '📦' },
+    { id: 'forestry-supply-chain', label: 'Forestry Supply Chain Optimization', icon: '📦' },
+    { id: 'digital-timber-tracking', label: 'Digital Timber Tracking and Traceability', icon: '📡' },
+    { id: 'sustainable-forest-harvest', label: 'Sustainable Forest Harvest Planning', icon: '🌍' },
+    { id: 'forest-fire-detection', label: 'Forest Fire Detection and Prevention Systems', icon: '🔥' },
+    { id: 'smart-logging-scheduling', label: 'Smart Logging Equipment Scheduling', icon: '📅' },
+    { id: 'real-time-carbon-footprint', label: 'Real-Time Forest Carbon Footprint Monitoring', icon: '🌍' },
+    { id: 'forest-regeneration-monitoring', label: 'Forest Regeneration Monitoring Systems', icon: '🌱' },
+    { id: 'deforestation-analytics', label: 'Deforestation and Land Use Change Analytics', icon: '📊' },
+    { id: 'digital-timber-marketplaces', label: 'Digital Timber Marketplaces', icon: '🛒' },
+    { id: 'automated-wood-processing', label: 'Automated Wood Processing and Packaging', icon: '📦' },
+    { id: 'forest-soil-health', label: 'Forest Soil Health Monitoring', icon: '🌱' },
+    { id: 'precision-planting-trees', label: 'Precision Planting Systems for Trees', icon: '🌱' },
+    { id: 'digital-forest-disease', label: 'Digital Forest Disease Prediction Tools', icon: '🦠' },
+    { id: 'forest-data-analytics', label: 'Forest Data Analytics Platforms', icon: '📊' },
+    { id: 'remote-monitoring-forest', label: 'Remote Monitoring of Forest Conditions', icon: '🛰️' },
+    { id: 'smart-forest-irrigation', label: 'Smart Forest Irrigation Solutions', icon: '🚿' },
+    { id: 'timberland-investment', label: 'Timberland Investment Management Software', icon: '💰' },
+    { id: 'automated-forest-inventory', label: 'Automated Forest Inventory and Reporting', icon: '📊' },
+    { id: 'smart-forest-restoration', label: 'Smart Forest Restoration Technologies', icon: '🌱' },
+    { id: 'forest-risk-assessment', label: 'Forest Risk Assessment and Management Systems', icon: '⚠️' },
+    { id: 'environmental-impact-timber', label: 'Environmental Impact Monitoring for Timber Harvesting', icon: '🌍' },
+    { id: 'sustainable-timber-sourcing', label: 'Sustainable Timber Sourcing Platforms', icon: '🌲' },
+    { id: 'digital-forest-certification', label: 'Digital Forest Certification Systems', icon: '📝' },
+    { id: 'smart-waste-management-forest', label: 'Smart Waste Management in Forest Products', icon: '🗑️' },
+    { id: 'forest-asset-management', label: 'Forest Asset Management Software', icon: '📊' },
+    { id: 'tree-disease-detection', label: 'Tree Disease Detection and Management Systems', icon: '🦠' },
+    { id: 'timber-price-forecasting', label: 'Timber Price Forecasting and Optimization', icon: '💹' },
+    { id: 'real-time-forest-fire', label: 'Real-Time Forest Fire Risk Mapping', icon: '🔥' },
+    { id: 'digital-forest-monitoring', label: 'Digital Forest Monitoring with Drones', icon: '🚁' },
+    { id: 'biomass-harvesting', label: 'Biomass Harvesting and Management Systems', icon: '🌱' },
+    { id: 'forest-supply-chain-automation', label: 'Forest and Wood Product Supply Chain Automation', icon: '📦' },
+    { id: 'remote-sensing-tree-species', label: 'Remote Sensing for Tree Species Identification', icon: '🛰️' },
+    { id: 'forest-health-biodiversity', label: 'Forest Health and Biodiversity Monitoring Tools', icon: '🌍' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'fruit-farming':
+  return [
+    { id: 'precision-fruit-harvesting', label: 'Precision Fruit Harvesting Systems', icon: '🍎' },
+    { id: 'smart-irrigation-fruit', label: 'Smart Irrigation Management for Fruit Crops', icon: '🚿' },
+    { id: 'digital-fruit-health', label: 'Digital Fruit Health Monitoring', icon: '🩺' },
+    { id: 'automated-fruit-sorting', label: 'Automated Fruit Sorting and Grading Systems', icon: '📦' },
+    { id: 'real-time-crop-yield', label: 'Real-Time Crop Yield Prediction', icon: '🔮' },
+    { id: 'remote-sensing-fruit', label: 'Remote Sensing for Fruit Tree Health', icon: '🛰️' },
+    { id: 'automated-fruit-packaging', label: 'Automated Fruit Packaging Solutions', icon: '📦' },
+    { id: 'precision-fertilization-fruit', label: 'Precision Fertilization for Fruit Trees', icon: '🧪' },
+    { id: 'crop-stress-detection', label: 'Crop Stress Detection in Fruit Farming', icon: '⚠️' },
+    { id: 'real-time-soil-moisture', label: 'Real-Time Soil Moisture and Nutrient Monitoring', icon: '🌱' },
+    { id: 'automated-pest-disease-fruit', label: 'Automated Pest and Disease Control for Fruit Crops', icon: '🐛' },
+    { id: 'mobile-fruit-farm-management', label: 'Mobile Fruit Farm Management Apps', icon: '📱' },
+    { id: 'smart-fruit-pruning', label: 'Smart Fruit Tree Pruning Systems', icon: '✂️' },
+    { id: 'digital-farm-to-market', label: 'Digital Farm-to-Market Distribution Platforms', icon: '📦' },
+    { id: 'integrated-orchard-management', label: 'Integrated Orchard Management Systems', icon: '📊' },
+    { id: 'fruit-harvest-timing', label: 'Fruit Harvest Timing Optimization Tools', icon: '⏱️' },
+    { id: 'data-driven-disease-forecasting', label: 'Data-Driven Fruit Crop Disease Forecasting', icon: '🦠' },
+    { id: 'real-temperature-humidity', label: 'Real-Time Temperature and Humidity Control for Fruit Storage', icon: '🌡️' },
+    { id: 'digital-fruit-growth', label: 'Digital Fruit Growth Tracking Systems', icon: '📏' },
+    { id: 'fruit-supply-chain', label: 'Fruit Supply Chain Optimization Platforms', icon: '📦' },
+    { id: 'automated-fruit-pollination', label: 'Automated Fruit Pollination Systems', icon: '🐝' },
+    { id: 'digital-water-usage', label: 'Digital Water Usage Monitoring for Fruit Crops', icon: '💧' },
+    { id: 'fruit-ripeness-detection', label: 'Fruit Ripeness Detection and Harvesting Optimization', icon: '🍎' },
+    { id: 'smart-orchard-mapping', label: 'Smart Orchard Mapping and Analytics', icon: '🗺️' },
+    { id: 'fruit-tree-disease-risk', label: 'Fruit Tree Disease Risk Management Tools', icon: '🦠' },
+    { id: 'harvest-packing-efficiency', label: 'Harvest and Packing Efficiency Optimization', icon: '📦' },
+    { id: 'autonomous-fruit-picking', label: 'Autonomous Fruit Picking Robots', icon: '🤖' },
+    { id: 'real-time-fruit-quality', label: 'Real-Time Fruit Quality Monitoring', icon: '✅' },
+    { id: 'precision-tree-spacing', label: 'Precision Tree Spacing and Growth Monitoring', icon: '🌱' },
+    { id: 'automated-fertilizer-fruit', label: 'Automated Fertilizer Application for Fruit Crops', icon: '🧪' },
+    { id: 'data-driven-fruit-planning', label: 'Data-Driven Fruit Crop Planning and Forecasting', icon: '📊' },
+    { id: 'integrated-fruit-resource', label: 'Integrated Fruit Farm Resource Management', icon: '📊' },
+    { id: 'mobile-orchard-monitoring', label: 'Mobile Orchard Monitoring and Reporting', icon: '📱' },
+    { id: 'digital-pest-infestation', label: 'Digital Pest Infestation Mapping for Orchards', icon: '🐛' },
+    { id: 'automated-weed-control-fruit', label: 'Automated Weed Control for Fruit Crops', icon: '🌿' },
+    { id: 'real-time-fruit-storage', label: 'Real-Time Fruit Storage Condition Monitoring', icon: '🌡️' },
+    { id: 'environmental-impact-fruit', label: 'Environmental Impact Monitoring for Fruit Orchards', icon: '🌍' },
+    { id: 'smart-fruit-disease', label: 'Smart Fruit Tree Disease Management', icon: '🦠' },
+    { id: 'orchard-climate-control', label: 'Orchard Climate Control Systems', icon: '🌡️' },
+    { id: 'digital-fruit-market-pricing', label: 'Digital Fruit Market Pricing and Analytics', icon: '💹' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'greenhouse-nursery':
+  return [
+    { id: 'smart-greenhouse-climate', label: 'Smart Greenhouse Climate Control Systems', icon: '🌡️' },
+    { id: 'automated-irrigation-greenhouse', label: 'Automated Irrigation Management for Greenhouses', icon: '🚿' },
+    { id: 'precision-planting-nursery', label: 'Precision Planting Systems for Nurseries', icon: '🌱' },
+    { id: 'digital-crop-monitoring', label: 'Digital Crop Monitoring in Greenhouses', icon: '📡' },
+    { id: 'automated-fertilization-greenhouse', label: 'Automated Fertilization Systems for Greenhouse Plants', icon: '🧪' },
+    { id: 'greenhouse-energy-efficiency', label: 'Greenhouse Energy Efficiency Optimization', icon: '⚡' },
+    { id: 'real-time-soil-moisture-greenhouse', label: 'Real-Time Soil Moisture Monitoring in Greenhouses', icon: '💧' },
+    { id: 'smart-nursery-inventory', label: 'Smart Nursery Inventory Management', icon: '📊' },
+    { id: 'automated-plant-sorting', label: 'Automated Plant Sorting and Grading Systems', icon: '📦' },
+    { id: 'remote-sensing-greenhouse', label: 'Remote Sensing for Greenhouse Crop Health', icon: '🛰️' },
+    { id: 'greenhouse-lighting-control', label: 'Greenhouse Lighting Control and Optimization', icon: '💡' },
+    { id: 'digital-greenhouse-environmental', label: 'Digital Greenhouse Environmental Monitoring', icon: '🌍' },
+    { id: 'automated-pest-disease-greenhouse', label: 'Automated Greenhouse Pest and Disease Control', icon: '🐛' },
+    { id: 'real-time-temperature-regulation', label: 'Real-Time Temperature Regulation in Greenhouses', icon: '🌡️' },
+    { id: 'crop-growth-prediction', label: 'Crop Growth Prediction for Greenhouses', icon: '🔮' },
+    { id: 'automated-plant-pruning', label: 'Automated Plant Pruning and Care Systems', icon: '✂️' },
+    { id: 'smart-greenhouse-watering', label: 'Smart Greenhouse Watering Systems', icon: '🚿' },
+    { id: 'greenhouse-production-scheduling', label: 'Greenhouse Production Scheduling Software', icon: '📅' },
+    { id: 'smart-fertilizer-greenhouse', label: 'Smart Fertilizer Application for Greenhouse Crops', icon: '🧪' },
+    { id: 'nursery-growth-simulation', label: 'Nursery Plant Growth Simulation Tools', icon: '🖥️' },
+    { id: 'digital-crop-yield-forecasting', label: 'Digital Crop Yield Forecasting for Greenhouses', icon: '🔮' },
+    { id: 'automated-plant-harvesting', label: 'Automated Plant Harvesting Systems for Nurseries', icon: '🌱' },
+    { id: 'real-time-plant-stress', label: 'Real-Time Plant Stress Detection', icon: '⚠️' },
+    { id: 'greenhouse-microclimate', label: 'Greenhouse Microclimate Control', icon: '🌡️' },
+    { id: 'integrated-nursery-supply-chain', label: 'Integrated Nursery Supply Chain Management', icon: '📦' },
+    { id: 'smart-nursery-resource', label: 'Smart Nursery Resource Allocation Tools', icon: '📊' },
+    { id: 'automated-pest-detection-greenhouse', label: 'Automated Pest Detection in Greenhouses', icon: '🐛' },
+    { id: 'real-time-data-analytics-greenhouse', label: 'Real-Time Data Analytics for Greenhouse Operations', icon: '📊' },
+    { id: 'greenhouse-water-usage', label: 'Greenhouse Water Usage Optimization', icon: '💧' },
+    { id: 'automated-seedling-monitoring', label: 'Automated Seedling Monitoring and Tracking', icon: '🌱' },
+    { id: 'predictive-growth-modeling', label: 'Predictive Growth Modeling for Greenhouse Plants', icon: '🔮' },
+    { id: 'integrated-plant-disease', label: 'Integrated Plant Disease Management Systems', icon: '🦠' },
+    { id: 'smart-greenhouse-ventilation', label: 'Smart Greenhouse Ventilation Systems', icon: '🌬️' },
+    { id: 'digital-nursery-order', label: 'Digital Nursery Customer Order Management', icon: '📝' },
+    { id: 'automated-plant-packaging', label: 'Automated Plant Packaging and Distribution', icon: '📦' },
+    { id: 'greenhouse-waste-management', label: 'Greenhouse Waste and Resource Management', icon: '🗑️' },
+    { id: 'remote-monitoring-greenhouse', label: 'Remote Monitoring of Greenhouse Conditions', icon: '🛰️' },
+    { id: 'smart-temperature-humidity-nursery', label: 'Smart Temperature and Humidity Sensors for Nurseries', icon: '🌡️' },
+    { id: 'digital-greenhouse-lighting', label: 'Digital Greenhouse Lighting and CO2 Regulation', icon: '💡' },
+    { id: 'automated-greenhouse-reporting', label: 'Automated Greenhouse Climate Data Reporting', icon: '📊' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'herb-farming':
+  return [
+    { id: 'smart-herb-irrigation', label: 'Smart Herb Irrigation Systems', icon: '🚿' },
+    { id: 'automated-herb-harvesting', label: 'Automated Herb Harvesting Systems', icon: '🌿' },
+    { id: 'precision-fertilization-herb', label: 'Precision Fertilization for Herb Crops', icon: '🧪' },
+    { id: 'real-time-herb-health', label: 'Real-Time Herb Crop Health Monitoring', icon: '🩺' },
+    { id: 'digital-herb-farm-management', label: 'Digital Herb Farm Management Platforms', icon: '💻' },
+    { id: 'automated-herb-sorting', label: 'Automated Herb Sorting and Packaging', icon: '📦' },
+    { id: 'herb-growth-tracking', label: 'Herb Growth Tracking and Analysis Tools', icon: '📏' },
+    { id: 'soil-moisture-nutrient-herb', label: 'Soil Moisture and Nutrient Monitoring for Herbs', icon: '🌱' },
+    { id: 'herb-pest-disease-detection', label: 'Herb Pest and Disease Detection Systems', icon: '🐛' },
+    { id: 'remote-sensing-herb', label: 'Remote Sensing for Herb Plant Health', icon: '🛰️' },
+    { id: 'smart-herb-pruning', label: 'Smart Herb Pruning Systems', icon: '✂️' },
+    { id: 'digital-climate-control-herb', label: 'Digital Climate Control for Herb Greenhouses', icon: '🌡️' },
+    { id: 'herb-plant-stress-detection', label: 'Herb Plant Stress Detection Tools', icon: '⚠️' },
+    { id: 'real-time-herb-quality', label: 'Real-Time Herb Quality Monitoring', icon: '✅' },
+    { id: 'automated-herb-planting', label: 'Automated Herb Planting Systems', icon: '🌱' },
+    { id: 'herb-production-forecasting', label: 'Herb Production Forecasting Tools', icon: '🔮' },
+    { id: 'data-driven-herb-variety', label: 'Data-Driven Herb Variety Selection', icon: '📊' },
+    { id: 'smart-greenhouse-herb', label: 'Smart Greenhouse Management for Herb Farming', icon: '🏡' },
+    { id: 'real-time-herb-yield', label: 'Real-Time Herb Yield Estimation', icon: '📈' },
+    { id: 'herb-harvest-timing', label: 'Herb Harvest Timing Optimization', icon: '⏱️' },
+    { id: 'automated-weed-control-herb', label: 'Automated Weed Control in Herb Crops', icon: '🌿' },
+    { id: 'herb-traceability-supply-chain', label: 'Herb Traceability and Supply Chain Management', icon: '📦' },
+    { id: 'remote-herb-field-monitoring', label: 'Remote Herb Field Monitoring', icon: '🛰️' },
+    { id: 'smart-fertilizer-herb', label: 'Smart Fertilizer Application for Herb Crops', icon: '🧪' },
+    { id: 'herb-farm-resource-management', label: 'Herb Farm Resource Management Systems', icon: '📊' },
+    { id: 'digital-herb-packaging', label: 'Digital Herb Packaging and Distribution Systems', icon: '📦' },
+    { id: 'herb-crop-rotation', label: 'Herb Crop Rotation and Planning Software', icon: '🔄' },
+    { id: 'environmental-impact-herb', label: 'Environmental Impact Monitoring for Herb Farms', icon: '🌍' },
+    { id: 'herb-demand-forecasting', label: 'Herb Demand Forecasting Platforms', icon: '🔮' },
+    { id: 'integrated-herb-farming', label: 'Integrated Herb Farming and Marketing Tools', icon: '📊' },
+    { id: 'herb-nutrient-optimization', label: 'Herb Nutrient Optimization Systems', icon: '🍎' },
+    { id: 'smart-herb-plant-care', label: 'Smart Herb Plant Care and Maintenance Solutions', icon: '🌿' },
+    { id: 'precision-herb-monitoring', label: 'Precision Herb Crop Monitoring and Control', icon: '📡' },
+    { id: 'automated-seedling-monitoring-herb', label: 'Automated Seedling Monitoring for Herbs', icon: '🌱' },
+    { id: 'data-driven-herb-pest-control', label: 'Data-Driven Herb Pest Control Strategies', icon: '🐛' },
+    { id: 'herb-farm-equipment-maintenance', label: 'Herb Farm Equipment Maintenance Scheduling', icon: '🛠️' },
+    { id: 'herb-waste-reduction', label: 'Herb Waste Reduction and Recycling Solutions', icon: '🗑️' },
+    { id: 'herb-processing-automation', label: 'Herb Processing Automation Systems', icon: '⚙️' },
+    { id: 'real-time-herb-storage', label: 'Real-Time Herb Storage and Temperature Control', icon: '🌡️' },
+    { id: 'customizable-herb-reporting', label: 'Customizable Herb Farm Reporting and Analytics', icon: '📊' }
+  ];
+// ... existing code ...
+// ... existing code ...
       case 'hydroponics':
         return [
-          { id: 'vertical-farming', label: 'Vertical Farming', icon: '🌿' },
-          { id: 'nutrient-film-technique', label: 'Nutrient Film Technique', icon: '💧' },
-          { id: 'deep-water-culture', label: 'Deep Water Culture', icon: '🌊' }
-        ];
-      case 'agricultural-supply-chain':
+    { id: 'smart-hydroponic-monitoring', label: 'Smart Hydroponic System Monitoring', icon: '📡' },
+    { id: 'automated-nutrient-management', label: 'Automated Nutrient Solution Management', icon: '🧪' },
+    { id: 'precision-irrigation-hydroponics', label: 'Precision Irrigation Control for Hydroponics', icon: '🚿' },
+    { id: 'digital-hydroponic-management', label: 'Digital Hydroponic Farm Management Platforms', icon: '💻' },
+    { id: 'real-time-water-quality', label: 'Real-Time Water Quality Monitoring in Hydroponics', icon: '💧' },
+    { id: 'automated-plant-growth', label: 'Automated Plant Growth Tracking', icon: '📏' },
+    { id: 'hydroponic-system-efficiency', label: 'Hydroponic System Efficiency Optimization', icon: '📈' },
+    { id: 'climate-control-hydroponics', label: 'Climate Control Systems for Hydroponics', icon: '🌡️' },
+    { id: 'automated-plant-sorting', label: 'Automated Plant Sorting and Grading for Nurseries', icon: '📦' },
+    { id: 'hydroponic-nutrient-delivery', label: 'Hydroponic Nutrient Delivery Automation', icon: '🧪' },
+    { id: 'remote-hydroponic-monitoring', label: 'Remote Hydroponic Farm Monitoring', icon: '🛰️' },
+    { id: 'smart-lighting-hydroponics', label: 'Smart Lighting Systems for Hydroponics', icon: '💡' },
+    { id: 'digital-environmental-monitoring', label: 'Digital Environmental Monitoring for Nurseries', icon: '🌍' },
+    { id: 'automated-pest-disease-hydroponics', label: 'Automated Pest and Disease Detection in Hydroponics', icon: '🐛' },
+    { id: 'greenhouse-climate-optimization', label: 'Greenhouse Climate Optimization for Hydroponics', icon: '🌡️' },
+    { id: 'automated-plant-care-hydroponics', label: 'Automated Plant Care Systems for Hydroponic Farms', icon: '🌱' },
+    { id: 'hydroponic-water-recycling', label: 'Hydroponic Water Recycling and Efficiency Tools', icon: '💧' },
+    { id: 'digital-nursery-inventory', label: 'Digital Nursery Inventory and Resource Management', icon: '📊' },
+    { id: 'smart-fertilizer-hydroponics', label: 'Smart Fertilizer Application for Hydroponic Systems', icon: '🧪' },
+    { id: 'real-time-plant-health', label: 'Real-Time Plant Health Monitoring in Hydroponics', icon: '🩺' },
+    { id: 'automated-seedling-monitoring', label: 'Automated Seedling Monitoring and Tracking', icon: '🌱' },
+    { id: 'precision-crop-management', label: 'Precision Crop Management for Nursery Plants', icon: '🌱' },
+    { id: 'hydroponic-plant-stress', label: 'Hydroponic Plant Stress Detection', icon: '⚠️' },
+    { id: 'data-driven-yield-prediction', label: 'Data-Driven Crop Yield Prediction for Hydroponics', icon: '🔮' },
+    { id: 'smart-hydroponic-harvesting', label: 'Smart Hydroponic Harvesting Systems', icon: '🌱' },
+    { id: 'digital-nursery-scheduling', label: 'Digital Nursery Plant Scheduling and Planning', icon: '📅' },
+    { id: 'automated-nursery-shipping', label: 'Automated Nursery Plant Shipping and Distribution', icon: '📦' },
+    { id: 'real-time-hydroponic-production', label: 'Real-Time Hydroponic Farm Production Reporting', icon: '📊' },
+    { id: 'remote-hydroponic-diagnostics', label: 'Remote Hydroponic System Diagnostics', icon: '🛠️' },
+    { id: 'nutrient-optimization-hydroponics', label: 'Nutrient Optimization for Hydroponic Crops', icon: '🍎' },
+    { id: 'smart-nursery-climate', label: 'Smart Nursery Climate Control Systems', icon: '🌡️' },
+    { id: 'hydroponic-system-performance', label: 'Hydroponic System Performance Analytics', icon: '📊' },
+    { id: 'automated-plant-pollination', label: 'Automated Plant Pollination Systems for Hydroponics', icon: '🐝' },
+    { id: 'hydroponic-supply-chain', label: 'Hydroponic Supply Chain and Distribution Automation', icon: '📦' },
+    { id: 'data-driven-pest-disease', label: 'Data-Driven Pest and Disease Management for Hydroponics', icon: '🐛' },
+    { id: 'smart-crop-rotation', label: 'Smart Crop Rotation Planning for Nurseries', icon: '🔄' },
+    { id: 'mobile-hydroponic-management', label: 'Mobile Hydroponic Farm Management Apps', icon: '📱' },
+    { id: 'greenhouse-waste-management', label: 'Greenhouse Waste Management for Hydroponics', icon: '🗑️' },
+    { id: 'automated-hydroponic-harvest', label: 'Automated Hydroponic Harvest Timing Optimization', icon: '⏱️' },
+    { id: 'real-time-hydroponic-growth', label: 'Real-Time Hydroponic Crop Growth Simulation', icon: '🖥️' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'indoor-farming':
         return [
-          { id: 'supply-chain-optimization', label: 'Supply Chain Optimization', icon: '🔄' },
-          { id: 'logistics-management', label: 'Logistics Management', icon: '🚚' },
-          { id: 'farm-to-table', label: 'Farm to Table', icon: '🍽️' }
-        ];
-      case 'farm-equipment':
+    { id: 'smart-indoor-climate', label: 'Smart Indoor Climate Control Systems', icon: '🌡️' },
+    { id: 'automated-hydroponic-aeroponic', label: 'Automated Hydroponic and Aeroponic Systems', icon: '💧' },
+    { id: 'indoor-farm-lighting', label: 'Indoor Farm Lighting Optimization', icon: '💡' },
+    { id: 'precision-irrigation-indoor', label: 'Precision Irrigation for Indoor Crops', icon: '🚿' },
+    { id: 'real-time-crop-health', label: 'Real-Time Indoor Crop Health Monitoring', icon: '🩺' },
+    { id: 'automated-nutrient-delivery', label: 'Automated Nutrient Delivery Systems for Indoor Farms', icon: '🧪' },
+    { id: 'indoor-farm-resource', label: 'Indoor Farm Resource Management Platforms', icon: '📊' },
+    { id: 'digital-water-quality', label: 'Digital Water Quality and pH Control', icon: '💧' },
+    { id: 'smart-environmental-sensors', label: 'Smart Environmental Sensors for Indoor Farming', icon: '📡' },
+    { id: 'data-driven-farm-performance', label: 'Data-Driven Indoor Farm Performance Analytics', icon: '📊' },
+    { id: 'indoor-crop-stress', label: 'Indoor Crop Stress Detection Systems', icon: '⚠️' },
+    { id: 'automated-harvesting-indoor', label: 'Automated Harvesting Systems for Indoor Crops', icon: '🌱' },
+    { id: 'real-time-plant-growth', label: 'Real-Time Indoor Plant Growth Monitoring', icon: '📏' },
+    { id: 'smart-vertical-farming', label: 'Smart Vertical Farming Solutions', icon: '🏢' },
+    { id: 'indoor-farm-temperature', label: 'Indoor Farm Temperature Regulation Automation', icon: '🌡️' },
+    { id: 'indoor-farm-energy', label: 'Indoor Farm Energy Efficiency Optimization', icon: '⚡' },
+    { id: 'integrated-pest-disease', label: 'Integrated Pest and Disease Control for Indoor Farming', icon: '🐛' },
+    { id: 'remote-monitoring-indoor', label: 'Remote Monitoring and Control for Indoor Farms', icon: '🛰️' },
+    { id: 'indoor-crop-yield', label: 'Indoor Crop Yield Prediction and Analysis', icon: '🔮' },
+    { id: 'automated-plant-sorting', label: 'Automated Plant Sorting and Grading Systems', icon: '📦' },
+    { id: 'digital-indoor-scheduling', label: 'Digital Indoor Farm Scheduling and Planning', icon: '📅' },
+    { id: 'real-time-soil-nutrient', label: 'Real-Time Soil and Nutrient Monitoring in Indoor Farms', icon: '🌱' },
+    { id: 'smart-fertilizer-indoor', label: 'Smart Fertilizer Application for Indoor Crops', icon: '🧪' },
+    { id: 'indoor-farm-equipment', label: 'Indoor Farming Equipment Maintenance Automation', icon: '🛠️' },
+    { id: 'vertical-farm-design', label: 'Vertical Farm Design and Optimization Tools', icon: '🏢' },
+    { id: 'indoor-lighting-irrigation', label: 'Indoor Farm Lighting and Irrigation Integration', icon: '💡' },
+    { id: 'crop-rotation-indoor', label: 'Crop Rotation Planning for Indoor Farms', icon: '🔄' },
+    { id: 'indoor-farm-waste', label: 'Indoor Farming Waste and Resource Management', icon: '🗑️' },
+    { id: 'customizable-indoor-reporting', label: 'Customizable Indoor Farm Reporting Tools', icon: '📊' },
+    { id: 'automated-plant-care', label: 'Automated Plant Care and Pruning Systems', icon: '✂️' },
+    { id: 'smart-environmental-control', label: 'Smart Environmental Control for Indoor Greenhouses', icon: '🌡️' },
+    { id: 'indoor-farm-automation', label: 'Indoor Farm Automation for Crop Care and Growth', icon: '🤖' },
+    { id: 'data-driven-crop-selection', label: 'Data-Driven Indoor Farm Crop Selection', icon: '📊' },
+    { id: 'real-time-indoor-watering', label: 'Real-Time Indoor Farm Watering Systems', icon: '🚿' },
+    { id: 'indoor-farm-security', label: 'Indoor Farm Security and Surveillance Systems', icon: '📹' },
+    { id: 'automated-packaging-indoor', label: 'Automated Packaging and Distribution for Indoor Produce', icon: '📦' },
+    { id: 'nutrient-management-indoor', label: 'Nutrient Management and Customization for Indoor Farming', icon: '🍎' },
+    { id: 'real-time-monitoring-indoor', label: 'Real-Time Monitoring for Indoor Farm Conditions', icon: '📡' },
+    { id: 'indoor-air-quality', label: 'Indoor Farm Air Quality and Humidity Control', icon: '🌬️' },
+    { id: 'digital-indoor-supply-chain', label: 'Digital Indoor Farm Supply Chain Integration', icon: '📦' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'irrigation-systems':
         return [
-          { id: 'tractors', label: 'Tractors', icon: '🚜' },
-          { id: 'harvesters', label: 'Harvesters', icon: '🌾' },
-          { id: 'irrigation-systems', label: 'Irrigation Systems', icon: '💧' }
-        ];
+    { id: 'smart-irrigation-scheduling', label: 'Smart Irrigation Scheduling Systems', icon: '📅' },
+    { id: 'real-time-soil-moisture', label: 'Real-Time Soil Moisture Monitoring', icon: '💧' },
+    { id: 'automated-drip-irrigation', label: 'Automated Drip Irrigation Systems', icon: '🚿' },
+    { id: 'precision-irrigation-control', label: 'Precision Irrigation Control Solutions', icon: '🎯' },
+    { id: 'weather-based-irrigation', label: 'Weather-Based Irrigation Management', icon: '🌦️' },
+    { id: 'irrigation-water-flow', label: 'Irrigation Water Flow Optimization', icon: '💧' },
+    { id: 'digital-irrigation-performance', label: 'Digital Irrigation System Performance Monitoring', icon: '📊' },
+    { id: 'automated-irrigation-leak', label: 'Automated Irrigation Leak Detection', icon: '⚠️' },
+    { id: 'remote-irrigation-management', label: 'Remote Irrigation Management Platforms', icon: '🛰️' },
+    { id: 'crop-specific-irrigation', label: 'Crop-Specific Irrigation Scheduling Tools', icon: '🌱' },
+    { id: 'irrigation-energy-efficiency', label: 'Irrigation System Energy Efficiency Solutions', icon: '⚡' },
+    { id: 'real-time-evapotranspiration', label: 'Real-Time Evapotranspiration Monitoring', icon: '🌡️' },
+    { id: 'cloud-based-irrigation', label: 'Cloud-Based Irrigation Control Platforms', icon: '☁️' },
+    { id: 'smart-sprinkler-systems', label: 'Smart Sprinkler Systems for Agriculture', icon: '🚿' },
+    { id: 'automated-water-distribution', label: 'Automated Water Distribution for Large-Scale Farms', icon: '📦' },
+    { id: 'integrated-irrigation-fertilization', label: 'Integrated Irrigation and Fertilization Systems', icon: '🧪' },
+    { id: 'irrigation-water-efficiency', label: 'Irrigation Water Use Efficiency Analytics', icon: '📊' },
+    { id: 'soil-salinity-monitoring', label: 'Soil Salinity Monitoring for Irrigation Systems', icon: '🌱' },
+    { id: 'automated-watering-nutrient', label: 'Automated Watering and Nutrient Delivery Systems', icon: '💧' },
+    { id: 'digital-irrigation-pipeline', label: 'Digital Irrigation Pipeline Monitoring', icon: '📡' },
+    { id: 'smart-irrigation-pump', label: 'Smart Irrigation Pump Control Solutions', icon: '🚰' },
+    { id: 'irrigation-maintenance-scheduling', label: 'Irrigation System Maintenance Scheduling Tools', icon: '🛠️' },
+    { id: 'remote-sensing-irrigation', label: 'Remote Sensing for Irrigation Needs Assessment', icon: '🛰️' },
+    { id: 'irrigation-data-analytics', label: 'Irrigation System Data Analytics and Reporting', icon: '📊' },
+    { id: 'data-driven-irrigation-optimization', label: 'Data-Driven Irrigation Optimization for Crop Yield', icon: '📈' },
+    { id: 'sensor-integrated-irrigation', label: 'Sensor-Integrated Irrigation Management Tools', icon: '📡' },
+    { id: 'irrigation-flow-monitoring', label: 'Irrigation Flow Monitoring and Control Systems', icon: '💧' },
+    { id: 'real-time-water-quality', label: 'Real-Time Water Quality Monitoring for Irrigation', icon: '💧' },
+    { id: 'predictive-irrigation-demand', label: 'Predictive Irrigation Demand Forecasting', icon: '🔮' },
+    { id: 'irrigation-weather-integration', label: 'Irrigation System Integration with Weather Forecasts', icon: '🌦️' },
+    { id: 'smart-irrigation-controllers', label: 'Smart Irrigation Controllers with Mobile Integration', icon: '📱' },
+    { id: 'sustainable-water-management', label: 'Sustainable Water Management Systems for Irrigation', icon: '🌍' },
+    { id: 'iot-irrigation-monitoring', label: 'IoT-Enabled Irrigation System Monitoring', icon: '📡' },
+    { id: 'irrigation-automation-greenhouses', label: 'Irrigation Automation for Greenhouses and Nurseries', icon: '🏡' },
+    { id: 'irrigation-calibration', label: 'Irrigation System Calibration and Performance Optimization', icon: '⚙️' },
+    { id: 'automated-water-conservation', label: 'Automated Water Conservation Techniques for Irrigation', icon: '💧' },
+    { id: 'gps-irrigation-mapping', label: 'GPS-Based Irrigation System Mapping', icon: '📍' },
+    { id: 'automated-irrigation-zone', label: 'Automated Irrigation Zone Control Systems', icon: '🚿' },
+    { id: 'smart-watering-urban', label: 'Smart Watering Solutions for Urban Farming', icon: '🏙️' },
+    { id: 'irrigation-failure-detection', label: 'Irrigation System Failure Detection and Alerts', icon: '⚠️' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'livestock-farming':
+  return [
+    { id: 'automated-livestock-health', label: 'Automated Livestock Health Monitoring', icon: '🩺' },
+    { id: 'smart-herd-management', label: 'Smart Herd Management Systems', icon: '🐄' },
+    { id: 'precision-livestock-feeding', label: 'Precision Livestock Feeding Solutions', icon: '🍴' },
+    { id: 'real-time-livestock-tracking', label: 'Real-Time Livestock Tracking and Identification', icon: '📍' },
+    { id: 'digital-livestock-performance', label: 'Digital Livestock Performance Analytics', icon: '📊' },
+    { id: 'automated-milking-systems', label: 'Automated Milking Systems', icon: '🥛' },
+    { id: 'livestock-growth-prediction', label: 'Livestock Growth Prediction Tools', icon: '📈' },
+    { id: 'precision-breeding-genetics', label: 'Precision Breeding and Genetics Management', icon: '🧬' },
+    { id: 'mobile-livestock-management', label: 'Mobile Livestock Management Applications', icon: '📱' },
+    { id: 'smart-watering-livestock', label: 'Smart Watering Systems for Livestock', icon: '💧' },
+    { id: 'remote-sensing-livestock', label: 'Remote Sensing for Livestock Health', icon: '🛰️' },
+    { id: 'automated-animal-sorting', label: 'Automated Animal Sorting Systems', icon: '🚜' },
+    { id: 'livestock-disease-detection', label: 'Livestock Disease Detection and Reporting', icon: '⚠️' },
+    { id: 'smart-livestock-feed', label: 'Smart Livestock Feed Scheduling', icon: '🍽️' },
+    { id: 'real-time-animal-activity', label: 'Real-Time Animal Activity Monitoring', icon: '🏃‍♂️' },
+    { id: 'livestock-waste-management', label: 'Livestock Waste Management Solutions', icon: '🗑️' },
+    { id: 'digital-livestock-traceability', label: 'Digital Livestock Traceability Platforms', icon: '📡' },
+    { id: 'predictive-livestock-disease', label: 'Predictive Livestock Disease Risk Management', icon: '🔮' },
+    { id: 'animal-comfort-welfare', label: 'Animal Comfort and Welfare Monitoring', icon: '🐾' },
+    { id: 'livestock-immunization', label: 'Livestock Immunization and Health Record Tracking', icon: '💉' },
+    { id: 'automated-livestock-weight', label: 'Automated Livestock Weight Monitoring', icon: '⚖️' },
+    { id: 'smart-grazing-management', label: 'Smart Grazing Management Systems', icon: '🌱' },
+    { id: 'livestock-breeding-optimization', label: 'Livestock Breeding Optimization Software', icon: '🧬' },
+    { id: 'automated-cattle-herding', label: 'Automated Cattle Herding Solutions', icon: '🐮' },
+    { id: 'precision-livestock-feedlot', label: 'Precision Livestock Management for Feedlot Operations', icon: '🏭' },
+    { id: 'real-time-livestock-market', label: 'Real-Time Livestock Market Pricing and Sales Platforms', icon: '💲' },
+    { id: 'livestock-risk-management', label: 'Livestock Risk Management and Insurance Automation', icon: '📑' },
+    { id: 'automated-livestock-alerts', label: 'Automated Livestock Health and Treatment Alerts', icon: '🚨' },
+    { id: 'digital-livestock-welfare', label: 'Digital Livestock Welfare Assessments', icon: '📋' },
+    { id: 'livestock-environmental-impact', label: 'Livestock Environmental Impact Monitoring', icon: '🌍' },
+    { id: 'data-driven-livestock-reproduction', label: 'Data-Driven Livestock Reproductive Management', icon: '📊' },
+    { id: 'mobile-livestock-health', label: 'Mobile Livestock Health Diagnostic Tools', icon: '📱' },
+    { id: 'real-time-livestock-behavior', label: 'Real-Time Monitoring of Livestock Behavior', icon: '👀' },
+    { id: 'remote-veterinary-consultation', label: 'Remote Veterinary Consultation Platforms', icon: '👨‍⚕️' },
+    { id: 'farm-to-table-livestock', label: 'Farm-to-Table Livestock Traceability Systems', icon: '🏡' },
+    { id: 'livestock-supply-chain', label: 'Livestock Supply Chain Automation', icon: '📦' },
+    { id: 'livestock-feed-nutrition', label: 'Livestock Feed and Nutrition Optimization', icon: '🍽️' },
+    { id: 'livestock-performance-reporting', label: 'Livestock Performance and Efficiency Reporting', icon: '📈' },
+    { id: 'smart-herd-dairy', label: 'Smart Herd Management for Dairy Farms', icon: '🐄' },
+    { id: 'automated-animal-transportation', label: 'Automated Animal Transportation Scheduling', icon: '🚚' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'livestock-feed-production':
+  return [
+    { id: 'automated-feed-formulation', label: 'Automated Feed Formulation Systems', icon: '🧪' },
+    { id: 'precision-feed-rationing', label: 'Precision Feed Rationing Software', icon: '📊' },
+    { id: 'real-time-feed-quality', label: 'Real-Time Feed Ingredient Quality Monitoring', icon: '🔍' },
+    { id: 'digital-feed-scheduling', label: 'Digital Feed Production Scheduling', icon: '📅' },
+    { id: 'smart-feed-mixing', label: 'Smart Feed Mixing and Blending Systems', icon: '🥄' },
+    { id: 'feed-quality-control', label: 'Feed Quality Control and Testing Automation', icon: '✅' },
+    { id: 'automated-feed-manufacturing', label: 'Automated Feed Manufacturing and Processing', icon: '🏭' },
+    { id: 'digital-feed-supply-chain', label: 'Digital Supply Chain Management for Feed Production', icon: '📦' },
+    { id: 'feedstock-inventory', label: 'Feedstock Supply and Inventory Management', icon: '📦' },
+    { id: 'real-time-feed-manufacturing', label: 'Real-Time Monitoring of Feed Manufacturing Processes', icon: '👀' },
+    { id: 'data-driven-feed-efficiency', label: 'Data-Driven Feed Efficiency Analytics', icon: '📈' },
+    { id: 'automated-feed-pelletizing', label: 'Automated Feed Pelletizing Systems', icon: '⚙️' },
+    { id: 'precision-additive-mixing', label: 'Precision Additive Mixing for Livestock Feed', icon: '🧪' },
+    { id: 'feed-ingredient-traceability', label: 'Feed Ingredient Traceability Platforms', icon: '📡' },
+    { id: 'smart-feed-storage', label: 'Smart Feed Storage and Handling Systems', icon: '🏚️' },
+    { id: 'feed-waste-reduction', label: 'Livestock Feed Waste Reduction Solutions', icon: '🗑️' },
+    { id: 'nutritional-optimization', label: 'Nutritional Optimization for Livestock Feed', icon: '🍽️' },
+    { id: 'digital-feed-compliance', label: 'Digital Compliance and Regulation Tracking for Feed Production', icon: '📑' },
+    { id: 'automated-feed-packaging', label: 'Automated Packaging and Distribution of Feed', icon: '📦' },
+    { id: 'predictive-feed-maintenance', label: 'Predictive Maintenance for Feed Production Equipment', icon: '🛠️' },
+    { id: 'real-time-feed-consumption', label: 'Real-Time Feed Consumption Monitoring for Livestock', icon: '👀' },
+    { id: 'feed-cost-optimization', label: 'Feed Cost Optimization Tools', icon: '💲' },
+    { id: 'mobile-feed-production', label: 'Mobile Feed Production Management Apps', icon: '📱' },
+    { id: 'remote-feed-plant', label: 'Remote Monitoring and Control of Feed Plants', icon: '🛰️' },
+    { id: 'automated-feed-transport', label: 'Automated Feed Transport and Delivery Systems', icon: '🚚' },
+    { id: 'digital-feed-performance', label: 'Digital Feed Performance Analytics', icon: '📊' },
+    { id: 'customizable-feed-recipes', label: 'Customizable Livestock Feed Recipes', icon: '📝' },
+    { id: 'feed-environmental-impact', label: 'Environmental Impact Monitoring in Feed Production', icon: '🌍' },
+    { id: 'feed-ingredient-sourcing', label: 'Feed Ingredient Sourcing Automation', icon: '📦' },
+    { id: 'real-time-feedstock-quality', label: 'Real-Time Feedstock Quality Assessment', icon: '🔍' },
+    { id: 'feed-production-reporting', label: 'Feed Production Performance Reporting Systems', icon: '📈' },
+    { id: 'smart-feed-equipment', label: 'Smart Feed Production Equipment Control', icon: '⚙️' },
+    { id: 'nutrient-profiling', label: 'Nutrient Profiling for Livestock Feed', icon: '🍽️' },
+    { id: 'digital-feed-inventory', label: 'Digital Inventory Management for Feed Ingredients', icon: '📦' },
+    { id: 'farm-specific-feed', label: 'Farm-Specific Feed Ration Recommendations', icon: '🏡' },
+    { id: 'feed-mill-efficiency', label: 'Feed Mill Efficiency Optimization Tools', icon: '⚙️' },
+    { id: 'data-driven-feed-sustainability', label: 'Data-Driven Sustainability Practices for Feed Production', icon: '🌍' },
+    { id: 'automated-feedstock-sorting', label: 'Automated Feedstock Sorting Systems', icon: '🚜' },
+    { id: 'real-time-ingredient-procurement', label: 'Real-Time Ingredient Procurement and Cost Management', icon: '💲' },
+    { id: 'smart-feed-distribution', label: 'Smart Feed Distribution Systems', icon: '📦' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'meat-processing':
+  return [
+    { id: 'automated-meat-cutting', label: 'Automated Meat Cutting and Processing Systems', icon: '🔪' },
+    { id: 'smart-meat-quality', label: 'Smart Meat Quality Control and Grading', icon: '✅' },
+    { id: 'real-time-meat-inventory', label: 'Real-Time Meat Inventory Management', icon: '📦' },
+    { id: 'digital-meat-traceability', label: 'Digital Traceability Systems for Meat Products', icon: '📡' },
+    { id: 'meat-plant-efficiency', label: 'Meat Processing Plant Efficiency Optimization', icon: '⚙️' },
+    { id: 'automated-meat-packaging', label: 'Automated Packaging Solutions for Meat Products', icon: '📦' },
+    { id: 'precision-meat-portioning', label: 'Precision Meat Portioning and Weighing', icon: '⚖️' },
+    { id: 'meat-equipment-maintenance', label: 'Meat Processing Equipment Maintenance Automation', icon: '🛠️' },
+    { id: 'real-time-meat-storage', label: 'Real-Time Temperature and Humidity Monitoring in Meat Storage', icon: '🌡️' },
+    { id: 'meat-labeling-barcode', label: 'Meat Product Labeling and Barcode Automation', icon: '🏷️' },
+    { id: 'digital-meat-compliance', label: 'Digital Compliance Management for Meat Processing', icon: '📑' },
+    { id: 'automated-meat-inspection', label: 'Automated Meat Inspection and Quality Testing', icon: '🔍' },
+    { id: 'meat-supply-chain', label: 'Meat Supply Chain Optimization Systems', icon: '📦' },
+    { id: 'predictive-meat-maintenance', label: 'Predictive Maintenance for Meat Processing Equipment', icon: '🛠️' },
+    { id: 'real-time-meat-scheduling', label: 'Real-Time Meat Production Scheduling', icon: '📅' },
+    { id: 'automated-meat-data', label: 'Automated Meat Processing Data Collection', icon: '📊' },
+    { id: 'digital-meat-waste', label: 'Digital Waste Management Solutions in Meat Plants', icon: '🗑️' },
+    { id: 'smart-meat-trimming', label: 'Smart Meat Trimming and Deboning Systems', icon: '🔪' },
+    { id: 'meat-production-reporting', label: 'Meat Production and Processing Reporting Tools', icon: '📈' },
+    { id: 'meat-inventory-forecasting', label: 'Inventory Forecasting and Management for Meat Plants', icon: '📦' },
+    { id: 'data-driven-meat-safety', label: 'Data-Driven Meat Safety and Contamination Monitoring', icon: '⚠️' },
+    { id: 'meat-traceability-platforms', label: 'Meat Product Traceability and Transparency Platforms', icon: '📡' },
+    { id: 'real-time-meat-yield', label: 'Real-Time Analysis of Meat Yield and Efficiency', icon: '📊' },
+    { id: 'automated-meat-distribution', label: 'Automated Packing and Distribution of Meat Products', icon: '🚚' },
+    { id: 'smart-cold-storage', label: 'Smart Cold Storage Management for Meat Products', icon: '❄️' },
+    { id: 'digital-meat-scheduling', label: 'Digital Employee Scheduling for Meat Processing Plants', icon: '📅' },
+    { id: 'automated-meat-byproduct', label: 'Automated Meat Byproduct Management', icon: '🗑️' },
+    { id: 'intelligent-meat-labeling', label: 'Intelligent Labeling and Barcoding for Meat Products', icon: '🏷️' },
+    { id: 'remote-meat-monitoring', label: 'Remote Monitoring of Meat Processing Operations', icon: '🛰️' },
+    { id: 'meat-waste-reduction', label: 'Waste Reduction and Recycling in Meat Plants', icon: '♻️' },
+    { id: 'meat-product-customization', label: 'Meat Product Customization and Personalization Tools', icon: '🛠️' },
+    { id: 'integrated-meat-processing', label: 'Integrated Meat Processing and Packaging Solutions', icon: '📦' },
+    { id: 'energy-efficiency-meat', label: 'Energy Efficiency Monitoring for Meat Plants', icon: '⚡' },
+    { id: 'digital-haccp', label: 'Digital Hazard Analysis and Critical Control Point (HACCP) Systems', icon: '📑' },
+    { id: 'smart-meat-sorting', label: 'Smart Sorting and Classifying of Meat Products', icon: '🔍' },
+    { id: 'real-time-meat-kpis', label: 'Real-Time Reporting for Meat Processing KPIs', icon: '📊' },
+    { id: 'blockchain-meat-traceability', label: 'Blockchain for Meat Product Traceability', icon: '🔗' },
+    { id: 'smart-meat-packaging', label: 'Smart Tracking of Meat Packaging Materials', icon: '📦' },
+    { id: 'meat-plant-logistics', label: 'Meat Plant Supply Chain and Logistics Optimization', icon: '🚚' },
+    { id: 'automated-meat-inventory', label: 'Automated Inventory Replenishment Systems for Meat Plants', icon: '📦' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'mushroom-farming':
+  return [
+    { id: 'smart-mushroom-climate', label: 'Smart Mushroom Farm Climate Control', icon: '🌡️' },
+    { id: 'automated-mushroom-harvesting', label: 'Automated Mushroom Harvesting Systems', icon: '🤖' },
+    { id: 'digital-mushroom-growth', label: 'Digital Monitoring of Mushroom Growth', icon: '📊' },
+    { id: 'real-time-mushroom-humidity', label: 'Real-Time Humidity and Temperature Control for Mushrooms', icon: '💧' },
+    { id: 'automated-mushroom-sorting', label: 'Automated Mushroom Sorting and Grading Systems', icon: '🔍' },
+    { id: 'precision-mushroom-irrigation', label: 'Precision Irrigation Systems for Mushroom Farms', icon: '🚿' },
+    { id: 'data-driven-mushroom-yield', label: 'Data-Driven Mushroom Yield Prediction', icon: '📈' },
+    { id: 'remote-mushroom-monitoring', label: 'Remote Monitoring of Mushroom Farm Conditions', icon: '🛰️' },
+    { id: 'real-time-mushroom-disease', label: 'Real-Time Mushroom Disease Detection', icon: '⚠️' },
+    { id: 'automated-mushroom-packaging', label: 'Automated Mushroom Packaging Solutions', icon: '📦' },
+    { id: 'mushroom-environmental-impact', label: 'Mushroom Farm Environmental Impact Monitoring', icon: '🌍' },
+    { id: 'smart-mushroom-nutrient', label: 'Smart Nutrient Delivery Systems for Mushrooms', icon: '🍽️' },
+    { id: 'mushroom-stress-detection', label: 'Mushroom Crop Stress Detection Systems', icon: '⚠️' },
+    { id: 'digital-mushroom-resource', label: 'Digital Mushroom Farm Resource Management', icon: '📊' },
+    { id: 'automated-mushroom-spawn', label: 'Automated Mushroom Spawn Production', icon: '🧫' },
+    { id: 'remote-sensing-mushroom', label: 'Remote Sensing for Mushroom Farm Performance', icon: '🛰️' },
+    { id: 'automated-mushroom-waste', label: 'Automated Waste Management for Mushroom Farms', icon: '🗑️' },
+    { id: 'mushroom-substrate-quality', label: 'Mushroom Substrate Quality Monitoring', icon: '🔍' },
+    { id: 'digital-mushroom-traceability', label: 'Digital Farm-to-Market Traceability for Mushrooms', icon: '📡' },
+    { id: 'smart-mushroom-disease', label: 'Smart Mushroom Disease Prevention Systems', icon: '🛡️' },
+    { id: 'precision-mushroom-fertilization', label: 'Precision Mushroom Fertilization Management', icon: '🧪' },
+    { id: 'real-time-mushroom-harvesting', label: 'Real-Time Mushroom Harvesting Optimization', icon: '📅' },
+    { id: 'digital-mushroom-dashboard', label: 'Digital Mushroom Farm Performance Dashboards', icon: '📊' },
+    { id: 'automated-mushroom-rotation', label: 'Automated Mushroom Crop Rotation Scheduling', icon: '🔄' },
+    { id: 'real-time-mushroom-light', label: 'Real-Time Monitoring of Mushroom Farm Light Conditions', icon: '💡' },
+    { id: 'smart-mushroom-pest', label: 'Smart Pest Control for Mushroom Farms', icon: '🐛' },
+    { id: 'automated-mushroom-ventilation', label: 'Automated Ventilation and Air Circulation Systems', icon: '🌬️' },
+    { id: 'predictive-mushroom-maintenance', label: 'Predictive Maintenance for Mushroom Farm Equipment', icon: '🛠️' },
+    { id: 'integrated-mushroom-management', label: 'Integrated Mushroom Farm Management Systems', icon: '📊' },
+    { id: 'smart-mushroom-watering', label: 'Smart Watering Systems for Mushroom Farms', icon: '💧' },
+    { id: 'digital-mushroom-reporting', label: 'Digital Mushroom Production Reporting Tools', icon: '📈' },
+    { id: 'blockchain-mushroom-traceability', label: 'Blockchain for Mushroom Supply Chain Transparency', icon: '🔗' },
+    { id: 'real-time-mushroom-co2', label: 'Real-Time Monitoring of CO2 Levels in Mushroom Farms', icon: '🌬️' },
+    { id: 'automated-mushroom-substrate', label: 'Automated Substrate Mixing and Preparation', icon: '🧪' },
+    { id: 'mushroom-growth-simulation', label: 'Mushroom Growth Simulation Software', icon: '💻' },
+    { id: 'remote-mushroom-diagnostics', label: 'Remote Mushroom Farm Diagnostics and Troubleshooting', icon: '🛠️' },
+    { id: 'predictive-mushroom-harvesting', label: 'Predictive Analytics for Mushroom Farm Harvesting', icon: '🔮' },
+    { id: 'smart-mushroom-environmental', label: 'Smart Environmental Control for Mushroom Growth Rooms', icon: '🌡️' },
+    { id: 'digital-mushroom-quality', label: 'Digital Quality Control for Mushroom Products', icon: '✅' },
+    { id: 'automated-mushroom-labor', label: 'Automated Labor Scheduling for Mushroom Farms', icon: '📅' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'nutraceuticals':
+  return [
+    { id: 'smart-nutraceutical-development', label: 'Smart Nutraceutical Product Development', icon: '🧪' },
+    { id: 'digital-nutrient-profiling', label: 'Digital Nutrient Profiling for Supplements', icon: '📊' },
+    { id: 'automated-nutraceutical-sourcing', label: 'Automated Nutraceutical Ingredient Sourcing', icon: '📦' },
+    { id: 'real-time-nutraceutical-quality', label: 'Real-Time Quality Control for Nutraceutical Products', icon: '✅' },
+    { id: 'data-driven-nutraceutical-formulation', label: 'Data-Driven Formulation of Nutraceutical Supplements', icon: '📈' },
+    { id: 'precision-nutrient-optimization', label: 'Precision Nutrient Optimization for Functional Foods', icon: '🍽️' },
+    { id: 'automated-nutraceutical-manufacturing', label: 'Automated Manufacturing of Nutraceutical Products', icon: '🏭' },
+    { id: 'digital-nutraceutical-supply-chain', label: 'Digital Nutraceutical Supply Chain Management', icon: '📦' },
+    { id: 'real-time-nutraceutical-production', label: 'Real-Time Monitoring of Nutraceutical Production', icon: '👀' },
+    { id: 'nutraceutical-traceability', label: 'Nutraceutical Product Traceability and Transparency', icon: '📡' },
+    { id: 'smart-ingredient-blending', label: 'Smart Ingredient Blending and Mixing Systems', icon: '🥄' },
+    { id: 'automated-nutraceutical-packaging', label: 'Automated Packaging for Nutraceutical Products', icon: '📦' },
+    { id: 'nutraceutical-demand-forecasting', label: 'Nutraceutical Market Demand Forecasting', icon: '🔮' },
+    { id: 'digital-nutraceutical-engagement', label: 'Digital Nutraceutical Consumer Engagement Platforms', icon: '📱' },
+    { id: 'precision-nutraceutical-dosing', label: 'Precision Dosing in Nutraceutical Supplements', icon: '💊' },
+    { id: 'online-nutraceutical-customization', label: 'Online Nutraceutical Product Customization Tools', icon: '🛠️' },
+    { id: 'nutraceutical-regulatory-compliance', label: 'Nutraceutical Regulatory Compliance Automation', icon: '📑' },
+    { id: 'smart-nutraceutical-storage', label: 'Smart Storage and Distribution Systems for Nutraceuticals', icon: '🏚️' },
+    { id: 'real-time-nutraceutical-ingredient', label: 'Real-Time Nutraceutical Ingredient Quality Monitoring', icon: '🔍' },
+    { id: 'data-driven-nutraceutical-performance', label: 'Data-Driven Product Performance Tracking', icon: '📊' },
+    { id: 'nutraceutical-ecommerce', label: 'Nutraceutical E-commerce Platform Automation', icon: '🛒' },
+    { id: 'digital-nutraceutical-testing', label: 'Digital Nutraceutical Product Testing and Research', icon: '🔬' },
+    { id: 'automated-nutraceutical-labeling', label: 'Automated Nutraceutical Labeling Systems', icon: '🏷️' },
+    { id: 'integrated-nutraceutical-manufacturing', label: 'Integrated Nutraceutical Manufacturing and Packaging', icon: '📦' },
+    { id: 'real-time-nutraceutical-shelf-life', label: 'Real-Time Nutraceutical Product Shelf Life Monitoring', icon: '⏳' },
+    { id: 'nutraceutical-ingredient-sourcing', label: 'Nutraceutical Ingredient Sourcing Automation', icon: '📦' },
+    { id: 'precision-nutraceutical-cultivation', label: 'Precision Cultivation for Nutraceutical Ingredients', icon: '🌱' },
+    { id: 'automated-nutraceutical-research', label: 'Automated Nutraceutical Research and Development Tools', icon: '🧪' },
+    { id: 'nutraceutical-sustainability', label: 'Nutraceutical Sustainability Optimization Systems', icon: '🌍' },
+    { id: 'digital-nutraceutical-feedback', label: 'Digital Consumer Feedback and Quality Assurance', icon: '📝' },
+    { id: 'nutraceutical-supply-chain-transparency', label: 'Nutraceutical Supply Chain Transparency Tools', icon: '📡' },
+    { id: 'nutraceutical-ingredient-traceability', label: 'Nutraceutical Ingredient Traceability Platforms', icon: '📡' },
+    { id: 'predictive-nutraceutical-sourcing', label: 'Predictive Analytics for Nutraceutical Ingredient Sourcing', icon: '🔮' },
+    { id: 'automated-nutraceutical-equipment', label: 'Automated Nutraceutical Production Equipment Management', icon: '⚙️' },
+    { id: 'real-time-nutraceutical-stock', label: 'Real-Time Nutraceutical Stock and Inventory Management', icon: '📦' },
+    { id: 'smart-nutraceutical-labeling', label: 'Smart Nutraceutical Labeling and Compliance Tools', icon: '🏷️' },
+    { id: 'digital-nutraceutical-marketing', label: 'Digital Nutraceutical Marketing and Branding Platforms', icon: '📢' },
+    { id: 'data-driven-nutraceutical-trends', label: 'Data-Driven Nutraceutical Trend Analysis', icon: '📈' },
+    { id: 'precision-nutraceutical-processing', label: 'Precision Processing for Nutraceutical Raw Materials', icon: '⚙️' },
+    { id: 'automated-nutraceutical-delivery', label: 'Automated Nutraceutical Order and Delivery Systems', icon: '🚚' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'organic-farming':
+  return [
+    { id: 'precision-organic-irrigation', label: 'Precision Organic Irrigation Systems', icon: '🚿' },
+    { id: 'automated-organic-monitoring', label: 'Automated Organic Crop Monitoring', icon: '👀' },
+    { id: 'smart-soil-health', label: 'Smart Soil Health Management for Organic Farms', icon: '🌱' },
+    { id: 'organic-pest-control', label: 'Organic Pest Control and Monitoring Systems', icon: '🐛' },
+    { id: 'digital-organic-management', label: 'Digital Organic Farm Management Platforms', icon: '📊' },
+    { id: 'real-time-organic-yield', label: 'Real-Time Organic Crop Yield Prediction', icon: '📈' },
+    { id: 'automated-organic-weed', label: 'Automated Organic Weed Control Solutions', icon: '🌿' },
+    { id: 'organic-fertilization', label: 'Organic Fertilization and Nutrient Management', icon: '🧪' },
+    { id: 'remote-sensing-organic', label: 'Remote Sensing for Organic Farm Health', icon: '🛰️' },
+    { id: 'organic-crop-rotation', label: 'Organic Crop Rotation Scheduling Software', icon: '🔄' },
+    { id: 'digital-organic-certification', label: 'Digital Organic Certification and Compliance Tools', icon: '📑' },
+    { id: 'smart-greenhouse-organic', label: 'Smart Greenhouse Management for Organic Crops', icon: '🏡' },
+    { id: 'integrated-organic-pest', label: 'Integrated Organic Pest and Disease Management', icon: '🛡️' },
+    { id: 'data-driven-organic-irrigation', label: 'Data-Driven Organic Irrigation Scheduling', icon: '💧' },
+    { id: 'smart-crop-protection', label: 'Smart Crop Protection for Organic Farms', icon: '🛡️' },
+    { id: 'real-time-organic-performance', label: 'Real-Time Organic Farm Performance Analytics', icon: '📊' },
+    { id: 'automated-organic-seedling', label: 'Automated Organic Seedling Monitoring and Care', icon: '🌱' },
+    { id: 'digital-soil-moisture', label: 'Digital Soil Moisture and Nutrient Monitoring for Organic Crops', icon: '💧' },
+    { id: 'organic-resource-optimization', label: 'Organic Farm Resource Optimization Systems', icon: '⚙️' },
+    { id: 'digital-organic-marketplaces', label: 'Digital Marketplaces for Organic Products', icon: '🛒' },
+    { id: 'precision-organic-fertilizer', label: 'Precision Organic Fertilizer Application', icon: '🧪' },
+    { id: 'real-time-organic-weather', label: 'Real-Time Weather and Climate Data for Organic Farming', icon: '🌦️' },
+    { id: 'remote-organic-yield', label: 'Remote Organic Crop Yield Assessment', icon: '🛰️' },
+    { id: 'automated-organic-harvesting', label: 'Automated Organic Crop Harvesting Systems', icon: '🤖' },
+    { id: 'digital-organic-traceability', label: 'Digital Organic Farm Traceability and Transparency', icon: '📡' },
+    { id: 'smart-organic-composting', label: 'Smart Organic Composting Solutions', icon: '♻️' },
+    { id: 'mobile-organic-management', label: 'Mobile Organic Farm Management Apps', icon: '📱' },
+    { id: 'predictive-organic-growth', label: 'Predictive Analytics for Organic Crop Growth', icon: '🔮' },
+    { id: 'sustainable-organic-reporting', label: 'Sustainable Organic Farm Reporting Tools', icon: '📈' },
+    { id: 'automated-organic-harvest', label: 'Automated Organic Harvest Scheduling', icon: '📅' },
+    { id: 'real-time-organic-pest', label: 'Real-Time Organic Pest Infestation Mapping', icon: '🐛' },
+    { id: 'digital-organic-supply-chain', label: 'Digital Organic Supply Chain Management', icon: '📦' },
+    { id: 'automated-organic-equipment', label: 'Automated Organic Farm Equipment Maintenance', icon: '🛠️' },
+    { id: 'precision-organic-pollination', label: 'Precision Organic Pollination Systems', icon: '🐝' },
+    { id: 'organic-waste-management', label: 'Organic Farm Waste and Resource Management Solutions', icon: '🗑️' },
+    { id: 'smart-organic-soil', label: 'Smart Organic Soil Fertility Management', icon: '🌱' },
+    { id: 'remote-organic-climate', label: 'Remote Monitoring for Organic Farm Climate Control', icon: '🌡️' },
+    { id: 'data-driven-organic-demand', label: 'Data-Driven Organic Market Demand Forecasting', icon: '🔮' },
+    { id: 'organic-packaging-distribution', label: 'Organic Product Packaging and Distribution Automation', icon: '📦' },
+    { id: 'integrated-organic-financial', label: 'Integrated Organic Farm Financial and Operations Management', icon: '📊' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'poultry-farming':
+  return [
+    { id: 'smart-poultry-health', label: 'Smart Poultry Health Monitoring Systems', icon: '🩺' },
+    { id: 'automated-poultry-feeding', label: 'Automated Poultry Feeding Systems', icon: '🍽️' },
+    { id: 'real-time-egg-production', label: 'Real-Time Egg Production Tracking', icon: '🥚' },
+    { id: 'digital-poultry-management', label: 'Digital Poultry Farm Management Platforms', icon: '📊' },
+    { id: 'precision-poultry-disease', label: 'Precision Poultry Disease Detection', icon: '⚠️' },
+    { id: 'automated-poultry-environment', label: 'Automated Poultry Environmental Control Systems', icon: '🌡️' },
+    { id: 'smart-poultry-lighting', label: 'Smart Poultry Lighting and Temperature Regulation', icon: '💡' },
+    { id: 'remote-poultry-monitoring', label: 'Remote Poultry Farm Monitoring', icon: '🛰️' },
+    { id: 'digital-poultry-inventory', label: 'Digital Poultry Inventory Management', icon: '📦' },
+    { id: 'poultry-waste-management', label: 'Poultry Waste Management Automation', icon: '🗑️' },
+    { id: 'real-time-poultry-feed', label: 'Real-Time Poultry Feed Monitoring and Optimization', icon: '🍽️' },
+    { id: 'mobile-poultry-management', label: 'Mobile Poultry Farm Management Apps', icon: '📱' },
+    { id: 'automated-egg-sorting', label: 'Automated Egg Sorting and Grading Systems', icon: '🥚' },
+    { id: 'poultry-behavior-monitoring', label: 'Poultry Behavior Monitoring and Analysis', icon: '👀' },
+    { id: 'digital-poultry-biosecurity', label: 'Digital Poultry Biosecurity and Disease Prevention', icon: '🛡️' },
+    { id: 'smart-poultry-watering', label: 'Smart Watering Systems for Poultry', icon: '💧' },
+    { id: 'poultry-health-risk', label: 'Poultry Health Risk Assessment Tools', icon: '⚠️' },
+    { id: 'real-time-poultry-demand', label: 'Real-Time Poultry Market Demand Forecasting', icon: '🔮' },
+    { id: 'automated-poultry-housing', label: 'Automated Poultry Housing and Ventilation Systems', icon: '🏠' },
+    { id: 'digital-poultry-hatchery', label: 'Digital Poultry Hatchery Management', icon: '🐣' },
+    { id: 'poultry-mortality-tracking', label: 'Poultry Mortality Tracking and Reporting', icon: '📝' },
+    { id: 'predictive-poultry-growth', label: 'Predictive Analytics for Poultry Growth and Production', icon: '📈' },
+    { id: 'smart-poultry-nesting', label: 'Smart Nesting Systems for Poultry', icon: '🥚' },
+    { id: 'automated-poultry-flock', label: 'Automated Poultry Flock Monitoring', icon: '🐔' },
+    { id: 'real-time-poultry-performance', label: 'Real-Time Data Collection for Poultry Performance', icon: '📊' },
+    { id: 'poultry-egg-incubation', label: 'Poultry Egg Incubation Optimization', icon: '🥚' },
+    { id: 'poultry-breeding-optimization', label: 'Poultry Breeding and Genetic Optimization Software', icon: '🧬' },
+    { id: 'digital-poultry-supply-chain', label: 'Digital Poultry Supply Chain Management', icon: '📦' },
+    { id: 'intelligent-poultry-transport', label: 'Intelligent Poultry Transport and Logistics', icon: '🚚' },
+    { id: 'real-time-poultry-welfare', label: 'Real-Time Poultry Welfare and Comfort Monitoring', icon: '🐔' },
+    { id: 'precision-poultry-waste', label: 'Precision Poultry Waste Recycling', icon: '♻️' },
+    { id: 'automated-poultry-egg-collection', label: 'Automated Poultry Egg Collection Systems', icon: '🥚' },
+    { id: 'integrated-poultry-nutrition', label: 'Integrated Poultry Nutrition and Feed Management', icon: '🍽️' },
+    { id: 'poultry-health-antibiotic', label: 'Poultry Health and Antibiotic Use Monitoring', icon: '💊' },
+    { id: 'smart-poultry-packaging', label: 'Smart Poultry Product Packaging Solutions', icon: '📦' },
+    { id: 'poultry-feed-stock', label: 'Poultry Feed Stock Management Systems', icon: '🍽️' },
+    { id: 'digital-poultry-health-reports', label: 'Digital Poultry Flock Health Reports', icon: '📝' },
+    { id: 'poultry-growth-performance', label: 'Poultry Growth Rate and Performance Analytics', icon: '📈' },
+    { id: 'smart-poultry-housing', label: 'Smart Poultry Housing Design and Automation', icon: '🏠' },
+    { id: 'real-time-poultry-market', label: 'Real-Time Poultry Market Pricing and Sales Platforms', icon: '💲' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'precision-agriculture':
+  return [
+    { id: 'precision-irrigation', label: 'Precision Irrigation Systems', icon: '🚿' },
+    { id: 'automated-soil-health', label: 'Automated Soil Health Monitoring', icon: '🌱' },
+    { id: 'smart-fertilizer', label: 'Smart Fertilizer Application', icon: '🧪' },
+    { id: 'crop-yield-prediction', label: 'Crop Yield Prediction Models', icon: '📈' },
+    { id: 'real-time-crop-health', label: 'Real-Time Crop Health Monitoring', icon: '👀' },
+    { id: 'precision-seeding', label: 'Precision Seeding and Planting Systems', icon: '🌱' },
+    { id: 'remote-sensing-soil', label: 'Remote Sensing for Soil Moisture', icon: '🛰️' },
+    { id: 'automated-pest-detection', label: 'Automated Pest and Disease Detection', icon: '🐛' },
+    { id: 'digital-field-mapping', label: 'Digital Field Mapping Tools', icon: '🗺️' },
+    { id: 'real-time-weather', label: 'Real-Time Weather Data Integration for Farming', icon: '🌦️' },
+    { id: 'precision-livestock', label: 'Precision Livestock Monitoring', icon: '🐄' },
+    { id: 'smart-weed-control', label: 'Smart Weed Control Systems', icon: '🌿' },
+    { id: 'gps-tractor-navigation', label: 'GPS-Enabled Tractor Navigation Systems', icon: '🚜' },
+    { id: 'variable-rate-fertilizer', label: 'Variable Rate Technology for Fertilizers', icon: '🧪' },
+    { id: 'farm-data-analytics', label: 'Farm Data Analytics Platforms', icon: '📊' },
+    { id: 'drones-crop-surveillance', label: 'Drones for Crop Surveillance and Monitoring', icon: '🚁' },
+    { id: 'automated-harvesting', label: 'Automated Harvesting Systems', icon: '🤖' },
+    { id: 'smart-crop-protection', label: 'Smart Crop Protection Systems', icon: '🛡️' },
+    { id: 'precision-crop-rotation', label: 'Precision Crop Rotation Planning', icon: '🔄' },
+    { id: 'digital-irrigation-scheduling', label: 'Digital Irrigation Scheduling', icon: '🚿' },
+    { id: 'soil-erosion-monitoring', label: 'Soil Erosion Monitoring and Control', icon: '🌱' },
+    { id: 'remote-equipment-monitoring', label: 'Remote Equipment Monitoring and Diagnostics', icon: '🛠️' },
+    { id: 'data-driven-equipment', label: 'Data-Driven Farm Equipment Optimization', icon: '⚙️' },
+    { id: 'smart-weather-forecasting', label: 'Smart Weather Forecasting for Crops', icon: '🌦️' },
+    { id: 'precision-livestock-feeding', label: 'Precision Livestock Feeding Systems', icon: '🍽️' },
+    { id: 'integrated-pest-management', label: 'Integrated Pest Management Systems', icon: '🐛' },
+    { id: 'real-time-equipment-tracking', label: 'Real-Time Field Equipment Tracking', icon: '📍' },
+    { id: 'precision-harvesting', label: 'Precision Harvesting Technology', icon: '🤖' },
+    { id: 'digital-resource-allocation', label: 'Digital Farm Resource Allocation', icon: '📊' },
+    { id: 'real-time-fertilizer-monitoring', label: 'Real-Time Fertilizer and Pesticide Monitoring', icon: '🧪' },
+    { id: 'precision-land-leveling', label: 'Precision Land Leveling Tools', icon: '⚙️' },
+    { id: 'automated-crop-sorting', label: 'Automated Crop Sorting and Grading', icon: '🔍' },
+    { id: 'real-time-water-usage', label: 'Real-Time Water Usage Tracking', icon: '💧' },
+    { id: 'data-driven-disease-management', label: 'Data-Driven Plant Disease Management', icon: '⚠️' },
+    { id: 'automated-farm-data', label: 'Automated Farm Data Collection Systems', icon: '📊' },
+    { id: 'smart-soil-ph', label: 'Smart Soil pH Monitoring', icon: '🌱' },
+    { id: 'digital-farm-dashboards', label: 'Digital Farm Performance Dashboards', icon: '📊' },
+    { id: 'automated-soil-nutrient', label: 'Automated Soil Nutrient Testing', icon: '🧪' },
+    { id: 'precision-agrochemical', label: 'Precision Agrochemical Application', icon: '🧪' },
+    { id: 'farm-to-table-supply-chain', label: 'Farm-to-Table Supply Chain Optimization', icon: '📦' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'seed-production':
+  return [
+    { id: 'smart-seed-sourcing', label: 'Smart Seed Sourcing and Supply Chain Management', icon: '📦' },
+    { id: 'automated-seed-sorting', label: 'Automated Seed Sorting and Grading Systems', icon: '🔍' },
+    { id: 'precision-seed-coating', label: 'Precision Seed Coating Technology', icon: '🧪' },
+    { id: 'real-time-seed-germination', label: 'Real-Time Seed Germination Monitoring', icon: '🌱' },
+    { id: 'digital-seed-quality', label: 'Digital Seed Quality Control', icon: '✅' },
+    { id: 'automated-seed-packaging', label: 'Automated Seed Packaging Solutions', icon: '📦' },
+    { id: 'seed-storage-inventory', label: 'Seed Storage and Inventory Management Systems', icon: '📦' },
+    { id: 'predictive-seed-yield', label: 'Predictive Seed Yield Optimization Tools', icon: '📈' },
+    { id: 'digital-seed-traceability', label: 'Digital Traceability for Seed Products', icon: '📡' },
+    { id: 'seedling-growth-simulation', label: 'Seedling Growth Simulation Software', icon: '💻' },
+    { id: 'real-time-seed-environment', label: 'Real-Time Environmental Control for Seed Production', icon: '🌡️' },
+    { id: 'automated-seed-treatment', label: 'Automated Seed Treatment Systems', icon: '🧪' },
+    { id: 'seed-health-monitoring', label: 'Seed Health Monitoring and Disease Detection', icon: '🩺' },
+    { id: 'data-driven-seed-production', label: 'Data-Driven Seed Production Planning', icon: '📊' },
+    { id: 'precision-seed-testing', label: 'Precision Seed Testing and Analysis Tools', icon: '🔬' },
+    { id: 'smart-fertilization-seed', label: 'Smart Fertilization for Seed Crops', icon: '🧪' },
+    { id: 'seed-harvesting-automation', label: 'Seed Harvesting Automation', icon: '🤖' },
+    { id: 'digital-seed-scheduling', label: 'Digital Seed Production Scheduling', icon: '📅' },
+    { id: 'smart-water-seed', label: 'Smart Water Management for Seed Crops', icon: '💧' },
+    { id: 'genetic-seed-testing', label: 'Genetic Testing and Seed Improvement Platforms', icon: '🧬' },
+    { id: 'automated-seed-delivery', label: 'Automated Seed Delivery Systems', icon: '🚚' },
+    { id: 'remote-seed-monitoring', label: 'Remote Monitoring for Seed Production Facilities', icon: '🛰️' },
+    { id: 'seed-moisture-quality', label: 'Seed Moisture and Quality Control Systems', icon: '💧' },
+    { id: 'seedling-care-growth', label: 'Seedling Care and Growth Optimization', icon: '🌱' },
+    { id: 'digital-seed-marketplaces', label: 'Digital Seed Marketplaces and Sales Platforms', icon: '🛒' },
+    { id: 'soil-health-seed', label: 'Soil Health and Nutrient Monitoring for Seed Crops', icon: '🌱' },
+    { id: 'real-time-seed-data', label: 'Real-Time Data Collection for Seed Production', icon: '📊' },
+    { id: 'precision-planting-seed', label: 'Precision Planting for Seed Crops', icon: '🌱' },
+    { id: 'automated-seedling-transplantation', label: 'Automated Seedling Transplantation Systems', icon: '🤖' },
+    { id: 'smart-weed-pest-seed', label: 'Smart Weed and Pest Management in Seed Production', icon: '🐛' },
+    { id: 'seed-inventory-forecasting', label: 'Seed Inventory Forecasting Tools', icon: '🔮' },
+    { id: 'digital-seed-certification', label: 'Digital Seed Testing and Certification Systems', icon: '📑' },
+    { id: 'precision-harvesting-seed', label: 'Precision Harvesting for Seed Crops', icon: '🤖' },
+    { id: 'automated-seedling-sorting', label: 'Automated Seedling Sorting for Packaging', icon: '🔍' },
+    { id: 'seed-resource-optimization', label: 'Seed Production Resource Optimization', icon: '⚙️' },
+    { id: 'seed-production-analytics', label: 'Seed Production Performance Analytics', icon: '📊' },
+    { id: 'remote-sensing-seed', label: 'Remote Sensing for Seed Crop Health', icon: '🛰️' },
+    { id: 'digital-seed-distribution', label: 'Digital Seed Distribution Networks', icon: '📦' },
+    { id: 'smart-irrigation-seed', label: 'Smart Irrigation Systems for Seed Production', icon: '🚿' },
+    { id: 'integrated-seed-research', label: 'Integrated Seed Research and Development Tools', icon: '🧪' }
+  ];
+// ... existing code ...
+// ... existing code ...
       case 'sustainable-agriculture':
         return [
-          { id: 'organic-certification', label: 'Organic Certification', icon: '🌱' },
-          { id: 'regenerative-agriculture', label: 'Regenerative Agriculture', icon: '♻️' },
-          { id: 'agroforestry', label: 'Agroforestry', icon: '🌳' }
-        ];
+    { id: 'precision-water-management', label: 'Precision Water Management Systems', icon: '🚿' },
+    { id: 'smart-irrigation-conservation', label: 'Smart Irrigation and Water Conservation', icon: '💧' },
+    { id: 'organic-fertilizer', label: 'Organic Fertilizer Application Systems', icon: '🧪' },
+    { id: 'automated-crop-rotation', label: 'Automated Crop Rotation and Planning', icon: '🔄' },
+    { id: 'real-time-soil-health', label: 'Real-Time Soil Health Monitoring', icon: '🌱' },
+    { id: 'integrated-pest-management', label: 'Integrated Pest Management Solutions', icon: '🐛' },
+    { id: 'digital-farm-resource', label: 'Digital Farm Resource Optimization', icon: '📊' },
+    { id: 'sustainable-farm-energy', label: 'Sustainable Farm Energy Management', icon: '⚡' },
+    { id: 'remote-sensing-crop-stress', label: 'Remote Sensing for Crop Stress Detection', icon: '🛰️' },
+    { id: 'data-driven-soil-nutrient', label: 'Data-Driven Soil Nutrient Management', icon: '📊' },
+    { id: 'smart-greenhouse-climate', label: 'Smart Greenhouse Climate Control', icon: '🏡' },
+    { id: 'automated-waste-recycling', label: 'Automated Waste Recycling in Agriculture', icon: '♻️' },
+    { id: 'digital-carbon-footprint', label: 'Digital Carbon Footprint Tracking for Farms', icon: '🌍' },
+    { id: 'precision-livestock-management', label: 'Precision Livestock Management Systems', icon: '🐄' },
+    { id: 'smart-feed-nutrition', label: 'Smart Feed and Nutrition Management', icon: '🍽️' },
+    { id: 'renewable-energy-farms', label: 'Renewable Energy Integration for Farms', icon: '⚡' },
+    { id: 'sustainable-crop-protection', label: 'Sustainable Crop Protection Systems', icon: '🛡️' },
+    { id: 'real-time-environmental-impact', label: 'Real-Time Environmental Impact Monitoring', icon: '🌍' },
+    { id: 'farm-biodiversity', label: 'Farm Biodiversity and Conservation Tools', icon: '🌿' },
+    { id: 'integrated-weed-control', label: 'Integrated Weed Control Solutions', icon: '🌿' },
+    { id: 'mobile-sustainable-farm', label: 'Mobile Platforms for Sustainable Farm Management', icon: '📱' },
+    { id: 'real-time-weather-monitoring', label: 'Real-Time Weather Monitoring for Sustainable Farming', icon: '🌦️' },
+    { id: 'smart-fertilizer-application', label: 'Smart Fertilizer Application Systems', icon: '🧪' },
+    { id: 'farm-to-table-sustainability', label: 'Farm-to-Table Sustainability Tracking', icon: '📦' },
+    { id: 'digital-soil-erosion', label: 'Digital Soil Erosion Management Tools', icon: '🌱' },
+    { id: 'sustainable-irrigation', label: 'Sustainable Irrigation Practices and Automation', icon: '🚿' },
+    { id: 'digital-water-usage', label: 'Digital Water Usage Analytics for Farms', icon: '💧' },
+    { id: 'low-emission-farm-equipment', label: 'Low-Emission Farm Equipment and Technology', icon: '🚜' },
+    { id: 'automated-sustainable-harvesting', label: 'Automated Crop Harvesting Systems for Sustainability', icon: '🤖' },
+    { id: 'real-time-water-quality', label: 'Real-Time Water Quality Monitoring for Irrigation', icon: '💧' },
+    { id: 'smart-fertilization-nutrient', label: 'Smart Fertilization and Nutrient Cycling', icon: '🧪' },
+    { id: 'eco-friendly-packaging', label: 'Eco-Friendly Packaging Solutions for Farm Products', icon: '📦' },
+    { id: 'waste-to-energy', label: 'Waste-to-Energy Systems for Farms', icon: '⚡' },
+    { id: 'crop-disease-prediction', label: 'Crop Disease Prediction and Control Systems', icon: '⚠️' },
+    { id: 'soil-remediation', label: 'Soil Remediation and Restoration Technologies', icon: '🌱' },
+    { id: 'sustainable-crop-yield', label: 'Sustainable Crop Yield Forecasting', icon: '📈' },
+    { id: 'real-time-greenhouse-gas', label: 'Real-Time Monitoring of Greenhouse Gas Emissions', icon: '🌍' },
+    { id: 'eco-friendly-distribution', label: 'Eco-Friendly Packaging and Distribution Automation', icon: '📦' },
+    { id: 'precision-composting', label: 'Precision Composting Systems', icon: '♻️' },
+    { id: 'circular-economy-agriculture', label: 'Circular Economy Practices in Agriculture', icon: '🔄' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'soil-fertility-management':
+  return [
+    { id: 'smart-soil-nutrient', label: 'Smart Soil Nutrient Management Systems', icon: '🌱' },
+    { id: 'real-time-soil-health', label: 'Real-Time Soil Health Monitoring', icon: '👀' },
+    { id: 'precision-fertilizer', label: 'Precision Fertilizer Application Technology', icon: '🧪' },
+    { id: 'soil-ph-moisture', label: 'Soil pH and Moisture Regulation Tools', icon: '🌱' },
+    { id: 'automated-soil-testing', label: 'Automated Soil Testing and Analysis', icon: '🔬' },
+    { id: 'digital-soil-fertility', label: 'Digital Soil Fertility Mapping', icon: '🗺️' },
+    { id: 'smart-irrigation-nutrient', label: 'Smart Irrigation for Soil Nutrient Optimization', icon: '🚿' },
+    { id: 'data-driven-soil-erosion', label: 'Data-Driven Soil Erosion Management', icon: '🌱' },
+    { id: 'soil-organic-matter', label: 'Soil Organic Matter Tracking', icon: '📊' },
+    { id: 'precision-composting', label: 'Precision Composting for Soil Health', icon: '♻️' },
+    { id: 'digital-nutrient-deficiency', label: 'Digital Crop Nutrient Deficiency Detection', icon: '⚠️' },
+    { id: 'soil-microbe-monitoring', label: 'Soil Microbe and Ecosystem Monitoring', icon: '🦠' },
+    { id: 'automated-soil-amending', label: 'Automated Soil Amending Systems', icon: '⚙️' },
+    { id: 'real-time-soil-condition', label: 'Real-Time Soil Condition Monitoring', icon: '👀' },
+    { id: 'remote-sensing-soil-texture', label: 'Remote Sensing for Soil Texture Mapping', icon: '🛰️' },
+    { id: 'soil-quality-forecasting', label: 'Soil Quality Forecasting Tools', icon: '🔮' },
+    { id: 'smart-fertilization-scheduling', label: 'Smart Fertilization Scheduling Systems', icon: '📅' },
+    { id: 'mobile-soil-fertility', label: 'Mobile Soil Fertility Management Apps', icon: '📱' },
+    { id: 'soil-moisture-management', label: 'Soil Moisture Management and Automation', icon: '💧' },
+    { id: 'automated-fertilizer-blending', label: 'Automated Soil Fertilizer Blending Systems', icon: '🧪' },
+    { id: 'soil-carbon-sequestration', label: 'Soil Carbon Sequestration Measurement Tools', icon: '🌍' },
+    { id: 'precision-lime-application', label: 'Precision Lime Application for Soil pH Adjustment', icon: '🧪' },
+    { id: 'smart-crop-rotation', label: 'Smart Crop Rotation Planning for Soil Health', icon: '🔄' },
+    { id: 'real-time-soil-temperature', label: 'Real-Time Soil Temperature Monitoring', icon: '🌡️' },
+    { id: 'digital-organic-decomposition', label: 'Digital Organic Matter Decomposition Tracking', icon: '📊' },
+    { id: 'soil-salinity-management', label: 'Soil Salinity Management and Monitoring', icon: '🌱' },
+    { id: 'automated-nutrient-deficiency', label: 'Automated Soil Nutrient Deficiency Alerts', icon: '⚠️' },
+    { id: 'digital-crop-soil-interaction', label: 'Digital Crop and Soil Interaction Analysis', icon: '📊' },
+    { id: 'smart-soil-erosion', label: 'Smart Soil Erosion Control Systems', icon: '🌱' },
+    { id: 'soil-conservation', label: 'Soil Conservation and Fertility Enhancement Tools', icon: '🌱' },
+    { id: 'precision-nitrogen-management', label: 'Precision Nitrogen Management Systems', icon: '🧪' },
+    { id: 'digital-fertilizer-supply-chain', label: 'Digital Soil Fertilizer Supply Chain Management', icon: '📦' },
+    { id: 'remote-soil-fertility', label: 'Remote Soil Fertility Monitoring Platforms', icon: '🛰️' },
+    { id: 'soil-remediation', label: 'Soil Remediation and Restoration Technologies', icon: '🌱' },
+    { id: 'real-time-soil-fertility', label: 'Real-Time Soil Fertility Data Analytics', icon: '📊' },
+    { id: 'soil-compaction-detection', label: 'Soil Compaction Detection and Prevention Systems', icon: '🌱' },
+    { id: 'automated-soil-moisture', label: 'Automated Soil Moisture and Irrigation Control', icon: '💧' },
+    { id: 'remote-sensing-soil-water', label: 'Remote Sensing for Soil Water Holding Capacity', icon: '🛰️' },
+    { id: 'digital-soil-fertility-forecasting', label: 'Digital Soil Fertility Forecasting Tools', icon: '🔮' },
+    { id: 'smart-soil-amending', label: 'Smart Soil Amending and Fertilizer Management Software', icon: '⚙️' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'tea-coffee-production':
+  return [
+    { id: 'automated-tea-harvesting', label: 'Automated Tea Harvesting Systems', icon: '🤖' },
+    { id: 'smart-irrigation-tea', label: 'Smart Irrigation for Tea Plantations', icon: '🚿' },
+    { id: 'digital-tea-quality', label: 'Digital Tea Leaf Quality Control', icon: '✅' },
+    { id: 'precision-fertilizer-tea', label: 'Precision Fertilizer Application for Tea Crops', icon: '🧪' },
+    { id: 'real-time-weather-tea', label: 'Real-Time Weather Monitoring for Tea Farms', icon: '🌦️' },
+    { id: 'smart-tea-processing', label: 'Smart Tea Processing and Drying Systems', icon: '🍵' },
+    { id: 'automated-coffee-sorting', label: 'Automated Coffee Bean Sorting and Grading', icon: '🔍' },
+    { id: 'data-driven-coffee-yield', label: 'Data-Driven Coffee Crop Yield Prediction', icon: '📈' },
+    { id: 'coffee-plant-health', label: 'Coffee Plant Health Monitoring Systems', icon: '🩺' },
+    { id: 'digital-tea-management', label: 'Digital Tea Plantation Management Platforms', icon: '📊' },
+    { id: 'remote-sensing-coffee', label: 'Remote Sensing for Coffee Tree Growth', icon: '🛰️' },
+    { id: 'automated-tea-coffee-packaging', label: 'Automated Tea and Coffee Packaging Solutions', icon: '📦' },
+    { id: 'precision-tea-coffee-harvest', label: 'Precision Tea and Coffee Harvest Timing', icon: '📅' },
+    { id: 'coffee-roasting-optimization', label: 'Coffee Bean Roasting Optimization Software', icon: '🔥' },
+    { id: 'tea-pest-detection', label: 'Tea Pest and Disease Detection Tools', icon: '🐛' },
+    { id: 'smart-fertilizer-tea-coffee', label: 'Smart Fertilizer Management for Tea and Coffee', icon: '🧪' },
+    { id: 'digital-tea-coffee-traceability', label: 'Digital Traceability for Tea and Coffee Products', icon: '📡' },
+    { id: 'real-time-tea-stress', label: 'Real-Time Tea Plant Stress Detection', icon: '⚠️' },
+    { id: 'smart-coffee-watering', label: 'Smart Coffee Watering Systems', icon: '💧' },
+    { id: 'automated-coffee-processing', label: 'Automated Coffee Bean Processing Systems', icon: '🤖' },
+    { id: 'tea-plantation-environmental', label: 'Tea Plantation Environmental Impact Monitoring', icon: '🌍' },
+    { id: 'data-driven-coffee-quality', label: 'Data-Driven Coffee Quality Control', icon: '📊' },
+    { id: 'smart-harvesting-scheduling', label: 'Smart Harvesting Scheduling for Tea and Coffee', icon: '📅' },
+    { id: 'precision-coffee-fertilization', label: 'Precision Coffee Fertilization Systems', icon: '🧪' },
+    { id: 'coffee-plant-breeding', label: 'Coffee Plant Breeding and Genetic Management', icon: '🧬' },
+    { id: 'digital-tea-coffee-supply-chain', label: 'Digital Tea and Coffee Supply Chain Optimization', icon: '📦' },
+    { id: 'coffee-bean-ripeness', label: 'Coffee Bean Ripeness Prediction Tools', icon: '🔮' },
+    { id: 'automated-tea-plucking', label: 'Automated Tea Leaf Plucking Systems', icon: '🤖' },
+    { id: 'coffee-production-reporting', label: 'Coffee Production Reporting and Analytics', icon: '📊' },
+    { id: 'remote-coffee-monitoring', label: 'Remote Coffee Plantation Monitoring', icon: '🛰️' },
+    { id: 'smart-coffee-rotation', label: 'Smart Coffee Crop Rotation Scheduling', icon: '🔄' },
+    { id: 'digital-tea-coffee-demand', label: 'Digital Tea and Coffee Market Demand Forecasting', icon: '🔮' },
+    { id: 'coffee-soil-health', label: 'Coffee Plant Soil Health and Moisture Monitoring', icon: '🌱' },
+    { id: 'real-time-tea-processing', label: 'Real-Time Tea Processing Line Control', icon: '⚙️' },
+    { id: 'precision-coffee-pest', label: 'Precision Coffee Pest and Disease Management', icon: '🐛' },
+    { id: 'automated-coffee-drying', label: 'Automated Coffee Drying Systems', icon: '🔥' },
+    { id: 'real-time-tea-quality', label: 'Real-Time Tea Quality Assessment Systems', icon: '✅' },
+    { id: 'coffee-bean-storage', label: 'Coffee Bean Storage Optimization', icon: '📦' },
+    { id: 'digital-coffee-roasting', label: 'Digital Coffee Roasting and Blending Software', icon: '🔥' },
+    { id: 'green-tea-coffee-sustainability', label: 'Green Tea and Coffee Sustainability Analytics', icon: '🌍' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'tree-crops-agroforestry':
+  return [
+    { id: 'smart-agroforestry-land', label: 'Smart Agroforestry Land Management Systems', icon: '🌳' },
+    { id: 'automated-tree-planting', label: 'Automated Tree Planting and Nursery Management', icon: '🌱' },
+    { id: 'precision-irrigation-tree', label: 'Precision Irrigation for Tree Crops', icon: '🚿' },
+    { id: 'tree-growth-monitoring', label: 'Tree Growth Monitoring and Analysis Tools', icon: '📊' },
+    { id: 'real-time-soil-agroforestry', label: 'Real-Time Soil Health Monitoring in Agroforestry', icon: '🌱' },
+    { id: 'automated-tree-harvesting', label: 'Automated Tree Crop Harvesting Systems', icon: '🤖' },
+    { id: 'digital-agroforestry-design', label: 'Digital Agroforestry Design and Planning Tools', icon: '🗺️' },
+    { id: 'smart-carbon-sequestration', label: 'Smart Forest and Tree Crop Carbon Sequestration Measurement', icon: '🌍' },
+    { id: 'automated-tree-disease', label: 'Automated Tree Disease Detection and Management', icon: '⚠️' },
+    { id: 'remote-sensing-tree-canopy', label: 'Remote Sensing for Tree Canopy Health Monitoring', icon: '🛰️' },
+    { id: 'integrated-agroforestry-pest', label: 'Integrated Agroforestry Pest and Disease Control', icon: '🐛' },
+    { id: 'real-time-water-tree', label: 'Real-Time Water Usage Monitoring for Tree Crops', icon: '💧' },
+    { id: 'automated-fertilization-tree', label: 'Automated Fertilization Systems for Tree Crops', icon: '🧪' },
+    { id: 'smart-pollination-agroforestry', label: 'Smart Pollination Management for Agroforestry', icon: '🐝' },
+    { id: 'precision-harvest-scheduling', label: 'Precision Harvest Scheduling for Tree Crops', icon: '📅' },
+    { id: 'data-driven-agroforestry', label: 'Data-Driven Crop Rotation and Agroforestry Management', icon: '🔄' },
+    { id: 'digital-tree-yield', label: 'Digital Tree Crop Yield Prediction Models', icon: '📈' },
+    { id: 'sustainable-agroforestry', label: 'Sustainable Forestry and Agroforestry Practices Optimization', icon: '🌍' },
+    { id: 'remote-tree-stress', label: 'Remote Tree Stress and Health Monitoring Systems', icon: '⚠️' },
+    { id: 'smart-soil-agroforestry', label: 'Smart Soil Fertility and Nutrient Management for Agroforestry', icon: '🌱' },
+    { id: 'tree-crop-diversity', label: 'Tree and Crop Diversity Monitoring in Agroforestry', icon: '🌿' },
+    { id: 'automated-tree-pruning', label: 'Automated Tree Pruning and Maintenance Systems', icon: '✂️' },
+    { id: 'precision-agroforestry-carbon', label: 'Precision Agroforestry Carbon Footprint Tracking', icon: '🌍' },
+    { id: 'real-time-agroforestry-climate', label: 'Real-Time Agroforestry Climate Impact Monitoring', icon: '🌡️' },
+    { id: 'digital-agroforestry-resource', label: 'Digital Agroforestry Resource Allocation Systems', icon: '📊' },
+    { id: 'smart-tree-breeding', label: 'Smart Tree Crop Breeding and Genetics Tools', icon: '🧬' },
+    { id: 'mobile-agroforestry', label: 'Mobile Agroforestry Management and Reporting Apps', icon: '📱' },
+    { id: 'digital-tree-traceability', label: 'Digital Tree Crop Traceability and Certification', icon: '📡' },
+    { id: 'tree-soil-moisture', label: 'Tree Crop Soil Moisture and Temperature Monitoring', icon: '🌱' },
+    { id: 'smart-forest-management', label: 'Smart Forest Management and Timber Harvesting', icon: '🌲' },
+    { id: 'automated-agroforestry-equipment', label: 'Automated Agroforestry Equipment Monitoring and Maintenance', icon: '🛠️' },
+    { id: 'real-time-weather-agroforestry', label: 'Real-Time Weather and Climate Data for Agroforestry', icon: '🌦️' },
+    { id: 'smart-irrigation-agroforestry', label: 'Smart Irrigation Scheduling for Agroforestry Systems', icon: '🚿' },
+    { id: 'tree-growth-modeling', label: 'Tree Crop Growth Modeling and Simulation Tools', icon: '💻' },
+    { id: 'digital-agroforestry-supply-chain', label: 'Digital Agroforestry Supply Chain Management', icon: '📦' },
+    { id: 'precision-soil-erosion', label: 'Precision Soil Erosion Control in Agroforestry', icon: '🌱' },
+    { id: 'integrated-agroforestry-traceability', label: 'Integrated Agroforestry Supply Chain Traceability', icon: '📡' },
+    { id: 'smart-agroforestry-waste', label: 'Smart Agroforestry Waste Management Systems', icon: '🗑️' },
+    { id: 'remote-agroforestry-biodiversity', label: 'Remote Monitoring of Agroforestry Biodiversity', icon: '🌿' },
+    { id: 'automated-tree-inventory', label: 'Automated Tree Crop Inventory and Resource Management', icon: '📦' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'turf-sod-farming':
+  return [
+    { id: 'smart-irrigation-turf', label: 'Smart Irrigation Systems for Turf', icon: '🚿' },
+    { id: 'automated-turf-harvesting', label: 'Automated Turf Sod Harvesting', icon: '🤖' },
+    { id: 'digital-turf-monitoring', label: 'Digital Turf Field Monitoring and Management', icon: '📊' },
+    { id: 'precision-fertilization-turf', label: 'Precision Fertilization for Turf Grass', icon: '🧪' },
+    { id: 'automated-soil-moisture-turf', label: 'Automated Soil Moisture Monitoring for Turf', icon: '💧' },
+    { id: 'turf-quality-control', label: 'Turf Quality Control and Grading Systems', icon: '✅' },
+    { id: 'real-time-turf-growth', label: 'Real-Time Turf Growth Tracking', icon: '📈' },
+    { id: 'precision-seeding-turf', label: 'Precision Seeding Systems for Turf Crops', icon: '🌱' },
+    { id: 'remote-sensing-turf', label: 'Remote Sensing for Turf Health and Stress', icon: '🛰️' },
+    { id: 'turf-pest-detection', label: 'Turf Pest and Disease Detection Systems', icon: '🐛' },
+    { id: 'digital-turf-supply-chain', label: 'Digital Turf and Sod Supply Chain Management', icon: '📦' },
+    { id: 'smart-turf-maintenance', label: 'Smart Turf Maintenance Scheduling', icon: '📅' },
+    { id: 'turf-field-analytics', label: 'Turf Field Performance Analytics', icon: '📊' },
+    { id: 'automated-turf-packaging', label: 'Automated Turf Roll Packaging and Distribution', icon: '📦' },
+    { id: 'data-driven-irrigation-turf', label: 'Data-Driven Irrigation Scheduling for Turf Farms', icon: '🚿' },
+    { id: 'smart-turf-watering', label: 'Smart Turf Watering Systems', icon: '💧' },
+    { id: 'turf-grass-breeding', label: 'Turf Grass Breeding and Genetic Optimization', icon: '🧬' },
+    { id: 'real-time-turf-disease', label: 'Real-Time Turf Disease Prevention Alerts', icon: '⚠️' },
+    { id: 'automated-weed-control', label: 'Automated Weed Control for Turf and Sod', icon: '🌿' },
+    { id: 'remote-turf-monitoring', label: 'Remote Monitoring for Turf Field Conditions', icon: '🛰️' },
+    { id: 'smart-temperature-turf', label: 'Smart Temperature Regulation for Turf Farms', icon: '🌡️' },
+    { id: 'predictive-turf-growth', label: 'Predictive Turf Growth Modeling and Simulation', icon: '🔮' },
+    { id: 'automated-turf-maintenance', label: 'Automated Turf Field Maintenance Equipment', icon: '🛠️' },
+    { id: 'real-time-soil-turf', label: 'Real-Time Soil and Nutrient Monitoring for Turf', icon: '🌱' },
+    { id: 'precision-turf-harvesting', label: 'Precision Turf Harvesting Tools', icon: '✂️' },
+    { id: 'digital-turf-resource', label: 'Digital Turf Farm Resource Optimization', icon: '📊' },
+    { id: 'turf-health-monitoring', label: 'Turf Health Monitoring and Diagnostic Tools', icon: '🩺' },
+    { id: 'smart-fertilizer-turf', label: 'Smart Fertilizer Application for Turf Fields', icon: '🧪' },
+    { id: 'environmental-impact-turf', label: 'Environmental Impact Monitoring for Turf Farms', icon: '🌍' },
+    { id: 'turf-market-demand', label: 'Turf Market Demand Forecasting Tools', icon: '🔮' },
+    { id: 'automated-turf-preparation', label: 'Automated Turf Field Preparation and Planting', icon: '🌱' },
+    { id: 'precision-turf-irrigation', label: 'Precision Turf Irrigation and Drainage Systems', icon: '🚿' },
+    { id: 'mobile-turf-management', label: 'Mobile Turf Farm Management Apps', icon: '📱' },
+    { id: 'smart-turf-transport', label: 'Smart Turf Sod Transport Management', icon: '🚚' },
+    { id: 'digital-turf-erosion', label: 'Digital Turf Soil Erosion and Compaction Monitoring', icon: '🌱' },
+    { id: 'remote-turf-mapping', label: 'Remote Turf Field Mapping and Analysis', icon: '🗺️' },
+    { id: 'real-time-turf-disease-risk', label: 'Real-Time Turf Disease Risk Forecasting', icon: '⚠️' },
+    { id: 'turf-grass-selection', label: 'Turf Grass Selection Optimization Tools', icon: '🌱' },
+    { id: 'automated-turf-fertilizer', label: 'Automated Turf Fertilizer Blending Systems', icon: '🧪' },
+    { id: 'turf-crop-rotation', label: 'Turf Crop Rotation and Sustainability Software', icon: '🔄' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'vegetable-farming':
+  return [
+    { id: 'precision-irrigation-vegetables', label: 'Precision Irrigation Systems for Vegetables', icon: '🚿' },
+    { id: 'smart-fertilizer-vegetables', label: 'Smart Fertilizer Application for Vegetables', icon: '🧪' },
+    { id: 'automated-pest-detection-vegetables', label: 'Automated Pest and Disease Detection for Vegetables', icon: '🐛' },
+    { id: 'real-time-soil-moisture-vegetables', label: 'Real-Time Soil Moisture Monitoring for Vegetables', icon: '💧' },
+    { id: 'digital-yield-prediction-vegetables', label: 'Digital Crop Yield Prediction for Vegetables', icon: '📈' },
+    { id: 'automated-weeding-vegetables', label: 'Automated Weeding Systems for Vegetable Fields', icon: '🌿' },
+    { id: 'remote-sensing-vegetables', label: 'Remote Sensing for Vegetable Crop Health', icon: '🛰️' },
+    { id: 'digital-vegetable-management', label: 'Digital Vegetable Farm Management Platforms', icon: '📊' },
+    { id: 'smart-harvest-scheduling', label: 'Smart Harvest Scheduling and Automation', icon: '📅' },
+    { id: 'precision-seeding-vegetables', label: 'Precision Seeding and Planting Systems for Vegetables', icon: '🌱' },
+    { id: 'real-time-temperature-vegetables', label: 'Real-Time Temperature and Humidity Control for Vegetables', icon: '🌡️' },
+    { id: 'automated-vegetable-sorting', label: 'Automated Vegetable Sorting and Grading', icon: '🔍' },
+    { id: 'digital-soil-fertility-vegetables', label: 'Digital Soil Fertility Monitoring for Vegetable Crops', icon: '🌱' },
+    { id: 'automated-vegetable-packaging', label: 'Automated Vegetable Packaging and Distribution', icon: '📦' },
+    { id: 'smart-watering-vegetables', label: 'Smart Watering Solutions for Vegetable Farms', icon: '💧' },
+    { id: 'data-driven-crop-rotation', label: 'Data-Driven Crop Rotation Planning for Vegetables', icon: '🔄' },
+    { id: 'automated-harvesting-leafy', label: 'Automated Harvesting for Leafy Vegetables', icon: '🤖' },
+    { id: 'real-time-pest-risk-vegetables', label: 'Real-Time Pest and Disease Risk Forecasting for Vegetables', icon: '⚠️' },
+    { id: 'precision-planting-vegetables', label: 'Precision Planting for Vegetables', icon: '🌱' },
+    { id: 'vegetable-stress-detection', label: 'Vegetable Crop Stress Detection Systems', icon: '⚠️' },
+    { id: 'smart-fertilization-vegetables', label: 'Smart Fertilization and Nutrient Management for Vegetables', icon: '🧪' },
+    { id: 'digital-market-demand-vegetables', label: 'Digital Market Demand Forecasting for Vegetables', icon: '🔮' },
+    { id: 'remote-field-monitoring-vegetables', label: 'Remote Field Monitoring for Vegetable Growth', icon: '🛰️' },
+    { id: 'real-time-growth-analytics', label: 'Real-Time Vegetables Growth Analytics', icon: '📊' },
+    { id: 'automated-planting-vegetables', label: 'Automated Vegetable Planting and Transplanting Systems', icon: '🌱' },
+    { id: 'smart-soil-nutrient-vegetables', label: 'Smart Soil and Nutrient Management for Vegetables', icon: '🌱' },
+    { id: 'precision-weed-control-vegetables', label: 'Precision Weed Control Systems for Vegetables', icon: '🌿' },
+    { id: 'digital-traceability-vegetables', label: 'Digital Traceability for Vegetable Products', icon: '📡' },
+    { id: 'automated-irrigation-scheduling', label: 'Automated Irrigation Scheduling for Vegetables', icon: '🚿' },
+    { id: 'real-time-harvest-quality', label: 'Real-Time Monitoring of Vegetable Harvest Quality', icon: '✅' },
+    { id: 'smart-crop-protection-vegetables', label: 'Smart Crop Protection for Vegetables', icon: '🛡️' },
+    { id: 'remote-monitoring-vegetables', label: 'Remote Monitoring of Vegetable Farm Conditions', icon: '🛰️' },
+    { id: 'predictive-maintenance-vegetables', label: 'Predictive Maintenance for Vegetable Farming Equipment', icon: '🛠️' },
+    { id: 'mobile-vegetable-management', label: 'Mobile Vegetable Farm Management Apps', icon: '📱' },
+    { id: 'real-time-weather-vegetables', label: 'Real-Time Weather Data Integration for Vegetables', icon: '🌦️' },
+    { id: 'digital-crop-health-reports', label: 'Digital Vegetable Crop Health Reports', icon: '📝' },
+    { id: 'automated-soil-health-vegetables', label: 'Automated Soil Health and pH Control for Vegetables', icon: '🌱' },
+    { id: 'digital-water-optimization', label: 'Digital Water Use Optimization for Vegetable Farms', icon: '💧' },
+    { id: 'precision-disease-management', label: 'Precision Disease Management for Vegetables', icon: '⚠️' },
+    { id: 'real-time-field-mapping', label: 'Real-Time Field Mapping and Vegetables Monitoring', icon: '🗺️' }
+  ];
+// ... existing code ...
+// ... existing code ...
+case 'wine-production':
+  return [
+    { id: 'precision-vineyard-irrigation', label: 'Precision Vineyard Irrigation Systems', icon: '🚿' },
+    { id: 'automated-grape-harvesting', label: 'Automated Grape Harvesting Systems', icon: '🤖' },
+    { id: 'smart-vineyard-climate', label: 'Smart Vineyard Climate Control', icon: '🌡️' },
+    { id: 'digital-vineyard-health', label: 'Digital Vineyard Health Monitoring', icon: '📊' },
+    { id: 'real-time-soil-moisture-vineyard', label: 'Real-Time Soil Moisture and pH Monitoring for Vineyards', icon: '🌱' },
+    { id: 'automated-grape-sorting', label: 'Automated Grape Sorting and Grading', icon: '🔍' },
+    { id: 'smart-fertilization-vineyard', label: 'Smart Fertilization and Nutrient Management for Vineyards', icon: '🧪' },
+    { id: 'remote-sensing-vineyard', label: 'Remote Sensing for Vineyard Health and Stress', icon: '🛰️' },
+    { id: 'precision-grape-pruning', label: 'Precision Grape Pruning Systems', icon: '✂️' },
+    { id: 'real-time-weather-vineyard', label: 'Real-Time Weather and Climate Data Integration for Vineyards', icon: '🌦️' },
+    { id: 'automated-wine-fermentation', label: 'Automated Wine Fermentation Monitoring', icon: '🍷' },
+    { id: 'smart-grape-pest-detection', label: 'Smart Grape Pest and Disease Detection', icon: '🐛' },
+    { id: 'digital-wine-quality', label: 'Digital Wine Quality Control Systems', icon: '✅' },
+    { id: 'automated-grape-packing', label: 'Automated Grape Packing and Bottling Solutions', icon: '📦' },
+    { id: 'smart-wine-storage', label: 'Smart Wine Storage and Aging Optimization', icon: '🍷' },
+    { id: 'predictive-harvesting-grapes', label: 'Predictive Harvesting Tools for Grapes', icon: '🔮' },
+    { id: 'digital-grape-yield', label: 'Digital Grape Yield Prediction Systems', icon: '📈' },
+    { id: 'automated-wine-bottling', label: 'Automated Wine Bottling and Labeling Systems', icon: '🍷' },
+    { id: 'precision-soil-water-vineyard', label: 'Precision Soil and Water Management for Vineyards', icon: '🌱' },
+    { id: 'real-time-grape-ripeness', label: 'Real-Time Grape Ripeness Monitoring', icon: '🍇' },
+    { id: 'automated-vineyard-maintenance', label: 'Automated Vineyard Equipment Maintenance', icon: '🛠️' },
+    { id: 'vineyard-waste-management', label: 'Vineyard Waste Management and Recycling Solutions', icon: '♻️' },
+    { id: 'digital-wine-production', label: 'Digital Wine Production Scheduling', icon: '📅' },
+    { id: 'smart-vineyard-trellising', label: 'Smart Vineyard Trellising and Training Systems', icon: '🌿' },
+    { id: 'data-driven-wine-production', label: 'Data-Driven Wine Production and Processing', icon: '📊' },
+    { id: 'real-time-wine-temperature', label: 'Real-Time Monitoring of Wine Temperature and Humidity', icon: '🌡️' },
+    { id: 'wine-flavor-profiling', label: 'Wine Flavor and Aroma Profiling Tools', icon: '🍷' },
+    { id: 'smart-grape-disease', label: 'Smart Grape Disease Forecasting', icon: '⚠️' },
+    { id: 'digital-wine-traceability', label: 'Digital Wine Traceability and Compliance Tracking', icon: '📡' },
+    { id: 'vineyard-fertilizer-automation', label: 'Vineyard Fertilizer Application Automation', icon: '🧪' },
+    { id: 'remote-vineyard-surveillance', label: 'Remote Vineyard Surveillance for Security', icon: '🛰️' },
+    { id: 'wine-supply-chain', label: 'Wine Supply Chain and Logistics Optimization', icon: '📦' },
+    { id: 'digital-harvest-scheduling', label: 'Digital Harvest Scheduling and Coordination for Grapes', icon: '📅' },
+    { id: 'automated-wine-quality', label: 'Automated Wine Quality Testing and Analysis', icon: '🍷' },
+    { id: 'real-time-wine-storage', label: 'Real-Time Wine Storage Condition Monitoring', icon: '🍷' },
+    { id: 'smart-wine-blending', label: 'Smart Wine Blending Tools', icon: '🍷' },
+    { id: 'digital-wine-inventory', label: 'Digital Wine Inventory Management', icon: '📦' },
+    { id: 'precision-grape-genetics', label: 'Precision Grape Vine Genetics and Breeding', icon: '🧬' },
+    { id: 'vineyard-harvesting-analytics', label: 'Vineyard Harvesting Performance Analytics', icon: '📊' },
+    { id: 'wine-marketing-distribution', label: 'Wine Marketing and Distribution Platforms', icon: '📢' }
+  ];
+// ... existing code ...
+
       default:
         return [
           { id: 'general-niche-1', label: 'General Niche 1', icon: '🔍' },
@@ -3963,24 +5744,22 @@ const UserInputForm = ({ onComplete, onBack }) => {
       case 2: // Sub-Industry
       setFormData({ ...formData, subIndustry: id });
         break;
-    case 3: // Primary Technology Domains
-        if (isMultiSelect) {
-        const updatedTechDomains = formData.primaryTechDomains?.includes(id)
-          ? formData.primaryTechDomains.filter((item) => item !== id)
-          : [...(formData.primaryTechDomains || []), id];
-        setFormData({...formData, primaryTechDomains: updatedTechDomains});
-        }
+        case 3: // Business Model
+        setFormData({...formData, niches: id});
         break;
-    case 4: // Business Model
+          case 4: // Business Model
+        setFormData({...formData, primaryTechDomains: id});
+        break;
+    case 5: // Business Model
       setFormData({...formData, businessModel: id});
         break;
-    case 5: // Target Audience
+      case 6: // Target Audience
         setFormData({...formData, targetAudience: id});
         break;
-    case 6: // Market Selection
+    case 7: // Market Selection
       setFormData({...formData, market: id});
         break;
-    case 7: // Specific Problems
+    /*case 7: // Specific Problems
         if (isMultiSelect) {
         const updatedProblems = formData.specificProblems?.includes(id)
           ? formData.specificProblems.filter((item) => item !== id)
@@ -4116,8 +5895,8 @@ const UserInputForm = ({ onComplete, onBack }) => {
           ? formData.lowCodePlatforms.filter((item) => item !== id)
           : [...(formData.lowCodePlatforms || []), id];
         setFormData({...formData, lowCodePlatforms: updatedLowCode});
-      }
-      break;
+        }
+        break;
     case 21: // Authentication and Security
       if (isMultiSelect) {
         const updatedAuthSecurity = formData.authSecurity?.includes(id)
@@ -4178,7 +5957,7 @@ const UserInputForm = ({ onComplete, onBack }) => {
           : [...(formData.legalCompliance || []), id];
         setFormData({...formData, legalCompliance: updatedLegalCompliance});
         }
-        break;
+        break;*/
       default:
         break;
     }
@@ -4193,7 +5972,7 @@ const UserInputForm = ({ onComplete, onBack }) => {
   
   
   const handleNext = () => {
-    if (currentStep < 28) {
+    if (currentStep < 7) {
       setCurrentStep(currentStep + 1);
     } else {
       // Complete the form
@@ -4217,14 +5996,16 @@ const UserInputForm = ({ onComplete, onBack }) => {
       case 2:
         return !formData.subIndustry;
       case 3:
-      return formData.primaryTechDomains?.length === 0;
+      return !formData.niches;
       case 4:
-      return !formData.businessModel;
+      return formData.primaryTechDomains?.length === 0;
       case 5:
+      return !formData.businessModel;
+      case 6:
         return !formData.targetAudience;
-    case 6:
-      return !formData.market;
       case 7:
+      return !formData.market;
+      /*case 7:
       return formData.specificProblems?.length === 0;
       case 8:
       return formData.solutions?.length === 0;
@@ -4284,6 +6065,7 @@ const UserInputForm = ({ onComplete, onBack }) => {
       return formData.dataProcessing?.length === 0;
     case 28:
       return formData.legalCompliance?.length === 0;
+      */
       default:
         return false;
     }
@@ -4291,14 +6073,14 @@ const UserInputForm = ({ onComplete, onBack }) => {
 // ... existing code ...
   
   // Calculate progress percentage
-  const progress = (currentStep / 16) * 100;
+  const progress = (currentStep / 7) * 100;
   
   const renderStepContent = () => {
     switch(currentStep) {
       case 1: // Primary Industry
         return (
           <>
-            <h2 className="input-form-title">Please select the primary industry that best represents your start-up or project idea.</h2>
+            <h2 className="input-form-title">Select the Primary Industry</h2>
             <div className="options-grid">
               {baseIndustries.map((item) => (
                 <button
@@ -4319,11 +6101,11 @@ const UserInputForm = ({ onComplete, onBack }) => {
           <>
             <h2 className="input-form-title">
               {formData.baseIndustry === 'healthcare'
-                ? 'Which sub-industry within the Healthcare sector are you most focused on?'
+                ? 'Select the Sub-Industry within the Healthcare sector'
                 : formData.baseIndustry === 'banking'
-                ? 'Which sub-industry within the banking sector are you most focused on?'
+                ? 'Select the Sub-Industry within the Banking sector'
                 : formData.baseIndustry === 'agriculture'
-                ? 'Which sub-industry within the agriculture sector are you most focused on?'
+                ? 'Select the Sub-Industry within the Agriculture sector'
                 : 'Which sub-industry within the selected base industry are you most focused on?'}
             </h2>
             <div className="options-grid">
@@ -4341,56 +6123,84 @@ const UserInputForm = ({ onComplete, onBack }) => {
           </>
         );
 
-            case 3: // Primary Technology Domains
+    
+
+      case 3: // Niche
+      
         return (
           <>
-            <h2 className="input-form-title">Please select the primary technology domains you plan to implement for your start-up or project idea.</h2>
+            <h2 className="input-form-title">{formData.baseIndustry === 'healthcare'
+                ? 'Select the Niche within the Healthcare sector'
+                : formData.baseIndustry === 'banking'
+                ? 'Select the Niche within the Banking sector'
+                : formData.baseIndustry === 'agriculture'
+                ? 'Select the Niche within the Agriculture sector'
+                : 'Which Niche within the selected base industry are you most focused on?'}</h2>
             <div className="options-grid">
-              {[
-                { id: 'ai', label: 'Artificial Intelligence (AI)', icon: '🤖' },
-                { id: 'ml', label: 'Machine Learning (ML)', icon: '🧠' },
-                { id: 'cloud-computing', label: 'Cloud Computing', icon: '☁️' },
-                { id: 'big-data-analytics', label: 'Big Data Analytics', icon: '📊' },
-                { id: 'iot', label: 'Internet of Things (IoT)', icon: '🌐' },
-                { id: 'blockchain', label: 'Blockchain Technology', icon: '⛓️' },
-                { id: 'rpa', label: 'Robotic Process Automation (RPA)', icon: '🤖' },
-                { id: 'nlp', label: 'Natural Language Processing (NLP)', icon: '🗣️' },
-                { id: 'telemedicine', label: 'Telemedicine', icon: '🏥' },
-                { id: 'wearable-devices', label: 'Wearable Devices', icon: '⌚' },
-                { id: 'ar', label: 'Augmented Reality (AR)', icon: '🕶️' },
-                { id: 'vr', label: 'Virtual Reality (VR)', icon: '👓' },
-                { id: '5g', label: '5G Technology', icon: '📶' },
-                { id: 'edge-computing', label: 'Edge Computing', icon: '🖥️' },
-                { id: 'voice-recognition', label: 'Voice Recognition Technology', icon: '🎤' },
-                { id: 'data-privacy', label: 'Data Privacy and Security Technologies', icon: '🔒' },
-                { id: 'ehr', label: 'Electronic Health Records (EHR)', icon: '📋' },
-                { id: 'automated-billing', label: 'Automated Billing Systems', icon: '💳' },
-                { id: 'biometric-auth', label: 'Biometric Authentication', icon: '🖐️' },
-                { id: 'healthcare-automation', label: 'Healthcare Automation Software', icon: '⚙️' },
-                { id: 'cdss', label: 'Clinical Decision Support Systems (CDSS)', icon: '📈' },
-                { id: 'predictive-analytics', label: 'Predictive Analytics', icon: '🔮' },
-                { id: 'patient-monitoring', label: 'Patient Monitoring Systems', icon: '📉' },
-                { id: 'robotics', label: 'Robotics in Healthcare', icon: '🤖' },
-                { id: 'smart-hospitals', label: 'Smart Hospitals', icon: '🏥' },
-                { id: 'data-integration', label: 'Data Integration Platforms', icon: '🔗' },
-                { id: 'healthcare-iot', label: 'Healthcare IoT Devices', icon: '🌐' },
-                { id: 'smart-wearables', label: 'Smart Wearables', icon: '⌚' },
-                { id: 'e-prescribing', label: 'E-Prescribing Systems', icon: '💊' },
-                { id: 'hie', label: 'Health Information Exchange (HIE)', icon: '📤' },
-                { id: 'automated-imaging', label: 'Automated Imaging Systems', icon: '📷' },
-                { id: 'medical-chatbots', label: 'Medical Chatbots', icon: '💬' },
-                { id: 'supply-chain', label: 'Supply Chain Automation', icon: '📦' },
-                { id: 'medical-research', label: 'Automation in Medical Research', icon: '🔬' },
-                { id: 'testing-diagnostics', label: 'Automated Testing and Diagnostics', icon: '🩺' },
-                { id: 'computer-vision', label: 'Computer Vision', icon: '👁️' },
-                { id: 'genomic-data', label: 'Genomic Data Analysis', icon: '🧬' },
-                { id: 'digital-therapeutics', label: 'Digital Therapeutics', icon: '💡' },
-                { id: 'mhealth', label: 'Mobile Health (mHealth)', icon: '📱' },
-                { id: 'sdoh', label: 'Social Determinants of Health (SDOH) Platforms', icon: '🌍' }
-              ].map((item) => (
+              {getNiches().map((item) => (
                 <button
                   key={item.id}
-                  className={`option-button ${formData.primaryTechDomains?.includes(item.id) ? 'selected' : ''}`}
+                  className={`option-button ${formData.niches === item.id ? 'selected' : ''}`}
+                  onClick={() => handleSelection(item.id)}
+                >
+                  <span className="option-icon">{item.icon}</span>
+                  <span className="option-label">{item.label}</span>
+                </button>
+              ))}
+            </div>
+          </>
+        );
+      
+      case 4: // Primary Technology Domains
+        return (
+          <>
+          <h2 className="input-form-title">Select the Technology Domain</h2>
+            <div className="options-grid">
+            {[
+              { id: 'ai', label: 'Artificial Intelligence (AI)', icon: '🤖' },
+              { id: 'ml', label: 'Machine Learning (ML)', icon: '🧠' },
+              { id: 'cloud-computing', label: 'Cloud Computing', icon: '☁️' },
+              { id: 'big-data-analytics', label: 'Big Data Analytics', icon: '📊' },
+              { id: 'iot', label: 'Internet of Things (IoT)', icon: '🌐' },
+              { id: 'blockchain', label: 'Blockchain Technology', icon: '⛓️' },
+              { id: 'rpa', label: 'Robotic Process Automation (RPA)', icon: '🤖' },
+              { id: 'nlp', label: 'Natural Language Processing (NLP)', icon: '🗣️' },
+              { id: 'telemedicine', label: 'Telemedicine', icon: '🏥' },
+              { id: 'wearable-devices', label: 'Wearable Devices', icon: '⌚' },
+              { id: 'ar', label: 'Augmented Reality (AR)', icon: '🕶️' },
+              { id: 'vr', label: 'Virtual Reality (VR)', icon: '👓' },
+              { id: '5g', label: '5G Technology', icon: '📶' },
+              { id: 'edge-computing', label: 'Edge Computing', icon: '🖥️' },
+              { id: 'voice-recognition', label: 'Voice Recognition Technology', icon: '🎤' },
+              { id: 'data-privacy', label: 'Data Privacy and Security Technologies', icon: '🔒' },
+              { id: 'ehr', label: 'Electronic Health Records (EHR)', icon: '📋' },
+              { id: 'automated-billing', label: 'Automated Billing Systems', icon: '💳' },
+              { id: 'biometric-auth', label: 'Biometric Authentication', icon: '🖐️' },
+              { id: 'healthcare-automation', label: 'Healthcare Automation Software', icon: '⚙️' },
+              { id: 'cdss', label: 'Clinical Decision Support Systems (CDSS)', icon: '📈' },
+              { id: 'predictive-analytics', label: 'Predictive Analytics', icon: '🔮' },
+              { id: 'patient-monitoring', label: 'Patient Monitoring Systems', icon: '📉' },
+              { id: 'robotics', label: 'Robotics in Healthcare', icon: '🤖' },
+              { id: 'smart-hospitals', label: 'Smart Hospitals', icon: '🏥' },
+              { id: 'data-integration', label: 'Data Integration Platforms', icon: '🔗' },
+              { id: 'healthcare-iot', label: 'Healthcare IoT Devices', icon: '🌐' },
+              { id: 'smart-wearables', label: 'Smart Wearables', icon: '⌚' },
+              { id: 'e-prescribing', label: 'E-Prescribing Systems', icon: '💊' },
+              { id: 'hie', label: 'Health Information Exchange (HIE)', icon: '📤' },
+              { id: 'automated-imaging', label: 'Automated Imaging Systems', icon: '📷' },
+              { id: 'medical-chatbots', label: 'Medical Chatbots', icon: '💬' },
+              { id: 'supply-chain', label: 'Supply Chain Automation', icon: '📦' },
+              { id: 'medical-research', label: 'Automation in Medical Research', icon: '🔬' },
+              { id: 'testing-diagnostics', label: 'Automated Testing and Diagnostics', icon: '🩺' },
+              { id: 'computer-vision', label: 'Computer Vision', icon: '👁️' },
+              { id: 'genomic-data', label: 'Genomic Data Analysis', icon: '🧬' },
+              { id: 'digital-therapeutics', label: 'Digital Therapeutics', icon: '💡' },
+              { id: 'mhealth', label: 'Mobile Health (mHealth)', icon: '📱' },
+              { id: 'sdoh', label: 'Social Determinants of Health (SDOH) Platforms', icon: '🌍' }
+            ].map((item) => (
+                <button
+                  key={item.id}
+                className={`option-button ${formData.primaryTechDomains?.includes(item.id) ? 'selected' : ''}`}
                   onClick={() => handleSelection(item.id, true)}
                 >
                   <span className="option-icon">{item.icon}</span>
@@ -4401,10 +6211,11 @@ const UserInputForm = ({ onComplete, onBack }) => {
           </>
         );
 
-        case 4: // Business Model
+        case 5: // Business Model
         return (
           <>
-            <h2 className="input-form-title">Please select the business model that best aligns with your start-up or project idea.</h2>
+            <h2 className="input-form-title">Select the Business Model
+            </h2>
             <div className="options-grid">
               {[
                 { id: 'saas', label: 'Software-as-a-Service (SaaS)', icon: '💻' },
@@ -4461,11 +6272,12 @@ const UserInputForm = ({ onComplete, onBack }) => {
           </>
         );
 
-      case 5: // Target Audience
+      case 6: // Target Audience
       if (formData.baseIndustry === 'healthcare') {
         return (
           <>
-            <h2 className="input-form-title">Please select the target audiences for your start-up or project idea within the Healthcare sector</h2>
+            <h2 className="input-form-title">Select the Target Audience
+            </h2>
             <div className="options-grid">
               {[
                 { id: 'patients-general-public', label: 'Patients (General Public)', icon: '👥' },
@@ -4553,11 +6365,11 @@ const UserInputForm = ({ onComplete, onBack }) => {
         );
       }
 
-      case 6: // Market Selection
+      case 7: // Market Selection
       if (formData.baseIndustry === 'healthcare') {
         return (
           <>
-            <h2 className="input-form-title">Please select the specific market within the healthcare industry that aligns with your focus</h2>
+            <h2 className="input-form-title">Select the Market Segment</h2>
             <div className="options-grid">
               {[
                 { id: 'local', label: 'Local', icon: '📍' },
@@ -4622,7 +6434,7 @@ const UserInputForm = ({ onComplete, onBack }) => {
         );
       }
 
-      case 7: // Specific Problems
+     /* case 7: // Specific Problems
       if (formData.baseIndustry === 'healthcare') {
         return (
           <>
@@ -5052,14 +6864,16 @@ const UserInputForm = ({ onComplete, onBack }) => {
           </>
         );
   
-       
+       */
     // ... existing code ...
+
+  /*  
     case 13: // Combined Front-End Technologies
-    return (
-      <>
+        return (
+          <>
         <h2 className="input-form-title">Please select the front-end technologies for your start-up or project idea.</h2>
-        <div className="options-grid">
-          {/* Web Front-End Technologies */}
+            <div className="options-grid">
+          
           {formData.platformType === 'web' || formData.platformType === 'hybrid' ? (
             <>
             <div className="tech-section">
@@ -5101,7 +6915,7 @@ const UserInputForm = ({ onComplete, onBack }) => {
             </>
           ) : null}
 
-          {/* Mobile Front-End Technologies */}
+          
           {formData.platformType === 'mobile' || formData.platformType === 'hybrid' ? (
             <>
             <div className="tech-section">
@@ -5150,7 +6964,7 @@ const UserInputForm = ({ onComplete, onBack }) => {
       <>
         <h2 className="input-form-title">Please select the back-end technologies for your start-up or project idea.</h2>
         <div className="options-grid">
-          {/* Web Back-End Technologies */}
+          
           {formData.platformType === 'web' || formData.platformType === 'hybrid' ? (
             <>
             <div className="tech-section">
@@ -5192,7 +7006,7 @@ const UserInputForm = ({ onComplete, onBack }) => {
             </>
           ) : null}
 
-          {/* Mobile Back-End Technologies */}
+         
           {formData.platformType === 'mobile' || formData.platformType === 'hybrid' ? (
             <>
             <div className="tech-section">
@@ -5558,8 +7372,7 @@ const UserInputForm = ({ onComplete, onBack }) => {
           </div>
         </>
       );
-// ... existing code ...
-     // ... existing code ...
+
      case 23: // Pricing Models
      return (
        <>
@@ -5870,7 +7683,7 @@ case 24: // Payment Gateways
       );
     }
 // ... existing code ...
-    
+    */
       default:
         return null;
     }
@@ -5879,11 +7692,11 @@ case 24: // Payment Gateways
   return (
     <div className="user-input-container">
       <div className="progress-bar">
-        <div className="progress-fill" style={{ width: `${(currentStep / 28) * 100}%` }}></div>
+        <div className="progress-fill" style={{ width: `${(currentStep / 7) * 100}%` }}></div>
       </div>
       
       <div className="step-indicator">
-        Step {currentStep} of 28
+        Step {currentStep} of 7
       </div>
       
       <div className="input-form-content">

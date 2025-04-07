@@ -1,83 +1,48 @@
 import React, { useState } from 'react';
 import './AuthPages.css';
-import UserRoleSelection from './UserRoleSelection';
-import UserInputForm from './UserInputForm';
+import IdeaGenerator from './IdeaGenerator';
 import App from './App';
 
 const AuthPages = ({ initialPage = 'signup', onClose }) => {
-  const [currentPage, setCurrentPage] = useState(initialPage === 'signup' ? 'role-selection' : 'login');
-  const [selectedRole, setSelectedRole] = useState(null);
-  const [userInputData, setUserInputData] = useState(null);
+  const [currentPage, setCurrentPage] = useState(initialPage === 'signup' ? 'signup' : 'login');
   const [userCredentials, setUserCredentials] = useState(null);
+  const [showIdeaGenerator, setShowIdeaGenerator] = useState(false);
   
   const switchPage = () => {
     if (currentPage === 'signup') {
       setCurrentPage('login');
     } else if (currentPage === 'login') {
-      setCurrentPage('role-selection');
+      setCurrentPage('signup');
     }
-  };
-
-  const handleRoleSelectionComplete = (role) => {
-    setSelectedRole(role);
-    setCurrentPage('signup');
-  };
-
-  const handleUserInputComplete = (data) => {
-    setUserInputData(data);
-    onClose();
-  };
-
-  const handleBackFromRoleSelection = () => {
-    if (onClose) {
-      onClose();
-    }
-  };
-
-  const handleBackFromUserInput = () => {
-    setCurrentPage('signup');
   };
 
   const handleSignupComplete = (credentials) => {
     setUserCredentials(credentials);
-    setCurrentPage('user-input');
+    setShowIdeaGenerator(true);
   };
 
   const renderContent = () => {
+    if (showIdeaGenerator) {
+      return <IdeaGenerator onClose={onClose} />;
+    }
+    
     switch (currentPage) {
-      case 'role-selection':
-        return (
-          <UserRoleSelection
-            onComplete={handleRoleSelectionComplete}
-            onBack={handleBackFromRoleSelection}
-            currentPage={currentPage}
-            setCurrentPage={setCurrentPage}
-          />
-        );
       case 'signup':
         return (
           <SignupForm 
             onSwitchPage={switchPage} 
             onComplete={handleSignupComplete}
-            selectedRole={selectedRole}
           />
         );
       case 'login':
         return <LoginForm onSwitchPage={switchPage} />;
-      case 'user-input':
-        return (
-          <UserInputForm
-            onComplete={handleUserInputComplete}
-            onBack={handleBackFromUserInput}
-          />
-        );
       default:
         return null;
     }
   };
 
-  // Only show header with tabs when we're in login or signup pages
-  const showHeader = currentPage === 'login' || currentPage === 'signup';
+  // Only show header with tabs when we're in login or signup pages and not showing IdeaGenerator
+  const showHeader = (currentPage === 'login' || currentPage === 'signup') && !showIdeaGenerator;
   
   return (
     <div className="auth-container">
@@ -93,7 +58,7 @@ const AuthPages = ({ initialPage = 'signup', onClose }) => {
             </button>
             <button 
               className={currentPage === 'signup' ? "signup-btn active" : "signup-btn"} 
-              onClick={() => setCurrentPage('role-selection')}
+              onClick={() => setCurrentPage('signup')}
             >
               Signup
             </button>
@@ -106,8 +71,8 @@ const AuthPages = ({ initialPage = 'signup', onClose }) => {
   );
 };
 
-// Updated SignupForm to include selected role and handle form submission
-const SignupForm = ({ onSwitchPage, onComplete, selectedRole }) => {
+// SignupForm component for user registration
+const SignupForm = ({ onSwitchPage, onComplete }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [otp, setOtp] = useState('');
