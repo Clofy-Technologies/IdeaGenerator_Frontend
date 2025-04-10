@@ -158,9 +158,9 @@ const IdeaGenerator = ({ onClose }) => {
     setSelectedProblem(null);
   };
 
-  // Render just the form inputs without the ideas panel
+  // Render just the form inputs for the center panel
   const renderFormInputs = () => (
-    <div className="form-left-panel">
+    <div className="form-center-panel">
       <h3>What is your primary focus of your start-up idea?</h3>
       <div className="select-container">
         <select 
@@ -300,13 +300,20 @@ const IdeaGenerator = ({ onClose }) => {
   // Render the complete form with empty state for initial view
   const renderForm = () => (
     <div className="idea-generator-form">
-      {renderFormInputs()}
-      <div className="ideas-panel">
-        <div className="empty-state">
-          <div className="empty-state-icon">💡</div>
-          <h3>Ready to Generate Ideas</h3>
-          <p>Fill out the form on the left and click "Generate Ideas" to see innovative solutions tailored to your needs.</p>
-          <p>Our AI will analyze your inputs and suggest creative ideas to help you solve problems in your industry.</p>
+      {/* Center Panel - Form Inputs */}
+      <div className="center-panel">
+        {renderFormInputs()}
+      </div>
+      
+      {/* Right Panel - Ideas Display */}
+      <div className="right-panel">
+        <div className="ideas-panel">
+          <div className="empty-state">
+            <div className="empty-state-icon">💡</div>
+            <h3>Ready to Generate Ideas</h3>
+            <p>Fill out the form on the left and click "Generate Ideas" to see innovative solutions tailored to your needs.</p>
+            <p>Our AI will analyze your inputs and suggest creative ideas to help you solve problems in your industry.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -338,13 +345,18 @@ const IdeaGenerator = ({ onClose }) => {
   const renderResults = () => (
     <div className="idea-generator-results">
       <div className="results-container">
-        <div className="form-panel">
+        {/* Center Panel - Form Inputs */}
+        <div className="center-panel">
           <div className="idea-generator-form">
             {renderFormInputs()}
           </div>
         </div>
-        <div className="ideas-panel">
-          {selectedProblem ? renderIdeasDetail() : renderProblemSelection()}
+        
+        {/* Right Panel - Ideas Display */}
+        <div className="right-panel">
+          <div className="ideas-panel">
+            {selectedProblem ? renderIdeasDetail() : renderProblemSelection()}
+          </div>
         </div>
       </div>
     </div>
@@ -372,19 +384,65 @@ const IdeaGenerator = ({ onClose }) => {
     </div>
   );
 
-  return (
-    <div className="idea-generator-container">
-      <div className="idea-generator-header">
-        <div className="logo">YAIIA <span className="logo-dot">•</span></div>
-        <div className="auth-buttons">
-          <button className="login-btn-hero">Login</button>
-          <button className="signup-btn-hero">Signup</button>
+  // Render the left sidebar navigation panel
+  const renderSidebar = () => (
+    <div className="sidebar-panel">
+      <div className="sidebar-logo">YAIIA <span className="logo-dot">•</span></div>
+      
+      <nav className="sidebar-nav">
+        <ul className="nav-links">
+          <li className="nav-item active">
+            <span className="nav-icon">🏠</span>
+            <span className="nav-text">Home</span>
+          </li>
+          <li className="nav-item">
+            <span className="nav-icon">💡</span>
+            <span className="nav-text">Generate Ideas</span>
+          </li>
+          <li className="nav-item">
+            <span className="nav-icon">⭐</span>
+            <span className="nav-text">Saved Ideas</span>
+          </li>
+          <li className="nav-item">
+            <span className="nav-icon">⚙️</span>
+            <span className="nav-text">Account Settings</span>
+          </li>
+        </ul>
+      </nav>
+      
+      <div className="user-info">
+        <div className="user-avatar">👤</div>
+        <div className="user-details">
+          <div className="user-name">Guest User</div>
+          <div className="user-plan">Free Plan</div>
         </div>
       </div>
+      
+      <div className="pro-upgrade">
+        <button className="upgrade-button">
+          <span className="upgrade-icon">⚡</span>
+          <span>Upgrade to Pro</span>
+        </button>
+      </div>
+    </div>
+  );
 
-      {currentView === 'form' ? (
-        renderForm()
-      ) : renderResults()}
+  return (
+    <div className="idea-generator-container">
+      {/* Three-panel layout */}
+      <div className="three-panel-layout">
+        {/* Left Panel - Sidebar */}
+        {renderSidebar()}
+        
+        {/* Center and Right Panels */}
+        <div className="main-content">
+          <div className="content-panels">
+            {currentView === 'form' ? (
+              renderForm()
+            ) : renderResults()}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
